@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template de Header</title>
+    <style>
+        header {
+            background: #b1bfce;
+            padding: 8px 10px;
+            display: flex; /* Activamos el modelo Flexbox */
+            justify-content: space-between; /* Distribuimos los elementos */
+            align-items: center; /* Alineamos verticalmente en el centro */
+        }
+
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            background-color: #1f3677; /* Color de fondo */
+            color: white;               /* Color del texto */
+            padding: 10px 20px;         /* Espaciado interno */
+            border: none;               /* Eliminar borde */
+            border-radius: 5px;         /* Bordes redondeados */
+            font-size: 16px;            /* Tamaño de la fuente */
+            cursor: pointer;           /* Cambiar cursor */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+
+        button:hover {
+            background-color: #12214c; /* Cambio de color al pasar el ratón */
+        }
+
+        .login {
+            width: 100px; /* Ancho para el botón de login */
+        }
+
+        .register {
+            width: 150px; /* Ancho para el botón de crear cuenta */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <figure>
+        <img src="images/logo.png" alt="logo" width="60" height="60">
+    </figure>
+    <div>
+        <button type="button" class="login">Log in</button>
+        <button type="button" class="register">Create account</button>
+    </div>
+</header>
+</body>
+</html>
