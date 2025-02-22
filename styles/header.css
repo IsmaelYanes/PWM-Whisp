@@ -1,9 +1,14 @@
-header {
-    background: #b1bfce;
-    padding: 8px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-figure {
-    margin: 2px;
-    padding: 0;
+header {
+    background: #b1bfce;
+    padding: 0.5em;
+}
+
+.imageLogo {
+    width: 5em;
+    height: 5em;
 }
