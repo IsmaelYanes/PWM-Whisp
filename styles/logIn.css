@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1.25em;
+    height: 22em;
+    width: 45%;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    background: whitesmoke;
+    box-shadow: 0 0 10px 8px #A8A8A8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.LogInText {
+    color: #323234;
+    padding-left: 0.3em;
+}
+
+.registerForm {
+    width: 95%;
+    height: 85%;
+    padding-top: 1.25em;
+    padding-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.emailRegisterField, .passwordRegisterField {
+    width: 100%;
+    height: 3em;
+    padding-bottom: 2em;
+}
+
+.inputField{
+    width: 94%;
+    height: 100%;
+    padding: 0.8em 0 0.8em 1em;
+    border-radius: 0.5em;
+    border: #A8A8A8 solid 2px;
+}
+
+.inputOptions {
+    width: 100%;
+    height: 100%;
+}
+
+.createAccountField, .forgotPassword {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.createAccountField {
+    height: 40%;
+    padding: 0.65em 0 0.3em 0;
+}
+
+.forgotPassword {
+    height: 40%;
+}
+
+.createAccountButton {
+    width: 100%;
+    height: 80%;
+    border-radius: 5em;
+    border: #1d407d solid 2px;
+    background: #1d407d;
+    cursor: pointer;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+.forgotPasswordText {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+}
+
