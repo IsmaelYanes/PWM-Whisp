@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Add MockHomeHeader template">
-      <change afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Separate the style from the html file to a css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/homeHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/homeHeader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MockHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MockHeader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MockHomeHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MockHomeHeader.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +43,54 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.MockHeader.html.executor": "Run",
     "JavaScript Debug.MockHomeHeader.html.executor": "Run",
+    "JavaScript Debug.createAccount.html.executor": "Run",
+    "JavaScript Debug.logIn.html.executor": "Debug",
+    "JavaScript Debug.mockHomePage.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.MockHeader.html">
+    <configuration name="MockHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/MockHeader.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="MockHomeHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/MockHomeHeader.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="createAccount.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/createAccount.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="logIn.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/logIn.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.MockHeader.html" />
+        <item itemvalue="JavaScript Debug.logIn.html" />
+        <item itemvalue="JavaScript Debug.createAccount.html" />
+        <item itemvalue="JavaScript Debug.MockHomeHeader.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,6 +108,10 @@
       <updated>1740001056677</updated>
       <workItem from="1740001057861" duration="954000" />
       <workItem from="1740002029516" duration="308000" />
+      <workItem from="1740089122190" duration="1854000" />
+      <workItem from="1740150332811" duration="6602000" />
+      <workItem from="1740180233130" duration="5262000" />
+      <workItem from="1740226551245" duration="15905000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -102,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740002185461</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Separate the style from the html file to a css">
+      <option name="closed" value="true" />
+      <created>1740089733583</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740089733583</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +164,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -123,6 +186,7 @@
     <MESSAGE value="Add MockHeader template" />
     <MESSAGE value="Upload changes" />
     <MESSAGE value="Add MockHomeHeader template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add MockHomeHeader template" />
+    <MESSAGE value="Separate the style from the html file to a css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate the style from the html file to a css" />
   </component>
 </project>
