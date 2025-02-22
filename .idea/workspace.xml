@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Separate the style from the html file to a css">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Change MockHomeHeader.html name to HomeHeader.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/homeHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/homeHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/MockHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MockHeader.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/MockHomeHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MockHomeHeader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HomeHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomeHeader.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +41,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JavaScript Debug.MockHeader.html.executor": "Run",
+    "JavaScript Debug.MockHeader.html.executor": "Debug",
     "JavaScript Debug.MockHomeHeader.html.executor": "Run",
     "JavaScript Debug.createAccount.html.executor": "Run",
     "JavaScript Debug.logIn.html.executor": "Debug",
@@ -70,10 +68,10 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.MockHeader.html">
-    <configuration name="MockHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/MockHeader.html" useBuiltInWebServerPort="true">
+    <configuration name="Header.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/Header.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="MockHomeHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/MockHomeHeader.html" useBuiltInWebServerPort="true">
+    <configuration name="HomeHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/HomeHeader.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="createAccount.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/createAccount.html" useBuiltInWebServerPort="true">
@@ -111,7 +109,7 @@
       <workItem from="1740089122190" duration="1854000" />
       <workItem from="1740150332811" duration="6602000" />
       <workItem from="1740180233130" duration="5262000" />
-      <workItem from="1740226551245" duration="15905000" />
+      <workItem from="1740226551245" duration="19803000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -153,7 +151,47 @@
       <option name="project" value="LOCAL" />
       <updated>1740089733583</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update structure of header.html">
+      <option name="closed" value="true" />
+      <created>1740247724413</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740247724413</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update structure of header.css">
+      <option name="closed" value="true" />
+      <created>1740248174965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740248174965</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Change MockHeader.html name to Header.html">
+      <option name="closed" value="true" />
+      <created>1740248297351</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740248297351</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change MockHomeHeader.html name to HomeHeader.html">
+      <option name="closed" value="true" />
+      <created>1740252280340</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740252280340</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Change MockHomeHeader.html name to HomeHeader.html">
+      <option name="closed" value="true" />
+      <created>1740252701284</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740252701285</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +225,10 @@
     <MESSAGE value="Upload changes" />
     <MESSAGE value="Add MockHomeHeader template" />
     <MESSAGE value="Separate the style from the html file to a css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Separate the style from the html file to a css" />
+    <MESSAGE value="Update structure of header.html" />
+    <MESSAGE value="Update structure of header.css" />
+    <MESSAGE value="Change MockHeader.html name to Header.html" />
+    <MESSAGE value="Change MockHomeHeader.html name to HomeHeader.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change MockHomeHeader.html name to HomeHeader.html" />
   </component>
 </project>
