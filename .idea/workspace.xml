@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Change MockHomeHeader.html name to HomeHeader.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/homeHeader.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/homeHeader.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HomeHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HomeHeader.html" afterDir="false" />
-    </list>
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update structure of homeHeader.css" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +105,7 @@
       <workItem from="1740089122190" duration="1854000" />
       <workItem from="1740150332811" duration="6602000" />
       <workItem from="1740180233130" duration="5262000" />
-      <workItem from="1740226551245" duration="19803000" />
+      <workItem from="1740226551245" duration="20151000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -191,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740252701285</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update structure of HomeHeader.html">
+      <option name="closed" value="true" />
+      <created>1740253947734</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740253947734</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update structure of homeHeader.css">
+      <option name="closed" value="true" />
+      <created>1740253983270</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740253983270</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +240,10 @@
     <MESSAGE value="Update structure of header.html" />
     <MESSAGE value="Update structure of header.css" />
     <MESSAGE value="Change MockHeader.html name to Header.html" />
+    <MESSAGE value="Update" />
     <MESSAGE value="Change MockHomeHeader.html name to HomeHeader.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change MockHomeHeader.html name to HomeHeader.html" />
+    <MESSAGE value="Update structure of HomeHeader.html" />
+    <MESSAGE value="Update structure of homeHeader.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update structure of homeHeader.css" />
   </component>
 </project>
