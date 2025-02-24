@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto HTML5</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/photoCarousel.css">
+    <script src="../javascript/xlu-include-file.js"></script>
 </head>
 <body>
-    <h1>¡Hola, WebStorm!</h1>
-    <p>Este es mi primer proyecto en HTML5.</p>
-    <video width="320" height="240" controls></video>video
+    <div class="wrapper">
+        <header id="main_header" xlu-include-file="header.html"></header>
+        <div class="main_content" xlu-include-file="photoCarousel.html"></div>
+        <footer id="main_footer" xlu-include-file="footer.html"> </footer>
+    </div>
+    <script>xLuIncludeFile();</script>
 </body>
 </html>
