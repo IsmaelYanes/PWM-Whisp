@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload logIn.css file" />
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="create homepage">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,37 +32,45 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2tHFNuAFdz9vZ67CR9I2I0NkOtU" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.MockHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.MockHomeHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.createAccount.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.logIn.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.mockHomePage.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.MockHeader.html.executor": "Run",
+    "JavaScript Debug.MockHomeHeader.html.executor": "Run",
+    "JavaScript Debug.createAccount.html.executor": "Run",
+    "JavaScript Debug.logIn.html.executor": "Debug",
+    "JavaScript Debug.mockHomePage.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Uni/PWM/PWM-Whisp/javascript",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Uni\PWM\PWM-Whisp\javascript" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Uni\PWM\PWM-Whisp" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\styles" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\templates" />
     </key>
@@ -218,7 +229,55 @@
       <option name="project" value="LOCAL" />
       <updated>1740255330905</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add javascript file">
+      <option name="closed" value="true" />
+      <created>1740420012412</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740420012412</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reset fotter margin and padding to 0">
+      <option name="closed" value="true" />
+      <created>1740420411811</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1740420411811</updated>
+    </task>
+    <task id="LOCAL-00017" summary="reset message style margin and padding to 0">
+      <option name="closed" value="true" />
+      <created>1740420464707</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1740420464707</updated>
+    </task>
+    <task id="LOCAL-00018" summary="reset photoCarousel style margin and padding to 0">
+      <option name="closed" value="true" />
+      <created>1740420505285</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1740420505285</updated>
+    </task>
+    <task id="LOCAL-00019" summary="reset toolbar style margin and padding to 0">
+      <option name="closed" value="true" />
+      <created>1740420529221</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1740420529221</updated>
+    </task>
+    <task id="LOCAL-00020" summary="create homepage">
+      <option name="closed" value="true" />
+      <created>1740421431568</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1740421431568</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +320,12 @@
     <MESSAGE value="Update structure of homeHeader.css" />
     <MESSAGE value="Upload logIn.html file" />
     <MESSAGE value="Upload logIn.css file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload logIn.css file" />
+    <MESSAGE value="add javascript file" />
+    <MESSAGE value="reset fotter margin and padding to 0" />
+    <MESSAGE value="reset message style margin and padding to 0" />
+    <MESSAGE value="reset photoCarousel style margin and padding to 0" />
+    <MESSAGE value="reset toolbar style margin and padding to 0" />
+    <MESSAGE value="create homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="create homepage" />
   </component>
 </project>
