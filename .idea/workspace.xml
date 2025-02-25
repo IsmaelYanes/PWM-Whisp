@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload logIn.css file" />
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload logIn.css file">
+      <change afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/createAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/logIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/logIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/logIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/logIn.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +31,9 @@
     &quot;accountId&quot;: &quot;a81e128f-3904-40d7-96c7-443b4f04a3a7&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/styles/logIn.css" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -35,36 +44,36 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.MockHeader.html.executor": "Run",
-    "JavaScript Debug.MockHomeHeader.html.executor": "Run",
-    "JavaScript Debug.createAccount.html.executor": "Run",
-    "JavaScript Debug.logIn.html.executor": "Debug",
-    "JavaScript Debug.mockHomePage.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.MockHeader.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.MockHomeHeader.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.createAccount.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.logIn.html.executor&quot;: &quot;Debug&quot;,
+    &quot;JavaScript Debug.mockHomePage.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\styles" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.MockHeader.html">
+  <component name="RunManager" selected="JavaScript Debug.createAccount.html">
     <configuration name="Header.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/Header.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -79,10 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.MockHeader.html" />
         <item itemvalue="JavaScript Debug.logIn.html" />
         <item itemvalue="JavaScript Debug.createAccount.html" />
-        <item itemvalue="JavaScript Debug.MockHomeHeader.html" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +113,10 @@
       <workItem from="1740089122190" duration="1854000" />
       <workItem from="1740150332811" duration="6602000" />
       <workItem from="1740180233130" duration="5262000" />
-      <workItem from="1740226551245" duration="21504000" />
+      <workItem from="1740226551245" duration="21783000" />
+      <workItem from="1740417180792" duration="4914000" />
+      <workItem from="1740422139929" duration="2883000" />
+      <workItem from="1740484923779" duration="3035000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -220,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740255330905</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Upload logIn.css file">
+      <option name="closed" value="true" />
+      <created>1740255568153</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1740255568153</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Upload logIn.css file">
+      <option name="closed" value="true" />
+      <created>1740255621490</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1740255621490</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

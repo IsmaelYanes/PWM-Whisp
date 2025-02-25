@@ -47,7 +47,15 @@ main {
     padding-bottom: 2em;
 }
 
-.inputField{
+.inputFieldEmail {
+    width: 94%;
+    height: 100%;
+    padding: 0.8em 0 0.8em 1em;
+    border-radius: 0.5em;
+    border: #A8A8A8 solid 2px;
+}
+
+.inputFieldPassword {
     width: 94%;
     height: 100%;
     padding: 0.8em 0 0.8em 1em;
@@ -61,7 +69,7 @@ main {
 }
 
 .createAccountField, .forgotPassword {
-    width: 100%;
+    width: 96%;
     display: flex;
     justify-content: center;
 }
@@ -95,4 +103,18 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.7em;
 }
+
+.passwordInputField {
+    position: relative;
+}
+
+.togglePassword {
+    position: absolute;
+    top: 25%;
+    left: 90%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 
