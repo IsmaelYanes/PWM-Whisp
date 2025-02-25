@@ -8,34 +8,34 @@
 </head>
 <body>
 <main>
-    <div class="container">
-        <h1 class="LogInText">Iniciar sesión</h1>
-        <div class="registerForm">
-            <div class="emailRegisterField">
-                <div class="emailRegisterText">
+    <div id="container">
+        <h1 id="LogInText">Iniciar sesión</h1>
+        <div id="registerForm">
+            <div class="registerField">
+                <div class="registerText">
                     <label for="email">Correo</label>
                 </div>
-                <div class="emailInputField">
-                    <input class="inputFieldEmail" id="email" pattern=".+@example.com" placeholder="pedro@example.com" required>
+                <div>
+                    <input class="inputField" id="email" pattern=".+@example.com" placeholder="pedro@example.com" required>
                 </div>
             </div>
-            <div class="passwordRegisterField">
-                <div class="passwordRegisterText">
+            <div class="registerField">
+                <div class="registerText">
                     <label for="password">Contraseña</label>
                 </div>
-                <div class="passwordInputField">
+                <div id="passwordInputField">
                     <span>
-                        <input class="inputFieldPassword" type="password" id="password" pattern=".{8,}" placeholder="Contraseña" required>
-                        <button class="togglePassword" type="button" id="togglePassword">👁️</button>
+                        <input class="inputField" type="password" id="password" pattern=".{8,}" placeholder="Contraseña" required>
+                        <button id="togglePassword" type="button">👁️</button>
                     </span>
                 </div>
             </div>
-            <div class="inputOptions">
-                <div class="createAccountField">
-                    <input class="createAccountButton" type="submit" value="Iniciar sesión" />
+            <div id="inputOptions">
+                <div class="inputOptionsField" id="createAccountField">
+                    <input id="createAccountButton" type="submit" value="Iniciar sesión" />
                 </div>
-                <div class="forgotPassword">
-                    <input class="forgotPasswordText" type="button" value="¿Has olvidado la contraseña?" />
+                <div class="inputOptionsField">
+                    <input id="forgotPasswordText" type="button" value="¿Has olvidado la contraseña?" />
                 </div>
             </div>
         </div>
