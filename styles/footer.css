@@ -1,4 +1,3 @@
-<style>
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #222;
-    color: white;
+    background-color: #b1bfce;
+    color: black;
     padding: 5px;
     position: fixed;
     bottom: 0;
@@ -22,7 +21,7 @@
     max-height: 50px;
 }
 .panel-texto {
-    background-color: #444;
+    background-color: #b1bfce;
     padding: 10px;
     flex: 1;
     margin: 0 10px;
@@ -37,4 +36,3 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
-</style>
