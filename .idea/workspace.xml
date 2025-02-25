@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="create homepage">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update Mockups.zip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +116,7 @@
       <workItem from="1740150332811" duration="6602000" />
       <workItem from="1740180233130" duration="5262000" />
       <workItem from="1740226551245" duration="21504000" />
+      <workItem from="1740522292534" duration="320000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -276,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740421431568</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update Mockups.zip">
+      <option name="closed" value="true" />
+      <created>1740494227219</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1740494227219</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +335,7 @@
     <MESSAGE value="reset photoCarousel style margin and padding to 0" />
     <MESSAGE value="reset toolbar style margin and padding to 0" />
     <MESSAGE value="create homepage" />
-    <option name="LAST_COMMIT_MESSAGE" value="create homepage" />
+    <MESSAGE value="Update Mockups.zip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Mockups.zip" />
   </component>
 </project>
