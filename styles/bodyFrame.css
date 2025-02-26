@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body {
+.bodyFrame-container {
     font-family: Arial, sans-serif;
     height: 100vh;
     display: flex;
