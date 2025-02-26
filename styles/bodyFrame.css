@@ -49,17 +49,19 @@ body {
 }
 .profile-frame {
     height: 25%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: auto auto;
+    padding-bottom: 5%;
 }
 .profile-photo {
-    width: 90%;
     height: 90%;
     border-radius: 50%;
     border: 5px solid #ccc;
     object-fit: cover;
+
 }
 .top-bar {
     height:7%;
