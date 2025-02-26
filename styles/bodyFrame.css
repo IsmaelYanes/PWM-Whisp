@@ -67,3 +67,22 @@ body {
     height:7%;
 
 }
+
+.conversation{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    height: 15%;
+}
+.conversation:hover {
+    background-color: #f1f1f1;
+}
+.message-box-container{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
