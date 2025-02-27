@@ -3,11 +3,11 @@
     padding: 0;
 }
 
-main {
+#main-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 #container {
@@ -16,7 +16,7 @@ main {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25em;
-    height: 22em;
+    height: 70%;
     width: 45%;
     border: whitesmoke solid 2px;
     border-radius: 10px;
@@ -43,8 +43,14 @@ main {
 
 .registerField {
     width: 100%;
-    height: 3em;
-    padding-bottom: 2em;
+    height: 3em;}
+
+#emailRegisterField {
+    padding-bottom: 5em;
+}
+
+#passwordRegisterField {
+    padding-bottom: 4em;
 }
 
 .inputField {
@@ -62,7 +68,7 @@ main {
 
 .inputOptionsField {
     width: 96%;
-    height: 40%;
+    height: 60%;
     display: flex;
     justify-content: center;
 }
@@ -73,7 +79,7 @@ main {
 
 #createAccountButton {
     width: 100%;
-    height: 80%;
+    height: 100%;
     border-radius: 5em;
     border: #1d407d solid 2px;
     background: #1d407d;
@@ -98,8 +104,9 @@ main {
 
 #togglePassword {
     position: absolute;
-    top: 25%;
-    left: 90%;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
     border: none;
     background: none;
     cursor: pointer;
