@@ -13,13 +13,14 @@
     align-items: center;
     background: #d3d3d3;
     border-radius: 20px;
-    padding: 10px;
-    width: 300px;
+    padding: 2%;
+    /*padding: 10px;*/
+    width: 100%;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 .message-box .avatar {
-    width: 40px;
-    height: 40px;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 10px;
@@ -34,4 +35,9 @@
     padding: 10px;
     border-radius: 15px;
     flex: 1;
+}
+.vibe-photo {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
 }
