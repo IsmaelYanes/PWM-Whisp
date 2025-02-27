@@ -8,19 +8,20 @@
 
     <link rel="stylesheet" href="../styles/bodyFrame.css">
     <link rel="stylesheet" href="../styles/message.css">
-    <link rel="stylesheet" href="../styles/templateStyle.css">
+    <link rel="stylesheet" href="../styles/bodyFrameWithMessage.css">
 
 </head>
-<body style="height: 100vh">
-<div class="wrapper" style="justify-content: center; align-items: center; height: 100vh">
-<header id="main_header" xlu-include-file="../templates/header.html"></header>
-    <div class="bodyFrame-container" style="margin-top: 1em">
-<div class="container">
-
-    <div  xlu-include-file="toolbar.html"></div>
-    <div class="chat-panel"  xlu-include-file="chatPanel.html"></div>
-</div>
-</div>
+<body>
+<div class="wrapper">
+    <header id="main_header" xlu-include-file="../templates/header.html"></header>
+    <main>
+        <div class="bodyFrame-container">
+            <div class="container">
+                <div  xlu-include-file="toolbar.html"></div>
+                <div class="chat-panel"  xlu-include-file="chatPanel.html"></div>
+            </div>
+        </div>
+    </main>
     <footer id="main_footer" xlu-include-file="../templates/footer.html"> </footer>
 </div>
 <script>xLuIncludeFile();</script>
