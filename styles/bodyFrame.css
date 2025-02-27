@@ -73,7 +73,7 @@
     border: 1px solid #ddd;
     cursor: pointer;
     transition: background-color 0.3s;
-
+    align-items: center;
     height: 15%;
 }
 .conversation:hover {
@@ -85,4 +85,19 @@
     margin: auto;
     align-items: center;
     align-content: center;
+}
+.chatTime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.chatConversation {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    height: 15%;
 }
