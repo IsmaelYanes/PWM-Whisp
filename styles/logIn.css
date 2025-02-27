@@ -17,6 +17,7 @@
     box-shadow: 0 0 10px 8px #A8A8A8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10vh auto;
+    min-width: 45%;
 }
 
 #LogInText {
