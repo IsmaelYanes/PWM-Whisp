@@ -1,0 +1,13 @@
+.bodyFrameWithMessage-container {
+    height: 10em;
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bodyFrame-container {
+    margin-top: 1em;
+}
