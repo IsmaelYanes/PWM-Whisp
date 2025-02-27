@@ -17,6 +17,7 @@
     box-shadow: 0 0 10px 8px #A8A8A8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 4vh auto;
+    min-width: 60%;
 }
 
 #createAccountText {
