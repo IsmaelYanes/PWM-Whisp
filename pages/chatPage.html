@@ -9,37 +9,7 @@
     <link rel="stylesheet" href="../styles/bodyFrame.css">
     <link rel="stylesheet" href="../styles/message.css">
     <link rel="stylesheet" href="../styles/templateStyle.css">
-<style>
-    .mic-button {
-        width: 4em;  /* 10% del ancho del viewport */
-        height: 4em; /* 10% del ancho del viewport para mantener un botón cuadrado */
-        border-radius: 50%;  /* Hacer el botón redondo */
-        background-color: #4CAF50; /* Color de fondo del botón */
-        border: none; /* Sin borde */
-        cursor: pointer; /* Cambia el cursor al pasar por encima */
-        display: flex;
-        justify-content: center; /* Centrar la imagen horizontalmente */
-        align-items: center;     /* Centrar la imagen verticalmente */
-        transition: background-color 0.3s; /* Efecto de transición */
-    }
-
-    .mic-button:hover {
-        background-color: #45a049; /* Cambia el color cuando se pasa el mouse por encima */
-    }
-
-    .mic-button img {
-        width: 50%; /* Tamaño relativo al botón */
-        height: 50%;
-    }
-    .contenedor-boton {
-        align-items: center;         /* Centra el botón verticalmente */
-        justify-content: center;      /* Centra el botón horizontalmente */
-        display: flex;
-        width: 100%;
-        height: 15%;
-        background-color: #d3d3d3;
-    }
-</style>
+    <link rel="stylesheet" href="../styles/chatWindow.css">
 </head>
 <body style="height: 100vh">
 <div class="wrapper" style="justify-content: center; align-items: center; height: 100vh">
@@ -48,24 +18,7 @@
         <div class="container">
             <div  xlu-include-file="../templates/toolbar.html"></div>
             <div class="chat-panel"  xlu-include-file="../templates/chatPanel.html"></div>
-            <div class="chat-window">
-                <div class="chat-messages">
-                    <div style="height: 100%">
-                    <div class="chatTime"><span>10/15 21:00</span></div>
-                    <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                        <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                        <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-                    </div>
-                </div>
-                <div class="contenedor-boton">
-                    <button class="mic-button"><img  src="../images/microphone.png" alt="Micrófono"></button>
-                </div>
-            </div>
+            <div class="chat-window" xlu-include-file="../templates/chatWindow.html"></div>
         </div>
     </div>
     <footer id="main_footer" xlu-include-file="../templates/footer.html"> </footer>
