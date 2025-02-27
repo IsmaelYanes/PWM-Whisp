@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload createAccount.html file">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Change name Header.html to header.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/createAccountPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/createAccountPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/registerPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/registerPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/createAccount.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/logIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/logIn.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +76,13 @@
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.createAccount.html">
-    <configuration name="Header.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/Header.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="HomeHeader.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/HomeHeader.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="createAccount.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/createAccount.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="header.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/header.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="logIn.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/PWM-Whisp/templates/logIn.html" useBuiltInWebServerPort="true">
@@ -123,6 +119,7 @@
       <workItem from="1740522292534" duration="5420000" />
       <workItem from="1740566039567" duration="722000" />
       <workItem from="1740614489480" duration="552000" />
+      <workItem from="1740692921192" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -404,7 +401,47 @@
       <option name="project" value="LOCAL" />
       <updated>1740615012794</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Upload logIn.css file">
+      <option name="closed" value="true" />
+      <created>1740666293078</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1740666293078</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Upload createAccount.css file">
+      <option name="closed" value="true" />
+      <created>1740666310199</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1740666310199</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Upload createAccountPage.html file">
+      <option name="closed" value="true" />
+      <created>1740666331173</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1740666331173</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Upload registerPage.html file">
+      <option name="closed" value="true" />
+      <created>1740666377143</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1740666377143</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Change name Header.html to header.html">
+      <option name="closed" value="true" />
+      <created>1740666444599</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1740666444599</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,9 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update structure of header.css" />
-    <MESSAGE value="Change MockHeader.html name to Header.html" />
-    <MESSAGE value="Update" />
     <MESSAGE value="Change MockHomeHeader.html name to HomeHeader.html" />
     <MESSAGE value="Update structure of HomeHeader.html" />
     <MESSAGE value="Update structure of homeHeader.css" />
@@ -453,12 +487,15 @@
     <MESSAGE value="Update Header.html file" />
     <MESSAGE value="Update index.html file" />
     <MESSAGE value="Update footer.css file" />
-    <MESSAGE value="Upload createAccountPage.html file" />
     <MESSAGE value="Upload Header.html file" />
     <MESSAGE value="Upload header.css file" />
     <MESSAGE value="Upload logIn.html file" />
-    <MESSAGE value="Upload logIn.css file" />
     <MESSAGE value="Upload createAccount.html file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload createAccount.html file" />
+    <MESSAGE value="Upload logIn.css file" />
+    <MESSAGE value="Upload createAccount.css file" />
+    <MESSAGE value="Upload createAccountPage.html file" />
+    <MESSAGE value="Upload registerPage.html file" />
+    <MESSAGE value="Change name Header.html to header.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change name Header.html to header.html" />
   </component>
 </project>
