@@ -1,76 +1,60 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CreateAccount</title>
-    <link rel="stylesheet" href="../styles/createAccount.css">
-</head>
-<body>
-<main>
-    <div id="container">
-        <h1 id="LogInText">Iniciar sesión</h1>
-        <div id="registerForm">
-            <div class="registerField">
-                <div class="registerText">
-                    <label for="email">Correo</label>
-                </div>
-                <div>
-                    <input class="inputField" id="email" pattern=".+@example.com" placeholder="pedro@example.com" required>
-                </div>
+<link rel="stylesheet" href="/styles/createAccount.css">
+<meta charset="UTF-8">
+
+<div id="createAccount-container">
+    <h1 id="createAccountText">Crear cuenta</h1>
+    <div id="registerForm">
+        <div class="registerField">
+            <div class="registerText">
+                <label for="email">Correo</label>
             </div>
-            <div class="registerField">
-                <div class="registerText">
-                    <label for="password">Contraseña</label>
-                </div>
-                <div class="passwordInputField">
-                    <span>
-                        <input class="inputField" type="password" id="password" pattern=".{8,}" placeholder="Contraseña" required>
-                        <button class="togglePassword" type="button">👁️</button>
-                    </span>
-                </div>
-            </div>
-            <div class="registerField">
-                <div class="registerText">
-                    <label for="confirmPassword">Confirmar contraseña</label>
-                </div>
-                <div class="passwordInputField">
-                    <span>
-                        <input class="inputField" type="password" id="confirmPassword" pattern=".{8,}" placeholder="Contraseña" required>
-                        <button class="togglePassword" type="button">👁️</button>
-                    </span>
-                </div>
-            </div>
-            <div class="registerField">
-                <div class="registerText">
-                    <label for="userName">Nombre de usuario</label>
-                </div>
-                <div>
-                    <input class="inputField" id="userName" placeholder="ArmadilloAmarillo" required>
-                </div>
-            </div>
-            <div class="registerField">
-                <div class="registerText">
-                    <label for="birthdate">Fecha de nacimiento</label>
-                </div>
-                <div id="birthDateInputField">
-                    <input id="birthdate" type="date" required>
-                </div>
-            </div>
-            <div id="inputOptions">
-                <div class="inputOptionsField" id="createAccountField">
-                    <input id="createAccountButton" type="submit" value="Iniciar sesión" />
-                </div>
-                <div class="inputOptionsField">
-                    <input id="forgotPasswordText" type="button" value="¿Has olvidado la contraseña?" />
-                </div>
+            <div>
+                <input class="inputField" id="email" pattern=".+@example.com" placeholder="pedro@example.com" required>
             </div>
         </div>
+        <div class="registerField">
+            <div class="registerText">
+                <label for="password">Contraseña</label>
+            </div>
+            <div class="passwordInputField">
+                <span>
+                    <input class="inputField" type="password" id="password" pattern=".{8,}" placeholder="Contraseña" required>
+                    <button class="togglePassword" type="button">👁️</button>
+                </span>
+            </div>
+        </div>
+        <div class="registerField">
+            <div class="registerText">
+                <label for="confirmPassword">Confirmar contraseña</label>
+            </div>
+            <div class="passwordInputField">
+                <span>
+                    <input class="inputField" type="password" id="confirmPassword" pattern=".{8,}" placeholder="Contraseña" required>
+                    <button class="togglePassword" type="button">👁️</button>
+                </span>
+            </div>
+        </div>
+        <div class="registerField">
+            <div class="registerText">
+                <label for="userName">Nombre de usuario</label>
+            </div>
+            <div>
+                <input class="inputField" id="userName" placeholder="ArmadilloAmarillo" required>
+            </div>
+        </div>
+        <div class="registerField">
+            <div class="registerText">
+                <label for="birthdate">Fecha de nacimiento</label>
+            </div>
+            <div id="birthDateInputField">
+                <input id="birthdate" type="date" required>
+            </div>
+        </div>
+        <div class="inputOptionsField" id="createAccountField">
+            <button id="createAccountButton">Crear cuenta</button>
+        </div>
+        <div class="inputOptionsField">
+            <input id="forgotPasswordText" type="button" value="¿Has olvidado la contraseña?" />
+        </div>
     </div>
-</main>
-</body>
-</html>
-
-
-
-
+</div>
