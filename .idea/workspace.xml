@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update Mockups.zip">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload createAccount.html file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/createAccount.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Uni/PWM/PWM-Whisp/javascript&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/evaay/IdeaProjects/PWM-Whisp/pages&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
@@ -67,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\pages" />
       <recent name="D:\Uni\PWM\PWM-Whisp\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -116,7 +117,9 @@
       <workItem from="1740150332811" duration="6602000" />
       <workItem from="1740180233130" duration="5262000" />
       <workItem from="1740226551245" duration="21504000" />
-      <workItem from="1740522292534" duration="320000" />
+      <workItem from="1740522292534" duration="5420000" />
+      <workItem from="1740566039567" duration="722000" />
+      <workItem from="1740614489480" duration="552000" />
     </task>
     <task id="LOCAL-00001" summary="Add MockHeader template">
       <option name="closed" value="true" />
@@ -286,7 +289,119 @@
       <option name="project" value="LOCAL" />
       <updated>1740494227219</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update Header.html file">
+      <option name="closed" value="true" />
+      <created>1740522734591</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522734591</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Update Header.css file">
+      <option name="closed" value="true" />
+      <created>1740522742216</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1740522742216</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Update HomeHeader.html file">
+      <option name="closed" value="true" />
+      <created>1740523120102</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1740523120102</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Update HomeHeader.css file">
+      <option name="closed" value="true" />
+      <created>1740523125084</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1740523125084</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Update Header.html file">
+      <option name="closed" value="true" />
+      <created>1740523176134</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1740523176135</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Update index.html file">
+      <option name="closed" value="true" />
+      <created>1740523462105</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1740523462105</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Update footer.css file">
+      <option name="closed" value="true" />
+      <created>1740523478482</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1740523478482</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Upload createAccountPage.html file">
+      <option name="closed" value="true" />
+      <created>1740527438483</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1740527438483</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Upload Header.html file">
+      <option name="closed" value="true" />
+      <created>1740614777017</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1740614777017</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Upload header.css file">
+      <option name="closed" value="true" />
+      <created>1740614819573</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1740614819573</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Upload header.css file">
+      <option name="closed" value="true" />
+      <created>1740614889303</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1740614889303</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Upload logIn.html file">
+      <option name="closed" value="true" />
+      <created>1740614928169</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1740614928169</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Upload logIn.css file">
+      <option name="closed" value="true" />
+      <created>1740614951696</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1740614951696</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Upload createAccount.html file">
+      <option name="closed" value="true" />
+      <created>1740615012794</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1740615012794</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,19 +431,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add MockHeader template" />
-    <MESSAGE value="Upload changes" />
-    <MESSAGE value="Add MockHomeHeader template" />
-    <MESSAGE value="Separate the style from the html file to a css" />
-    <MESSAGE value="Update structure of header.html" />
     <MESSAGE value="Update structure of header.css" />
     <MESSAGE value="Change MockHeader.html name to Header.html" />
     <MESSAGE value="Update" />
     <MESSAGE value="Change MockHomeHeader.html name to HomeHeader.html" />
     <MESSAGE value="Update structure of HomeHeader.html" />
     <MESSAGE value="Update structure of homeHeader.css" />
-    <MESSAGE value="Upload logIn.html file" />
-    <MESSAGE value="Upload logIn.css file" />
     <MESSAGE value="add javascript file" />
     <MESSAGE value="reset fotter margin and padding to 0" />
     <MESSAGE value="reset message style margin and padding to 0" />
@@ -336,6 +444,18 @@
     <MESSAGE value="reset toolbar style margin and padding to 0" />
     <MESSAGE value="create homepage" />
     <MESSAGE value="Update Mockups.zip" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Mockups.zip" />
+    <MESSAGE value="Update Header.css file" />
+    <MESSAGE value="Update HomeHeader.html file" />
+    <MESSAGE value="Update HomeHeader.css file" />
+    <MESSAGE value="Update Header.html file" />
+    <MESSAGE value="Update index.html file" />
+    <MESSAGE value="Update footer.css file" />
+    <MESSAGE value="Upload createAccountPage.html file" />
+    <MESSAGE value="Upload Header.html file" />
+    <MESSAGE value="Upload header.css file" />
+    <MESSAGE value="Upload logIn.html file" />
+    <MESSAGE value="Upload logIn.css file" />
+    <MESSAGE value="Upload createAccount.html file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload createAccount.html file" />
   </component>
 </project>
