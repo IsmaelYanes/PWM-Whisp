@@ -9,8 +9,16 @@ Whisp es una aplicación centrada en la comunicación de usuarios, conocidos o n
 Podrás configurar tu perfil, conocer gente nueva, comunicarte con conocidos y escuchar audios que la gente a tu alcance publica.
 
 Requisitos funcionales:
+    - Enviar mensajes de voz a usuarios aleatorios.
+    - Escuchar mensajes de voz de desconocidos.
+    - Decidir si agregar o no una persona al contacto después de escuchar su mensaje.
+    - Comunicación completamente anónima y sin uso de fotos o texto.
+    - Cambiar la foto de perfil solamente con la combinación de los iconos predefinidos
+    - Interfaz sencilla y amigable.
+    
 
-Nombre y ubicacion del archivo pdf con los mockups y storyboard
+Nombre y ubicacion del archivo pdf con los mockups y storyboard:
+    
 
 Listado de templates:
 
@@ -66,3 +74,39 @@ Listado de templates:
     Ubicación : PWM-Whisp/templates/bodyFrameWithMessage.html
     Descripción : La ventana que muestra historial de chat y un marco predeninado para la venta.
 
+Listado de páginas html del proyecto:
+    Nombre : index
+    Ubicación : PWM-Whisp/pages/index.html
+    Descripción : La página inicial de la web.
+    Templates usados : homeHeader, photoCarousel, fotter
+    Mockup relacionado : 
+
+    Nombre : chatPage
+    Ubicación : PWM-Whisp/pages/chatPage.html
+    Descripción : La página que muestra la historial de chat y lista de contacto.
+    Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, chatWindow
+    Mockup relacionado : 
+
+    Nombre : 
+    Ubicación : PWM-Whisp/pages/
+    Descripción :
+    Templates usados : 
+    Mockup relacionado : 
+
+    Nombre : 
+    Ubicación : PWM-Whisp/pages/
+    Descripción :
+    Templates usados : 
+    Mockup relacionado : 
+
+    Nombre : 
+    Ubicación : PWM-Whisp/pages/
+    Descripción :
+    Templates usados : 
+    Mockup relacionado : 
+
+    Nombre : 
+    Ubicación : PWM-Whisp/pages/
+    Descripción :
+    Templates usados : 
+    Mockup relacionado : 
