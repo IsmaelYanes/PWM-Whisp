@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Mensajes (Izquierda) */
+.messages {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+/* Configuración (Derecha) */
+.settings-panel {
+    width: 100%;  /* Ocupar todo el ancho disponible */
+    max-width: 700px; /* Ajusta este valor para hacerlo más grande */
+    min-height: 500px; /* Aumenta la altura mínima */
+    padding: 30px; /* Más espacio interno */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Header */
+header {
+    background-color: #b1bfce;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Inputs */
+.option {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.option label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.option input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botón */
+.save-settings {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-settings:hover {
+    background-color: #0056b3;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+}
+.settings-panel-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.settings-panel-container {
+    width: 100%;
+    max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+    padding: 20px;
+}
+
+.settings-panel {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+}
+
+.settings-panel form {
+    margin-bottom: 10px;
+}
