@@ -36,3 +36,12 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
+.custom-background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background.webp');
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    background-position: top left;
+    position: relative;
+}
