@@ -80,50 +80,50 @@ Listado de páginas html del proyecto:
     Ubicación : PWM-Whisp/pages/index.html
     Descripción : La página inicial de la web.
     Templates usados : homeHeader, photoCarousel, fotter
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/HomePage.pdf
     
     Nombre : registerPage
     Ubicación : PWM-Whisp/pages/registerPage.html
     Descripción : La página para registar el usuario.
     Templates usados : header, fotter, login.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/LoginPage.pdf
 
     Nombre : createAccountPage
     Ubicación : PWM-Whisp/pages/createAccountPage.html
     Descripción : La página para crear la cuenta.
     Templates usados : header, fotter, createAccount.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/CreateAccountPage.pdf
 
     Nombre : chatPage
     Ubicación : PWM-Whisp/pages/chatPage.html
     Descripción : La página que muestra la historial de chat y lista de contacto.
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, chatWindow
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/ChatPage.pdf
 
     Nombre : editPage
     Ubicación : PWM-Whisp/pages/editPage.html
     Descripción : La página completa con la lista contacto y la interfaz de editar foto de perfil. 
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, editWindow.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/EditPage.pdf
 
     Nombre : userFrameRequestPage
     Ubicación : PWM-Whisp/pages/userFrameRequestPage.html
     Descripción : La página completa con la lista contacto y donde muestra mensajes recibidas para escuchar, posee botón de agregar usuario al contacto.
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, chatRequest, voiceMailRequest.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/userFrameRequestPage.pdf
 
     Nombre : userFrameSendMessage
     Ubicación : PWM-Whisp/pages/userFrameSendMessage.html
     Descripción : La página donde el usuario inicia un mensaje de voz al desconocido.
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/UserFrameSendPage.pdf
 
     Nombre : userFrameSettings
     Ubicación : PWM-Whisp/pages/userFrameSettings.html
     Descripción : La página donde el usuario configura su cuenta.
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message.
-    Mockup relacionado : 
+    Mockup relacionado : PWM-Whisp/mockups/UserFrameSettingsPage.pdf
 
 Enlaces :
     figma : https://www.figma.com/design/HcQ9vCunbOPQVvvpc39OuU/PWM?node-id=0-1&m=dev&t=KvkWZwf1rN4dF1nq-1
-    trello :   
+    trello : https://trello.com/invite/b/67a624efe35f1504497b146f/ATTI1c3c5286e72c03c8fa0ce6aecd3abe3267CBB3B1/pwm
