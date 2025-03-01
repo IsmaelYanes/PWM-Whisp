@@ -1,4 +1,50 @@
-.mic-button {
+#chat-window-container{
+    width: 100%;
+    height: 100%;
+}
+
+#conversation-main-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #e5ddd5;
+    overflow-y: auto;
+    height: 85%;
+}
+
+#conversation-container {
+    height: 100%;
+}
+
+#chat-Time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-conversation {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    height: 15%;
+}
+
+.chat-Direction {
+    direction: rtl;
+}
+
+#button-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 15%;
+    background-color: #d3d3d3;
+}
+
+#mic-button {
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -11,23 +57,11 @@
     transition: background-color 0.3s;
 }
 
-.mic-button:hover {
+#mic-button:hover {
     background-color: #45a049;
 }
 
-.mic-button img {
+#mic-button img {
     width: 50%;
     height: 50%;
-}
-.contenedor-boton {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 100%;
-    height: 15%;
-    background-color: #d3d3d3;
-}
-.chat-window-container{
-    width: 100%;
-    height: 100%;
 }
