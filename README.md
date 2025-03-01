@@ -3,6 +3,8 @@
 Proyecto : Whisp
 Autores: Wei Li, Eva Yuan Robaina, Ismael Pérez Yanes
 
+Advertencia: se recomienda visualizar los archivos html en webstorm o microsoft edge, debido a que chrome tiene error pintando 2 de las páginas de templates.
+
 Descripción:
 
 Whisp es una aplicación centrada en la comunicación de usuarios, conocidos o no, mediante mensajes de voz y audios exclusivamente.
