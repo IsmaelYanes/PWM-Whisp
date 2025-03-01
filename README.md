@@ -14,6 +14,7 @@ Requisitos funcionales:
     - Decidir si agregar o no una persona al contacto después de escuchar su mensaje.
     - Comunicación completamente anónima y sin uso de fotos o texto.
     - Cambiar la foto de perfil solamente con la combinación de los iconos predefinidos
+    - Configurar la edad o sexo de receptor desconocido.
     - Interfaz sencilla y amigable.
     
 
@@ -80,6 +81,18 @@ Listado de páginas html del proyecto:
     Descripción : La página inicial de la web.
     Templates usados : homeHeader, photoCarousel, fotter
     Mockup relacionado : 
+    
+    Nombre : registerPage
+    Ubicación : PWM-Whisp/pages/registerPage.html
+    Descripción : La página para registar el usuario.
+    Templates usados : header, fotter, login.
+    Mockup relacionado : 
+
+    Nombre : createAccountPage
+    Ubicación : PWM-Whisp/pages/createAccountPage.html
+    Descripción : La página para crear la cuenta.
+    Templates usados : header, fotter, createAccount.
+    Mockup relacionado : 
 
     Nombre : chatPage
     Ubicación : PWM-Whisp/pages/chatPage.html
@@ -87,26 +100,30 @@ Listado de páginas html del proyecto:
     Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, chatWindow
     Mockup relacionado : 
 
-    Nombre : 
-    Ubicación : PWM-Whisp/pages/
-    Descripción :
-    Templates usados : 
+    Nombre : editPage
+    Ubicación : PWM-Whisp/pages/editPage.html
+    Descripción : La página completa con la lista contacto y la interfaz de editar foto de perfil. 
+    Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, editWindow.
     Mockup relacionado : 
 
-    Nombre : 
-    Ubicación : PWM-Whisp/pages/
-    Descripción :
-    Templates usados : 
+    Nombre : userFrameRequestPage
+    Ubicación : PWM-Whisp/pages/userFrameRequestPage.html
+    Descripción : La página completa con la lista contacto y donde muestra mensajes recibidas para escuchar, posee botón de agregar usuario al contacto.
+    Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message, chatRequest, voiceMailRequest.
     Mockup relacionado : 
 
-    Nombre : 
-    Ubicación : PWM-Whisp/pages/
-    Descripción :
-    Templates usados : 
+    Nombre : userFrameSendMessage
+    Ubicación : PWM-Whisp/pages/userFrameSendMessage.html
+    Descripción : La página donde el usuario inicia un mensaje de voz al desconocido.
+    Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message.
     Mockup relacionado : 
 
-    Nombre : 
-    Ubicación : PWM-Whisp/pages/
-    Descripción :
-    Templates usados : 
+    Nombre : userFrameSettings
+    Ubicación : PWM-Whisp/pages/userFrameSettings.html
+    Descripción : La página donde el usuario configura su cuenta.
+    Templates usados : header, fotter, toolbar, bodyFrameWithMessage, message.
     Mockup relacionado : 
+
+Enlaces :
+    figma : https://www.figma.com/design/HcQ9vCunbOPQVvvpc39OuU/PWM?node-id=0-1&m=dev&t=KvkWZwf1rN4dF1nq-1
+    trello :   
