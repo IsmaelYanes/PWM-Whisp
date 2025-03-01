@@ -1,7 +1,7 @@
 # PWM-Whisp
 
 Proyecto : Whisp
-Autores: Wei Li, Eva, Ismael
+Autores: Wei Li, Eva Yuan Robaina, Ismael Pérez Yanes
 
 Descripción:
 
