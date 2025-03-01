@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload userFrameRequestPage.html file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/voiceMail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/voiceMail.html" afterDir="false" />
-    </list>
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload voiceMail.html and message.css files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,15 +121,7 @@
       <workItem from="1740614489480" duration="552000" />
       <workItem from="1740692921192" duration="4443000" />
       <workItem from="1740754744462" duration="6723000" />
-      <workItem from="1740790862397" duration="2169000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add MockHeader template">
-      <option name="closed" value="true" />
-      <created>1740001626966</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1740001626966</updated>
+      <workItem from="1740790862397" duration="2954000" />
     </task>
     <task id="LOCAL-00002" summary="Add MockHomeHeader template">
       <option name="closed" value="true" />
@@ -519,7 +507,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740760246930</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Upload voiceMail.html and message.css files">
+      <option name="closed" value="true" />
+      <created>1740793171370</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1740793171370</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -549,7 +545,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update Mockups.zip" />
     <MESSAGE value="Update Header.css file" />
     <MESSAGE value="Update HomeHeader.html file" />
     <MESSAGE value="Update HomeHeader.css file" />
@@ -574,6 +569,7 @@
     <MESSAGE value="Upload chatRequest.html and css file" />
     <MESSAGE value="Upload messageRequest.css file" />
     <MESSAGE value="Upload userFrameRequestPage.html file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload userFrameRequestPage.html file" />
+    <MESSAGE value="Upload voiceMail.html and message.css files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload voiceMail.html and message.css files" />
   </component>
 </project>
