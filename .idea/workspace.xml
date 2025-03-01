@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Upload voiceMail.html and message.css files" />
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update mockups.zip file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/ImageChanger.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ImageChanger.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/bodyFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/bodyFrame.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/chatWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/chatWindow.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/createAccount.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/message.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bodyFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatPanel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/chatWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatWindow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createAccount.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/imageChanger.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/imageChanger.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,14 +136,10 @@
       <workItem from="1740692921192" duration="4443000" />
       <workItem from="1740754744462" duration="6723000" />
       <workItem from="1740790862397" duration="2954000" />
-    </task>
-    <task id="LOCAL-00002" summary="Add MockHomeHeader template">
-      <option name="closed" value="true" />
-      <created>1740001701160</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1740001701160</updated>
+      <workItem from="1740794657210" duration="88000" />
+      <workItem from="1740795959322" duration="376000" />
+      <workItem from="1740797895738" duration="652000" />
+      <workItem from="1740827040142" duration="5486000" />
     </task>
     <task id="LOCAL-00003" summary="Upload changes">
       <option name="closed" value="true" />
@@ -515,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740793171370</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Update mockups.zip file">
+      <option name="closed" value="true" />
+      <created>1740794717686</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1740794717686</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update Header.css file" />
     <MESSAGE value="Update HomeHeader.html file" />
     <MESSAGE value="Update HomeHeader.css file" />
     <MESSAGE value="Update Header.html file" />
@@ -570,6 +587,7 @@
     <MESSAGE value="Upload messageRequest.css file" />
     <MESSAGE value="Upload userFrameRequestPage.html file" />
     <MESSAGE value="Upload voiceMail.html and message.css files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload voiceMail.html and message.css files" />
+    <MESSAGE value="Update mockups.zip file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update mockups.zip file" />
   </component>
 </project>

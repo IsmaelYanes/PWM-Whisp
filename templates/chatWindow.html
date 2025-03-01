@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <script src="../javascript/xlu-include-file.js"></script>
-  <link rel="stylesheet" href="../styles/bodyFrame.css">
-  <link rel="stylesheet" href="../styles/message.css">
-  <link rel="stylesheet" href="../styles/chatWindow.css">
+<meta charset="UTF-8">
+<script src="../javascript/xlu-include-file.js"></script>
+<link rel="stylesheet" href="../styles/bodyFrame.css">
+<link rel="stylesheet" href="../styles/message.css">
+<link rel="stylesheet" href="../styles/chatWindow.css">
 
-</head>
-
-
-<div class="chat-window-container">
-  <div class="conversations-container" >
-    <div style="height: 100%">
-      <div class="chatTime"><span>10/15 21:00</span></div>
-      <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
-      <div class="chatConversation" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+<div id="chat-window-container">
+    <div id="conversation-main-container" >
+        <div id="conversation-container">
+            <div id="chat-Time"><span>10/15 21:00</span></div>
+            <div class="chat-conversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation chat-Direction"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation chat-Direction" style="direction: rtl"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation chat-Direction"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+            <div class="chat-conversation chat-Direction"><div xlu-include-file="../templates/voiceMail.html"></div></div>
+        </div>
     </div>
-  </div>
-  <div class="contenedor-boton">
-    <button class="mic-button"><img  src="../images/microphone.png" alt="Micrófono"></button>
-  </div>
+    <div id="button-container">
+      <button id="mic-button"><img  src="../images/microphone.png"></button>
+    </div>
 </div>
-
 <script>xLuIncludeFile();</script>
-
-</html>
