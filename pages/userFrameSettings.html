@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Configuración de Usuario</title>
-  <script src="../javascript/xlu-include-file.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configuración de Usuario</title>
+        <script src="../javascript/xlu-include-file.js"></script>
 
-  <link rel="stylesheet" href="../styles/bodyFrame.css">
-  <link rel="stylesheet" href="../styles/message.css">
-  <link rel="stylesheet" href="../styles/bodyFrameWithMessage.css">
-  <link rel="stylesheet" href="../styles/SettingsPanelStyle.css">
-</head>
-<body>
+        <link rel="stylesheet" href="../styles/bodyFrame.css">
+        <link rel="stylesheet" href="../styles/message.css">
+        <link rel="stylesheet" href="../styles/bodyFrameWithMessage.css">
+        <link rel="stylesheet" href="../styles/SettingsPanelStyle.css">
+    </head>
+    <body>
+        <div class="wrapper custom-background">
+            <header id="main_header" xlu-include-file="../templates/header.html"></header>
+            <main class="bodyFrame-container">
+                <div class="container">
+                    <div xlu-include-file="../templates/toolbar.html"></div>
+                    <div class="chat-panel" xlu-include-file="../templates/chatPanel.html"></div>
 
-<div class="wrapper custom-background">
-  <header id="main_header" xlu-include-file="../templates/header.html"></header>
-  <main class="bodyFrame-container">
-    <div class="container">
-      <div xlu-include-file="../templates/toolbar.html"></div>
-      <div class="chat-panel" xlu-include-file="../templates/chatPanel.html"></div>
-
-      <div class="settings-window">
-        <div class="settings-panel-container" xlu-include-file="../templates/settingsPanel.html"></div>
-      </div>
-    </div>
-  </main>
-  <footer id="main_footer" xlu-include-file="../templates/footer.html"></footer>
-</div>
-<script>xLuIncludeFile();</script>
-</body>
+                    <div class="settings-window">
+                        <div class="settings-panel-container" xlu-include-file="../templates/settingsPanel.html"></div>
+                    </div>
+                </div>
+            </main>
+            <footer id="main_footer" xlu-include-file="../templates/footer.html"></footer>
+        </div>
+        <script>xLuIncludeFile();</script>
+    </body>
 </html>

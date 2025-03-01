@@ -1,44 +1,41 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="../styles/SettingsPanelStyle.css">
 
-<body>
 <div class="settings-panel">
-  <h2 >Configuración</h2>
-  <div class="settings-options">
-    <div class="option">
-      <label for="username">Nombre de usuario:</label>
-      <input type="text" id="username" name="username" placeholder="Tu nombre de usuario">
+    <h2 >Configuración</h2>
+    <div class="settings-options">
+        <div class="option">
+            <label for="user-name">Nombre de usuario:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Tu nombre de usuario">
+        </div>
+        <div class="option">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="tuemail@example.com">
+        </div>
+        <div class="option">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="********">
+        </div>
+            <form action="#">
+                <label for="size">Tamaño de letra</label>
+                <select name="letter-Size" id="size">
+                    <option value="Muy pequeño">Muy pequeño</option>
+                    <option value="Pequeño">Pequeño</option>
+                    <option value="Mediano">Mediano</option>
+                    <option value="Grande">Grande</option>
+                    <option value="Muy grande">Muy grande</option>
+                </select>
+                <input type="submit" value="Enviar" />
+            </form>
+          <form action="#">
+              <label for="Tema">Tema</label>
+                  <select name="color-App" id="Tema">
+                      <option value="Oscuro">Oscuro</option>
+                      <option value="Claro">Claro</option>
+                      <option value="Azul">Azul</option>
+                  </select>
+              <input type="submit" value="Enviar" />
+          </form>
+          <button class="save-settings">Guardar cambios</button>
     </div>
-    <div class="option">
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="tuemail@example.com">
-    </div>
-    <div class="option">
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" placeholder="********">
-    </div>
-    <form action="#">
-      <label for="size">Tamaño de letra</label>
-      <select name="letterSize" id="size">
-        <option value="Muy pequeño">Muy pequeño</option>
-        <option value="Pequeño">Pequeño</option>
-        <option value="Mediano">Mediano</option>
-        <option value="Grande">Grande</option>
-        <option value="Muy grande">Muy grande</option>
-      </select>
-      <input type="submit" value="Enviar" />
-    </form>
-    <form action="#">
-      <label for="Tema">Tema</label>
-      <select name="colorApp" id="Tema">
-        <option value="Oscuro">Oscuro</option>
-        <option value="Claro">Claro</option>
-        <option value="Azul">Azul</option>
-      </select>
-      <input type="submit" value="Enviar" />
-    </form>
-    <button class="save-settings">Guardar cambios</button>
-  </div>
 </div>
-
-</body>
