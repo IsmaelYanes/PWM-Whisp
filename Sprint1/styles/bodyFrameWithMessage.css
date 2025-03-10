@@ -1,0 +1,14 @@
+.bodyFrameWithMessage-container {
+    height: 10em;
+}
+
+.wrapper {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.bodyFrame-container {
+    margin-top: 1em;
+}

@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header-container {
+    background: #b1bfce;
+    padding: 0.5em;
+}
+
+#imageLogo {
+    width: 5em;
+    height: 5em;
+}
