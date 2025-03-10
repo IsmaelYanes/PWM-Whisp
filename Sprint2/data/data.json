@@ -1,0 +1,46 @@
+//Ejemplo datos
+
+{
+  "siteContent": {
+    "title": "Whisp - Mensajería de voz",
+    "description": "Envía y recibe mensajes de voz de manera rápida y segura.",
+    "features": [
+      "Mensajes de voz en tiempo real",
+      "Privacidad asegurada",
+      "Compatible con múltiples dispositivos"
+    ]
+  },
+  "users": [
+    {
+      "mail" : "user1@gmail.com",
+      "password" : "12345678",
+      "username" : "user1",
+      "birthdate" : "11/11/2011"
+    },
+    {
+      "mail" : "user2@gmail.com",
+      "password" : "User2passwd1234!@",
+      "username" : "user2",
+      "birthdate" : "11/11/1999"
+    }
+  ]
+}
+
+//Ejemplo construcción
+
+document.addEventListener("DOMContentLoaded", function () {
+fetch("data.json")
+.then(response => response.json())
+.then(data => {
+document.getElementById("site-title").textContent = data.siteContent.title;
+document.getElementById("site-description").textContent = data.siteContent.description;
+
+const featuresList = document.getElementById("features-list");
+data.siteContent.features.forEach(feature => {
+let li = document.createElement("li");
+li.textContent = feature;
+featuresList.appendChild(li);
+});
+})
+.catch(error => console.error("Error cargando los datos:", error));
+});

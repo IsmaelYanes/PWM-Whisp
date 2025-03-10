@@ -1,0 +1,37 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar Mensaje</title>
+  <script src="../javascript/xlu-include-file.js"></script>
+
+  <link rel="stylesheet" href="../styles/bodyFrame.css">
+  <link rel="stylesheet" href="../styles/message.css">
+  <link rel="stylesheet" href="../styles/bodyFrameWithMessage.css">
+  <link rel="stylesheet" href="../styles/SendMessageStyle.css">
+  <link rel="stylesheet" href="../styles/chatWindow.css">
+</head>
+<body>
+
+<div class="wrapper custom-background">
+  <header id="main_header" xlu-include-file="../templates/header.html"></header>
+  <main class="bodyFrame-container">
+    <div class="container">
+      <div xlu-include-file="../templates/toolbar.html"></div>
+      <div class="chat-panel" xlu-include-file="../templates/chatPanel.html"></div>
+      <div class="chatSender-window">
+        <img src="../images/earth.png" alt="Enviar mensaje" class="right-image expanded">
+
+          <div class="button-container">
+            <button class="mic-button"><img  src="../images/microphone.png" alt="Micrófono"></button>
+          </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="main_footer" xlu-include-file="../templates/footer.html"></footer>
+</div>
+
+<script>xLuIncludeFile();</script>
+</body>
+</html>
