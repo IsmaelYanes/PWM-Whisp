@@ -1,0 +1,26 @@
+#body_container {
+    margin: 0 auto;
+    width: 900px;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: #666666;
+}
+#custom-background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background.webp');
+    background-size: 300px 300px;
+    background-repeat: repeat;
+    background-position: top left;
+    position: relative;
+}
+#header-container {
+    background: #b1bfce;
+    padding: 0.5em;
+}
+
+#imageLogo {
+    width: 5em;
+    height: 5em;
+}

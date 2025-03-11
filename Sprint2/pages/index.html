@@ -4,15 +4,79 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HomePage</title>
-        <script src="../javascript/xlu-include-file.js"></script>
         <link rel="stylesheet" href="../styles/templateStyle.css">
+        <link rel="stylesheet" href="../styles/sp2General.css">
+        <link rel="stylesheet" href="../styles/footer.css">
+        <link rel="stylesheet" href="../styles/homeHeader.css">
     </head>
-    <body>
-        <div class="wrapper custom-background">
-            <header id="main_header" xlu-include-file="../templates/HomeHeader.html"></header>
-            <main class="main_content" xlu-include-file="../templates/photoCarousel.html"></main>
-            <footer id="main_footer" xlu-include-file="../templates/footer.html"> </footer>
+    <body id="custom-background">
+            <div id="header"></div>
+        <div id="body_container">
+            <div id="carousel">
+                <div id="photoCarousel"></div>
+            </div>
         </div>
-        <script>xLuIncludeFile();</script>
+        <div id="footer"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', init);
+
+        const supportsTemplate = function () {
+            //create a template element and make sure it has a 'content' property
+            return 'content' in document.createElement('template');
+        }
+
+        function loadTemplate(fileName, id, callback) {
+
+            fetch(fileName).then((res) => {
+                return res.text();
+            }).then((text) => {
+                document.getElementById(id).innerHTML = text;
+                //console.log(text)
+
+                if(callback){
+                    callback();
+                }
+            })
+        }
+
+
+        function init() {
+            loadTemplate('../templates/homeHeader.html', 'header')
+            loadTemplate('../templates/photoCarousel.html', 'carousel')
+            loadTemplate('../templates/footer.html', 'footer')
+        }
+
+        function addSideBarContent() {
+
+            fetch('users.json')
+                .then((response) => {
+                    return response.json();
+                })
+                .then((users) => {
+                    if ('content' in document.createElement('template')) {
+                        const container = document.getElementById('users');
+
+                        users.forEach((user) => {
+
+                            const tmpl = document
+                                .getElementById('user-card-template')
+                                .content.cloneNode(true);
+
+                            tmpl.querySelector('h2').innerText = user.fullname;
+                            tmpl.querySelector('.title').innerText = user.title;
+
+
+                            container.appendChild(tmpl);
+                        });
+                    } else {
+                        console.error('Your browser does not support templates');
+                    }
+                })
+                .catch((err) => console.error(err));
+
+
+        }
+    </script>
     </body>
 </html>
