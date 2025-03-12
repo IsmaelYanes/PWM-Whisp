@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
+
 
 .slides {
     display: flex;
@@ -46,4 +40,12 @@
 
 .slide:not(.active) {
     opacity: 0;
+}
+#carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 5em;
 }
