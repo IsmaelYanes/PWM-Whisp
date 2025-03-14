@@ -3,13 +3,12 @@
     padding: 0;
 }
 
-main {
+#createAccount-Container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25em;
-    height: 37em;
     width: 60vh;
     border: whitesmoke solid 2px;
     border-radius: 10px;
