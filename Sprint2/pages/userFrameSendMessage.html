@@ -10,28 +10,47 @@
   <link rel="stylesheet" href="../styles/bodyFrameWithMessage.css">
   <link rel="stylesheet" href="../styles/SendMessageStyle.css">
   <link rel="stylesheet" href="../styles/chatWindow.css">
+  <link rel="stylesheet" href="../styles/toolbar.css">
+  <link rel="stylesheet" href="../styles/sp2General.css">
+  <link rel="stylesheet" href="../styles/footer.css">
 </head>
-<body>
+<body id="custom-background">
+  <div id="header"></div>
+  <div id="body_container">
 
-<div class="wrapper custom-background">
-  <header id="main_header" xlu-include-file="../templates/header.html"></header>
-  <main class="bodyFrame-container">
-    <div class="container">
-      <div xlu-include-file="../templates/toolbar.html"></div>
-      <div class="chat-panel" xlu-include-file="../templates/chatPanel.html"></div>
-      <div class="chatSender-window">
-        <img src="../images/earth.png" alt="Enviar mensaje" class="right-image expanded">
+      <div id="body-frame"></div>
+  </div>
 
-          <div class="button-container">
-            <button class="mic-button"><img  src="../images/microphone.png" alt="Micrófono"></button>
-          </div>
-      </div>
-    </div>
-  </main>
 
-  <footer id="main_footer" xlu-include-file="../templates/footer.html"></footer>
-</div>
 
-<script>xLuIncludeFile();</script>
+
+  <div id="footer"></div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', init);
+
+
+  function loadTemplate(fileName, id, callback) {
+
+    fetch(fileName).then((res) => {
+      return res.text();
+    }).then((text) => {
+      document.getElementById(id).innerHTML = text;
+      if(callback){
+        callback();
+      }
+    })
+  }
+
+
+  function init() {
+    loadTemplate('../templates/homeHeader.html', 'header')
+    loadTemplate('../templates/bodyFrame.html', 'body-frame')
+    loadTemplate('../templates/userPhoto.html', 'userProfile')
+    loadTemplate('../templates/toolbar.html', 'toolBar')
+    loadTemplate('../templates/footer.html', 'footer')
+
+  }
+</script>
 </body>
 </html>

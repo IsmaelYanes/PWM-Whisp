@@ -24,9 +24,6 @@
         let slideIndex = 0;
         showSlide(slideIndex);
 
-
-
-
         function showSlide(slideIndex) {
             let slides = document.getElementsByClassName("slide");
             let dots = document.getElementsByClassName("dot");
@@ -50,12 +47,6 @@
         }
 
 
-
-        const supportsTemplate = function () {
-            //create a template element and make sure it has a 'content' property
-            return 'content' in document.createElement('template');
-        }
-
         function loadTemplate(fileName, id, callback) {
 
             fetch(fileName).then((res) => {
@@ -75,37 +66,9 @@
             loadTemplate('../templates/photoCarousel.html', 'carousel')
             loadTemplate('../templates/footer.html', 'footer')
 
-        }
-
-        function addSideBarContent() {
-
-            fetch('users.json')
-                .then((response) => {
-                    return response.json();
-                })
-                .then((users) => {
-                    if ('content' in document.createElement('template')) {
-                        const container = document.getElementById('users');
-
-                        users.forEach((user) => {
-
-                            const tmpl = document
-                                .getElementById('user-card-template')
-                                .content.cloneNode(true);
-
-                            tmpl.querySelector('h2').innerText = user.fullname;
-                            tmpl.querySelector('.title').innerText = user.title;
-
-
-                            container.appendChild(tmpl);
-                        });
-                    } else {
-                        console.error('Your browser does not support templates');
-                    }
-                })
-                .catch((err) => console.error(err));
 
         }
+
     </script>
     </body>
 </html>
