@@ -3,28 +3,28 @@
     padding: 0;
 }
 
-.homeHeader-container {
-    background: #b1bfce;
-    padding: 0.5em;
-}
 
-#container {
+#main-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: #b1bfce;
+    padding: 0.6em;
 }
 
-#imageLogo {
-    width: 5em;
-    height: 5em;
+figure {
+    width: 6em;
+    height: 6em;
+    display: flex;
 }
 
 #optionButtons {
-    width: 15.9em;
-    height: 2.5em;
+    width: 25em;
+    height: 3em;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 button {
@@ -33,7 +33,7 @@ button {
     padding: 0.65em;
     border: none;
     border-radius: 0.5em;
-    font-size: 1em;
+    font-size: 1.4em;
     cursor: pointer;
 }
 
@@ -42,9 +42,9 @@ button {
 }
 
 #logIn {
-    width: 6em;
+    width: 40%;
 }
 
 #register {
-    width: 9.5em;
+    width: 55%;
 }
