@@ -15,12 +15,42 @@
     background-position: top left;
     position: relative;
 }
-#header-container {
-    background: #b1bfce;
-    padding: 0.5em;
+
+#bodyFrame-container {
+    margin-top: 2em;
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#profile-frame {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto auto;
+    padding-bottom: 5%;
 }
 
-#imageLogo {
-    width: 5em;
-    height: 5em;
+#profile-photo {
+    width: 90%;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    object-fit: cover;
+
+}
+.chat-panel {
+     width: 35%;
+     background-color: #f8f9fa;
+     border-right: 1px solid #ddd;
+     display: flex
+ ;
+     flex-direction: column;
+     border-radius: 10px;
+ }
+#gap {
+    width: 1%;
 }

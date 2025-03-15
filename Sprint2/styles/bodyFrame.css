@@ -12,8 +12,8 @@
 
 }
 
-.container {
-    width: 70%;
+.bodyFrame-container2 {
+    width: 90%;
     height: 70vh;
     display: flex;
     background-color: white;
@@ -27,22 +27,7 @@
 
 }
 
-.profile-frame {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto auto;
-    padding-bottom: 5%;
-}
 
-.profile-photo {
-    width: 90%;
-    border-radius: 50%;
-    border: 5px solid #ccc;
-    object-fit: cover;
-
-}
 
 .gap {
     width: 1%;
@@ -63,8 +48,8 @@
 
 }
 
-.chat-panel {
-    width: 30%;
+#chat-panel {
+    width: 35%;
     background-color: #f8f9fa;
     border-right: 1px solid #ddd;
     display: flex;
