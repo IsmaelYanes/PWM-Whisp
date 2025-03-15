@@ -46,5 +46,23 @@
     background-color: #e5ddd5;
     overflow-y: auto;
     height: 60%;
-    overflow-y: auto;
+}
+#selectButton{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+#selectButton:hover {
+    background-color: #45a049;
+}
+#settingProfilePhoto{
+    width: 2em;
+    height: 2em;
 }

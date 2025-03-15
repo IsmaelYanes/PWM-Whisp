@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisp</title>
+
+    <link rel="stylesheet" href="../styles/bodyFrame.css">
+    <link rel="stylesheet" href="../styles/chatWindow.css">
+    <link rel="stylesheet" href="../styles/toolbar.css">
+    <link rel="stylesheet" href="../styles/sp2General.css">
+    <link rel="stylesheet" href="../styles/sendWindow.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/editWindow.css">
+
+</head>
+<body id="custom-background">
+<div id="header"></div>
+<div id="body_container">
+    <div id="bodyFrame-container">
+        <div id="toolBar"></div>
+        <div id="bodyFrame" class="chat-panel"></div>
+        <div id="gap"></div>
+        <div id="sendWindow" class="chatSender-window contentWindow" ></div>
+        <div id="editWindow" class="chatSender-window contentWindow" style="display: none"></div>
+    </div>
+</div>
+<div id="footer"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', init);
+
+
+    function loadTemplate(fileName, id, callback) {
+        fetch(fileName).then((res) => {
+            return res.text();
+        }).then((text) => {
+            document.getElementById(id).innerHTML = text;
+            if(callback){
+                callback();
+            }
+        })
+    }
+
+
+    function loadEditWindow(id) {
+        let contentWindows = document.getElementsByClassName("contentWindow");
+        for (let i = 0; i < contentWindows.length; i++) {
+            if (i === id) {
+                contentWindows[i].style.display = "block";
+            } else {
+                contentWindows[i].style.display = "none";
+            }
+        }
+    }
+
+    function changeProfileImage(path){
+
+        console.log("ho");
+    }
+
+    function loadProfileTable(rows, col, path){
+        let counter = 0;
+        const table = document.getElementById('profileTable');
+        for (let i = 0; i < rows; i++) {
+            const row = document.createElement('tr');
+            for (let j = 0; j < col; j++) {
+                   const cell = document.createElement('td');
+                   const img = document.createElement('img');
+                   let pathName = `${path}/${counter}.jpg`;
+                   img.src = pathName;
+                   img.classList.add('profile-image');
+                   cell.appendChild(img);
+                   cell.onclick = function () {
+                       document.getElementById("profileSetting").src = pathName;
+                   }
+                   row.appendChild(cell);
+                   counter++;
+            }
+            table.appendChild(row);
+        }
+    }
+    function init() {
+        loadTemplate('../templates/homeHeader.html', 'header')
+        loadTemplate('../templates/chatPanel.html', 'bodyFrame')
+        loadTemplate('../templates/userPhoto.html', 'userProfile')
+        loadTemplate('../templates/toolbar.html', 'toolBar')
+        loadTemplate('../templates/sendWindow.html', 'sendWindow')
+        loadTemplate('../templates/editWindow.html', 'editWindow')
+        loadTemplate('../templates/footer.html', 'footer')
+        loadProfileTable(5,5,"../images/icons")
+    }
+</script>
+</body>
+</html>

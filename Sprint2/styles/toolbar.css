@@ -1,7 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+
 .toolbar {
     height: 70vh;
     width: 65px;
@@ -20,6 +17,9 @@
     cursor: pointer;
 }
 .toolbar button img {
-    width: 50px;
-    height: 50px;
+    width: 90%;
+    border-radius: 50%;
+}
+.toolbar button:hover {
+    background-color: #457697;
 }
