@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../styles/chatWindow.css">
     <link rel="stylesheet" href="../styles/toolbar.css">
     <link rel="stylesheet" href="../styles/sp2General.css">
+    <link rel="stylesheet" href="../styles/sendWindow.css">
     <link rel="stylesheet" href="../styles/footer.css">
 
 </head>
@@ -18,7 +19,7 @@
         <div id="toolBar"></div>
         <div id="bodyFrame" class="chat-panel"></div>
         <div id="gap"></div>
-        <div id="editWindow"></div>
+        <div id="sendWindow" class="chatSender-window"></div>
     </div>
 </div>
 <div id="footer"></div>
@@ -45,7 +46,7 @@
         loadTemplate('../templates/chatPanel.html', 'bodyFrame')
         loadTemplate('../templates/userPhoto.html', 'userProfile')
         loadTemplate('../templates/toolbar.html', 'toolBar')
-        loadTemplate('../templates/editWindow.html', 'editWindow')
+        loadTemplate('../templates/sendWindow.html', 'sendWindow')
         loadTemplate('../templates/footer.html', 'footer')
 
     }
