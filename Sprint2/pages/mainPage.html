@@ -43,7 +43,9 @@
     }
 
 
-    function loadEditWindow(id) {
+    function switchWindow(id) {
+        loadProfileTable(5,5,"../images/icons")
+        synchronizePhoto();
         let contentWindows = document.getElementsByClassName("contentWindow");
         for (let i = 0; i < contentWindows.length; i++) {
             if (i === id) {
@@ -53,10 +55,9 @@
             }
         }
     }
-
-    function changeProfileImage(path){
-
-        console.log("ho");
+    function changeProfilePhoto(){
+        let photos = document.getElementsByClassName("photo");
+        photos[0].src = photos[1].src;
     }
 
     function loadProfileTable(rows, col, path){
@@ -88,7 +89,11 @@
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
         loadTemplate('../templates/editWindow.html', 'editWindow')
         loadTemplate('../templates/footer.html', 'footer')
-        loadProfileTable(5,5,"../images/icons")
+    }
+
+    function synchronizePhoto(){
+        let photos = document.getElementsByClassName("photo");
+        photos[1].src = photos[0].src;
     }
 </script>
 </body>
