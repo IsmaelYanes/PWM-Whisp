@@ -10,7 +10,7 @@
     justify-content: flex-start;
     padding: 1.25em;
     width: 40%;
-    min-width: 20%;
+    min-width: 20em;
     border: whitesmoke solid 2px;
     border-radius: 10px;
     background: whitesmoke;
@@ -86,3 +86,11 @@ label {
 #password {
     padding-right: 1.5em;
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
