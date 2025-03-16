@@ -46,8 +46,7 @@
 
 
     function switchWindow(id) {
-        loadProfileTable(5,5,"../images/icons")
-        synchronizePhoto();
+
         let contentWindows = document.getElementsByClassName("contentWindow");
         for (let i = 0; i < contentWindows.length; i++) {
             if (i === id) {
@@ -57,9 +56,10 @@
             }
         }
     }
-    function changeProfilePhoto(){
+
+    function synchronizePhoto(){
         let photos = document.getElementsByClassName("photo");
-        photos[0].src = photos[1].src;
+        photos[1].src = photos[0].src;
     }
 
     function loadProfileTable(rows, col, path){
@@ -83,21 +83,29 @@
             table.appendChild(row);
         }
     }
+
+    function changeProfilePhoto(){
+        let photos = document.getElementsByClassName("photo");
+        photos[0].src = photos[1].src;
+    }
+    function loadEditWindow(){
+        synchronizePhoto();
+        loadProfileTable(5,5,"../images/icons")
+    }
     function init() {
         loadTemplate('../templates/homeHeader.html', 'header')
         loadTemplate('../templates/chatPanel.html', 'bodyFrame')
         loadTemplate('../templates/userPhoto.html', 'userProfile')
         loadTemplate('../templates/toolbar.html', 'toolBar')
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
-        loadTemplate('../templates/editWindow.html', 'editWindow')
+        loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
         loadTemplate('../templates/settingsPanel.html', 'settingWindow')
         loadTemplate('../templates/footer.html', 'footer')
+
     }
 
-    function synchronizePhoto(){
-        let photos = document.getElementsByClassName("photo");
-        photos[1].src = photos[0].src;
-    }
+
+
 </script>
 </body>
 </html>
