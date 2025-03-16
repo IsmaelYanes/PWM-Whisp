@@ -51,7 +51,7 @@
         let contentWindows = document.getElementsByClassName("contentWindow");
         for (let i = 0; i < contentWindows.length; i++) {
             if (i === id) {
-                contentWindows[i].style.display = "block";
+                contentWindows[i].style.display = "flex";
             } else {
                 contentWindows[i].style.display = "none";
             }
@@ -90,6 +90,7 @@
         loadTemplate('../templates/toolbar.html', 'toolBar')
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
         loadTemplate('../templates/editWindow.html', 'editWindow')
+        loadTemplate('../templates/settingsPanel.html', 'settingWindow')
         loadTemplate('../templates/footer.html', 'footer')
     }
 
