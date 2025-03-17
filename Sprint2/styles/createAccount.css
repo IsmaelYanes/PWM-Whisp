@@ -3,29 +3,29 @@
     padding: 0;
 }
 
-#createAccount-container {
+#createAccount-Container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25em;
-    height: 32.5em;
-    width: 60vh;
+    width: 45%;
+    min-width: 30%;
     border: whitesmoke solid 2px;
     border-radius: 10px;
     background: whitesmoke;
     box-shadow: 0 0 10px 8px #A8A8A8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 4vh auto;
-    min-width: 60%;
+    margin: 8vh auto;
 }
 
 #createAccount-Text {
     color: #323234;
-    padding-left: 0.3em;
+    padding: 0.3em 0 0.3em 0.3em;
+    font-size: 3em;
 }
 
-#register-Form {
+#createAccount-Form {
     width: 100%;
     padding-left: 0.5em;
     display: flex;
@@ -34,43 +34,38 @@
     align-content: center;
 }
 
-.register-Field {
+section {
     width: 100%;
-    margin-block: 0.5em;
+    margin-block: 0.6em;
 }
 
-.input-Field {
+input {
     width: 94%;
-    height: 80%;
     padding: 0.8em 0 0.8em 1em;
     border-radius: 0.5em;
     border: #A8A8A8 solid 2px;
+    font-size: 1.3em;
 }
 
-.inputOptions-Field {
-    width: 96%;
+#createAccount-Field {
+    height: 3.5em;
+    width: 94.5%;
+    margin-top: 1.2em;
     display: flex;
     justify-content: center;
 }
 
-#createAccount-Field {
-    height: 3em;
-    margin-top: 0.65em;
+#birthdate, #confirm-password, #password {
+    padding-left: 1em;
+    padding-right: 1.5em;
 }
 
-#birthDate-Input-Field {
-    width: 100%;
-    padding-top: 0.4em;
-    border-radius: 0.5em;
+label {
+    font-size: 1.2em;
 }
 
 #birthdate {
-    height: 2.5em;
-    width: 94%;
-    padding-left: 1em;
-    font-size: 1.1em;
-    border-radius: 0.5em;
-    border: #A8A8A8 solid 2px;
+    font-size: 1.3em;
 }
 
 #createAccountButton {
@@ -81,19 +76,6 @@
     cursor: pointer;
     color: whitesmoke;
     font-weight: bold;
-    font-size: 0.8em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.passwordInput-Field {
-    position: relative;
-}
-
-.toggle-Password {
-    position: absolute;
-    top: 25%;
-    left: 88%;
-    border: none;
-    background: none;
-    cursor: pointer;
+    font-size: 1.4em;
 }

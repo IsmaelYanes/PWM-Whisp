@@ -3,12 +3,15 @@
     padding: 0;
 }
 
-#header-container {
+#main-container {
+    display: flex;
+    align-items: center;
     background: #b1bfce;
     padding: 0.5em;
 }
 
-#imageLogo {
-    width: 5em;
-    height: 5em;
+figure {
+    width: 6em;
+    height: 6em;
+    display: flex;
 }
