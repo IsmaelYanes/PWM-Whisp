@@ -14,14 +14,14 @@
 }
 
 figure {
-    width: 6em;
-    height: 6em;
+    width: 5em;
+    height: 5em;
     display: flex;
 }
 
 #optionButtons {
     width: 25em;
-    height: 3em;
+    height: 2.8em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +33,7 @@ button {
     padding: 0.65em;
     border: none;
     border-radius: 0.5em;
-    font-size: 1.4em;
+    font-size: 1.3em;
     cursor: pointer;
 }
 
