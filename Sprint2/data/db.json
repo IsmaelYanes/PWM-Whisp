@@ -1,0 +1,13 @@
+{
+  "users": [
+    {"id": 0,
+      "userName": "example",
+      "password": 123,
+      "email": "example@gmail.com",
+      "birthday" : "01/01/2025",
+      "profilePhoto": "../images/1.jpg",
+      "contact": [1, 2, 3]
+    }
+  ],
+  "posts": []
+}

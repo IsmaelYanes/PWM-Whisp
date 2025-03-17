@@ -1,7 +1,7 @@
 
 .toolbar {
     height: 70vh;
-    width: 65px;
+    width: 55px;
     background-color: #7b92ac;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 .toolbar button img {
-    width: 90%;
+    width: 80%;
     border-radius: 50%;
 }
 .toolbar button:hover {

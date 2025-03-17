@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../styles/sendWindow.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/editWindow.css">
+    <link rel="stylesheet" href="../styles/messageAudio.css">
+    <link rel="stylesheet" href="../styles/header.css">
 
 </head>
 <body id="custom-background">
@@ -20,7 +22,6 @@
     <div id="bodyFrame-container">
         <div id="toolBar"></div>
         <div id="bodyFrame" class="chat-panel"></div>
-        <div id="gap"></div>
         <div id="sendWindow" class="contentWindow" ></div>
         <div id="editWindow" class="contentWindow" style="display: none"></div>
         <div id="requestWindow" class="contentWindow" style="display: none"></div>
@@ -93,18 +94,21 @@
         loadProfileTable(5,5,"../images/icons")
     }
     function init() {
-        loadTemplate('../templates/homeHeader.html', 'header')
+        loadTemplate('../templates/header.html', 'header')
         loadTemplate('../templates/chatPanel.html', 'bodyFrame')
         loadTemplate('../templates/userPhoto.html', 'userProfile')
         loadTemplate('../templates/toolbar.html', 'toolBar')
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
         loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
         loadTemplate('../templates/settingsPanel.html', 'settingWindow')
+        loadTemplate('../templates/messageAudio.html', 'voiceMessage')
+        loadTemplate('../templates/messageAudio.html', 'voiceMessage2')
+        loadTemplate('../templates/messageAudio.html', 'voiceMessage3')
+        loadTemplate('../templates/messageAudio.html', 'voiceMessage4')
+        loadTemplate('../templates/messageAudio.html', 'voiceMessage5')
         loadTemplate('../templates/footer.html', 'footer')
 
     }
-
-
 
 </script>
 </body>

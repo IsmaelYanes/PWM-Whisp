@@ -22,24 +22,27 @@ input {
 }
 
 #avatar {
-    width: 5em;
-    height: 5em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
 }
 
 #playPauseIcon[src="../images/audioPlay.png"] {
-    width: 2.5em;
-    height: 2.5em;
-    margin-top: 0.3em;
+    width: 1.5em;
+    height: 1.5em;
+    margin:0.3em 5px 0 5px;
 }
 
 #playPauseIcon[src="../images/audioStop.png"] {
-    width: 2.5em;
-    height: 2.5em;
-    margin-top: 0.3em;
+    width: 1.5em;
+    height: 1.5em;
+    margin:0.3em 5px 0 5px;
 }
 
 .time {
-    font-size: 1.3em;
     font-family: "Lato", sans-serif;
+    font-size: 0.7em;
+}
+.progress{
+    margin-right: 5px;
 }

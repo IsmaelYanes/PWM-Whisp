@@ -25,6 +25,7 @@
 }
 #profile-frame {
     width: 60%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
