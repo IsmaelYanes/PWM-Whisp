@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.toolbar {
+
+    height: 70vh;
+    width: 60px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.toolbar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.toolbar button img {
+    width: 40px;
+    height: 40px;
+}
