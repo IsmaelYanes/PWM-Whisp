@@ -18,15 +18,7 @@ function loadComponent(url, containerId, callback = null) {
 }
 
 function addEventListeners() {
-    const togglePasswordBtn = document.getElementById("toggle-Password");
     const loginButton = document.getElementById("login-button");
-
-    if (togglePasswordBtn) {
-        togglePasswordBtn.addEventListener("click", function () {
-            const passwordInput = document.getElementById("password");
-            passwordInput.type = passwordInput.type === "password" ? "text" : "password";
-        });
-    }
 
     if (loginButton) {
         loginButton.addEventListener("click", validateLogInForm);
@@ -34,32 +26,56 @@ function addEventListeners() {
 }
 
 function validateLogInForm(event) {
-    event.preventDefault();
+    event.preventDefault(); // Evita el envío si hay errores
 
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
-    const emailRegex = /^[A-Za-z]+@[A-Za-z]+\.[A-Za-z]{1,3}$/;
-    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+    const emailRegex =  /^(?=[^@]*[a-zA-Z])([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/;
 
-    let errors = [];
+    let isValid = true;
+
+    const emailError = document.getElementById("emailError");
+    const emailInput = document.getElementById("email");
+    const passwordError = document.getElementById("passwordError");
+    const passwordInput = document.getElementById("password");
 
     if (!email) {
-        errors.push("El correo es obligatorio.");
+        emailError.textContent = "El correo es obligatorio.";
+        emailError.style.display = "block";
+        emailInput.style.border = "2px solid red";
+        isValid = false;
     } else if (!emailRegex.test(email)) {
-        errors.push("El correo no cumple con el formato válido.");
+        emailError.textContent = "El correo no cumple con el formato válido.";
+        emailError.style.display = "block";
+        emailInput.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        emailError.textContent = "";
+        emailError.style.display = "none";
+        emailInput.style.border = "2px solid #A8A8A8";
     }
 
     if (!password) {
-        errors.push("La contraseña es obligatoria.");
+        passwordError.textContent = "La contraseña es obligatoria.";
+        passwordError.style.display = "block";
+        passwordInput.style.border = "2px solid red";
+        isValid = false;
     } else if (!passwordRegex.test(password)) {
-        errors.push("La contraseña debe tener al menos 8 caracteres, incluir una letra mayúscula, una minúscula, un número y un carácter especial.");
+        passwordError.textContent = "La contraseña debe tener al menos 8 caracteres, " +
+            "incluir una letra mayúscula, una minúscula, un número y un carácter especial.";
+        passwordError.style.display = "block";
+        passwordInput.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        passwordError.textContent = "";
+        passwordError.style.display = "none";
+        passwordInput.style.border = "2px solid #A8A8A8";
     }
 
-    if (errors.length > 0) {
-        alert(errors.join("\n"));
-    } else {
+    if (isValid) {
         alert("Inicio de sesión exitoso.");
-        document.getElementById("logInForm").submit();
+        document.getElementById("logIn-Form").submit(); // Envía el formulario si todo está correcto
     }
 }

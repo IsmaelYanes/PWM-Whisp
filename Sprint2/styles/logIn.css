@@ -10,19 +10,25 @@
     justify-content: flex-start;
     padding: 1.25em;
     width: 40%;
-    min-width: 20%;
+    min-width: 20em;
     border: whitesmoke solid 2px;
     border-radius: 10px;
     background: whitesmoke;
     box-shadow: 0 0 10px 8px #A8A8A8;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 20vh auto;
+    margin: 10vh auto;
+    margin-bottom: 27.5vh;
+}
+
+.login-maintext {
+    text-align: center;
+    width: 100%;
 }
 
 #LogIn-Text {
     color: #323234;
-    padding: 0.3em 0 0.3em 0.3em;
-    font-size: 3em;
+    padding: 0.2em 0 0.05em 0;
+    font-size: 2em;
 }
 
 #logIn-Form {
@@ -36,15 +42,15 @@
 
 section {
     width: 100%;
-    margin-block: 0.6em;
+    margin-block: 0.4em;
 }
 
 input {
     width: 96%;
-    padding: 0.8em 0 0.8em 1em;
+    padding: 0.5em 0 0.5em 1em;
     border-radius: 0.5em;
     border: #A8A8A8 solid 2px;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .inputOptions-Field {
@@ -54,13 +60,12 @@ input {
 }
 
 #logIn-Button-Field {
-    height: 3.4em;
+    height: 2.5em;
     margin-bottom: 0;
 }
 
 #login-button {
     width: 100%;
-    height: 100%;
     border-radius: 5em;
     border: #1d407d solid 2px;
     background: #1d407d;
@@ -68,7 +73,7 @@ input {
     color: whitesmoke;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.1em;
 }
 
 #forgot-Password-Text {
@@ -76,13 +81,21 @@ input {
     border: none;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.6em;
 }
 
 label {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #password {
-    padding-right: 1.5em;
+    padding-right: 1.2em;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+

@@ -2,19 +2,21 @@
 <meta charset="UTF-8">
 
 <div id="login-container">
-    <header>
+    <div class="login-maintext">
         <h1 id="LogIn-Text">Iniciar sesión</h1>
-    </header>
+    </div>
     <form id="logIn-Form">
         <section>
             <label for="email">Correo</label>
             <div>
-                <input class="input-Field" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="pedro@example.com">
+                <input id="email" required pattern="^(?=[^@]*[a-zA-Z])([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$" placeholder="pedro@example.com">
+                <span id="emailError" class="error-message"></span>
             </div>
         </section>
         <section>
             <label for="password">Contraseña</label>
-            <input type="password" id="password" required pattern=".{8,}" placeholder="Contraseña">
+            <input type="password" id="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$" placeholder="Contraseña">
+            <span id="passwordError" class="error-message"></span>
         </section>
         <section class="inputOptions-Field" id="logIn-Button-Field">
             <button id="login-button">Iniciar sesion</button>
@@ -24,3 +26,4 @@
         </section>
     </form>
 </div>
+
