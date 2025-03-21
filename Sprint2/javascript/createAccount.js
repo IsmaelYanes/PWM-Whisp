@@ -21,10 +21,10 @@ function submitNewUser(){
     fetch("http://localhost:3000/prueba", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({userName: document.getElementById("username").value, 
+        body: JSON.stringify({userName: document.getElementById("user-Name").value,
             password: document.getElementById("password").value, 
             email: document.getElementById("email").value, 
-            bio: document.getElementById("bio").value,})
+            bio: document.getElementById("birthdate").value,})
     })
         .then(response => response.json())
         .then(data => {console.log("Usuario creado", data)})
@@ -127,10 +127,10 @@ function validateCreateAccountForm(event) {
     }
     
     if (isValid) {
+        submitNewUser();
         alert("Inicio de sesión exitoso.");
         document.getElementById("createAccount-Form").submit(); // Envía el formulario si todo está correcto
     }
-    submitNewUser();
 }
 
 function normalStyle(error, input) {
