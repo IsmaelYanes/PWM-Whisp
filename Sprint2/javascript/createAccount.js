@@ -17,22 +17,18 @@ function loadComponent(url, containerId, callback = null) {
         .catch(error => console.error(error));
 }
 
-function postNewUser(){
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const username = document.getElementById("username").value;
-    const birthday = document.getElementById("birthday").value;
-    const newUser = {
-        email: email,
-        password: password,
-        username: username,
-        birthday: birthday
-    };
-    fetch('http://localhost:3000/users',{
-        method: 'POST',
+function submitNewUser(){
+    fetch("http://localhost:3000/prueba", {
+        method: "POST",
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(newUser)
-    }).catch(error => console.error(error));
+        body: JSON.stringify({userName: document.getElementById("username").value, 
+            password: document.getElementById("password").value, 
+            email: document.getElementById("email").value, 
+            bio: document.getElementById("bio").value,})
+    })
+        .then(response => response.json())
+        .then(data => {console.log("Usuario creado", data)})
+        .catch(error => console.error("Error", error));
 }
 
 
@@ -82,7 +78,7 @@ function validateCreateAccountForm(event) {
         basicStyleError(emailError, emailInput);
         isValid = false;
     } else {
-        normalStyle(emailError);
+        normalStyle(emailError, emailInput);
     }
 
     if (!password) {
@@ -95,7 +91,7 @@ function validateCreateAccountForm(event) {
         basicStyleError(passwordError, passwordInput);
         isValid = false;
     } else {
-        normalStyle(passwordError);
+        normalStyle(passwordError, passwordInput);
     }
 
     if (!confirmPassword) {
@@ -107,7 +103,7 @@ function validateCreateAccountForm(event) {
         basicStyleError(confirmPasswdError, confirmPasswdInput);
         isValid = false;
     } else {
-        normalStyle(confirmPasswdError);
+        normalStyle(confirmPasswdError, confirmPasswdInput);
     }
 
     if (!userName) {
@@ -115,7 +111,7 @@ function validateCreateAccountForm(event) {
         basicStyleError(userNameError, userNameInput);
         isValid = false;
     } else {
-        normalStyle(userNameError);
+        normalStyle(userNameError, userNameInput);
     }
     
     if (!birthday) {
@@ -127,19 +123,20 @@ function validateCreateAccountForm(event) {
         basicStyleError(birthdayError, birthdayInput);
         isValid = false;
     } else {
-        normalStyle(birthdayError);
+        normalStyle(birthdayError, birthdayInput);
     }
-
+    
     if (isValid) {
         alert("Inicio de sesión exitoso.");
         document.getElementById("createAccount-Form").submit(); // Envía el formulario si todo está correcto
     }
+    submitNewUser();
 }
 
-function normalStyle(nameId) {
-    nameId.textContent = "";
-    nameId.style.display = "none";
-    nameId.style.border = "2px solid #A8A8A8";
+function normalStyle(error, input) {
+    error.textContent = "";
+    error.style.display = "none";
+    input.style.border = "2px solid #A8A8A8";
 }
 
 function validateBirthday(birthday) {
