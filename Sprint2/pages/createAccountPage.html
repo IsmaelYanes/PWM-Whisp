@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account Page</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/createAccount.css">
+</head>
+<body class="custom-background">
+
+<header id="header-base"></header>
+
+<main id="createAccount"></main>
+
+<footer id="footer-base"></footer>
+
+<script>
+    // Función para cargar las plantillas del header y footer
+    document.addEventListener('DOMContentLoaded', function() {
+        // Cargar el header
+        fetch('../templates/header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header-base').innerHTML = html;
+                setupNavigation(); // Configurar los eventos de navegación
+            });
+
+        // Cargar el footer
+        fetch('../templates/footer.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('footer-base').innerHTML = html;
+            });
+    });
+
+    // Configuración de navegación
+    function setupNavigation() {
+        // Redirección al hacer clic en el logo
+        const logo = document.getElementById('logo');
+        if (logo) {
+            logo.addEventListener('click', function() {
+                window.location.href = "../pages/index.html";
+            });
+        }
+
+        // Redirigir a la página de login
+        const logInButton = document.getElementById('logIn');
+        if (logInButton) {
+            logInButton.addEventListener('click', function() {
+                window.location.href = "../pages/logInPage.html";
+            });
+        }
+
+        // Redirigir a la página de crear cuenta
+        const registerButton = document.getElementById('register');
+        if (registerButton) {
+            registerButton.addEventListener('click', function() {
+                window.location.href = "../pages/createAccountPage.html";
+            });
+        }
+    }
+</script>
+
+<script src="../javascript/createAccount.js"></script>
+</body>
+</html>

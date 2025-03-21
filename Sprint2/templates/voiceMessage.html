@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../styles/messageAudio.css">
+<meta charset="UTF-8">
+
+<div class="player-container">
+  <img src="../images/avatar2.jpg" id="avatar">
+
+  <audio id="player">
+    <source src="../images/audio.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="playPauseButton" onclick="togglePlay()">
+    <img id="playPauseIcon" src="../images/audioPlay.png" class="audio-button">
+  </button>
+
+  <input type="range" id="progress" value="0" max="100">
+
+  <span id="currentTime" class="time">0:00</span>
+  <span class="time">/</span>
+  <span id="durationTime" class="time">0:00</span>
+
+</div>
+
+<script src="../javascript/messageAudio.js"></script>
+

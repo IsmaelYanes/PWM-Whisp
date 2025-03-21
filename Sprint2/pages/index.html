@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../styles/templateStyle.css">
+    <link rel="stylesheet" href="../styles/sp2General.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/homeHeader.css">
+    <link rel="stylesheet" href="../styles/photoCarousel.css">
+</head>
+<body id="custom-background">
+<!-- Cargar el header desde la plantilla -->
+<div id="header"></div>
+
+<div id="body_container">
+    <div id="carousel">
+        <div id="photoCarousel"></div>
+    </div>
+</div>
+
+<div id="footer"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', init);
+
+    // Lógica para cargar plantillas de header, footer, etc.
+    function loadTemplate(fileName, id, callback) {
+        fetch(fileName).then((res) => {
+            return res.text();
+        }).then((text) => {
+            document.getElementById(id).innerHTML = text;
+            if(callback) {
+                callback();
+            }
+        });
+    }
+
+    function init() {
+        loadTemplate('../templates/homeHeader.html', 'header', setupNavigation);
+        loadTemplate('../templates/photoCarousel.html', 'carousel');
+        loadTemplate('../templates/footer.html', 'footer');
+    }
+
+    function setupNavigation() {
+        // Redirigir al hacer clic en los botones
+        const logInButton = document.getElementById('logIn');
+        const registerButton = document.getElementById('register');
+
+        if (logInButton) {
+            logInButton.addEventListener('click', function() {
+                window.location.href = "../pages/logInPage.html"; // Redirige a la página de login
+            });
+        }
+
+        if (registerButton) {
+            registerButton.addEventListener('click', function() {
+                window.location.href = "../pages/createAccountPage.html"; // Redirige a la página de crear cuenta
+            });
+        }
+    }
+</script>
+</body>
+</html>

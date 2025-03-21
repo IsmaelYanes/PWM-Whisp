@@ -1,0 +1,45 @@
+.player-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #fff;
+    padding: 0.8em;
+    border-radius: 10px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+button:hover {
+    background: none;
+}
+
+input {
+    width: 100%;
+}
+
+#avatar {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+}
+
+#playPauseIcon[src="../images/audioPlay.png"] {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.3em;
+}
+
+#playPauseIcon[src="../images/audioStop.png"] {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: 0.3em;
+}
+
+.time {
+    font-size: 1.3em;
+    font-family: "Lato", sans-serif;
+}
