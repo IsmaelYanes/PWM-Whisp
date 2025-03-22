@@ -17,6 +17,28 @@ function loadComponent(url, containerId, callback = null) {
         .catch(error => console.error(error));
 }
 
+function submitExistUser(){
+    const email = document.getElementById("email").value.trim();
+    
+    fetch("http://localhost:3000/users?email=" + email, {
+        method: "GET",
+        headers: {'Content-Type': 'application/json'}
+    })
+        .then(response => response.json())
+        .then(data => {
+            if (data.length > 0) {
+                const user = data[0];
+
+                alert("Inicio de sesión exitoso.");
+                document.getElementById("logIn-Form").submit(); // Envía el formulario si todo está correcto
+                window.location.href = `../pages/mainPage.html?userID=${user.id}`;
+            } else {
+                alert("Usuario no encontrado");
+            }
+        })
+        .catch(error => console.error("Error", error));
+}
+
 function addEventListeners() {
     const loginButton = document.getElementById("login-button");
 
@@ -75,7 +97,6 @@ function validateLogInForm(event) {
     }
 
     if (isValid) {
-        alert("Inicio de sesión exitoso.");
-        document.getElementById("logIn-Form").submit(); // Envía el formulario si todo está correcto
+        submitExistUser();
     }
 }

@@ -18,13 +18,13 @@ function loadComponent(url, containerId, callback = null) {
 }
 
 function submitNewUser(){
-    fetch("http://localhost:3000/prueba", {
+    fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({userName: document.getElementById("user-Name").value,
+        body: JSON.stringify({userName: document.getElementById("user-name").value,
             password: document.getElementById("password").value, 
-            email: document.getElementById("email").value, 
-            bio: document.getElementById("birthdate").value,})
+            email: document.getElementById("email").value,
+            birthday: document.getElementById("birthdate").value,})
     })
         .then(response => response.json())
         .then(data => {console.log("Usuario creado", data)})
@@ -40,7 +40,7 @@ function addCreateAccountEventListeners() {
     }
 }
 
-function validateCreateAccountForm(event) {
+async function validateCreateAccountForm(event) {
     event.preventDefault(); // Evita el envío si hay errores
 
     const email = document.getElementById("email").value.trim();
@@ -68,13 +68,17 @@ function validateCreateAccountForm(event) {
 
     const birthdayError = document.getElementById("birthdateError");
     const birthdayInput = document.getElementById("birthdate");
-    
+
     if (!email) {
         emailError.textContent = "El correo es obligatorio.";
         basicStyleError(emailError, emailInput);
         isValid = false;
     } else if (!emailRegex.test(email)) {
         emailError.textContent = "El correo no cumple con el formato válido.";
+        basicStyleError(emailError, emailInput);
+        isValid = false;
+    } else if (await existUserEmail(email)) {
+        emailError.textContent = "Ya existe el usuario";
         basicStyleError(emailError, emailInput);
         isValid = false;
     } else {
@@ -110,7 +114,11 @@ function validateCreateAccountForm(event) {
         userNameError.textContent = "Introduzca un nombre de usuario";
         basicStyleError(userNameError, userNameInput);
         isValid = false;
-    } else {
+    } else if (await existUserName(userName)) {
+        userNameError.textContent = "Ya existe el username";
+        basicStyleError(userNameError, userNameInput);
+        isValid = false;
+    }else {
         normalStyle(userNameError, userNameInput);
     }
     
@@ -118,7 +126,7 @@ function validateCreateAccountForm(event) {
         birthdayError.textContent = "Introduzca la fecha de nacimiento";
         basicStyleError(birthdayError, birthdayInput);
         isValid = false;
-    } else if (validateBirthday(birthday) === false) {
+    } else if (!validateBirthday(birthday)) {
         birthdayError.textContent = "Debes de ser mayor a 8 años";
         basicStyleError(birthdayError, birthdayInput);
         isValid = false;
@@ -130,6 +138,7 @@ function validateCreateAccountForm(event) {
         submitNewUser();
         alert("Inicio de sesión exitoso.");
         document.getElementById("createAccount-Form").submit(); // Envía el formulario si todo está correcto
+        window.location.href = "../pages/logInPage.html";
     }
 }
 
@@ -151,4 +160,24 @@ function validateBirthday(birthday) {
 function basicStyleError(error, input) {
     error.style.display = "block";
     input.style.border = "2px solid red";
+}
+
+async function existUserEmail(email) {
+    try {
+        const response = await fetch("http://localhost:3000/users?email=" + email);
+        const data = await response.json();
+        return data.length > 0;
+    } catch {
+        return false;
+    }
+}
+
+async function existUserName(userName) {
+    try {
+        const response = await fetch("http://localhost:3000/users?userName=" + userName);
+        const data = await response.json();
+        return data.length > 0;
+    } catch {
+        return false;
+    }
 }
