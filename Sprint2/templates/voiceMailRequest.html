@@ -1,22 +1,10 @@
-<meta charset="UTF-8">
-<link rel="stylesheet" href="../styles/messageRequest.css">
 
 <div class="massage-container" >
-    <div class="message-box">
-        <div class="avatar">
-            <img src="../images/icono.jpg" alt="Avatar" class="white-font">
-        </div>
-        <div class="avatar" id="onda-container">
-            <img src="../images/onda.png" alt="Avatar">
-        </div>
-        <div class="avatar">
-            <img src="../images/playbutton.png" alt="Avatar" class="white-font">
-        </div>
-    </div>
+    <div id="messageAudio"></div>
     <div class="button-box">
         <figure>
-            <img src="../images/aceptar.png" id="aceptar-img">
-            <img src="../images/rechazar.png" id="rechazar-img">
+            <img src="../images/aceptar.png" id="aceptar-img" onclick="aceptContact()">
+            <img src="../images/rechazar.png" id="rechazar-img" onclick="rejectContact()">
         </figure>
     </div>
 </div>

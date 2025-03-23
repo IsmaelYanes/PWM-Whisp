@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="../styles/photoCarousel.css">
     </head>
     <body id="custom-background">
-            <div id="header"></div>
+        <div id="header"></div>
         <div id="body_container">
             <div id="carousel">
                 <div id="photoCarousel"></div>
@@ -23,6 +23,13 @@
         document.addEventListener('DOMContentLoaded', init);
         let slideIndex = 0;
         showSlide(slideIndex);
+
+        function register(){
+            window.location.href = "../pages/createAccountPage.html"
+        }
+        function login(){
+            window.location.href = "../pages/logInPage.html"
+        }
 
         function showSlide(slideIndex) {
             let slides = document.getElementsByClassName("slide");
@@ -66,9 +73,7 @@
             loadTemplate('../templates/photoCarousel.html', 'carousel')
             loadTemplate('../templates/footer.html', 'footer')
 
-
         }
-
     </script>
     </body>
 </html>
