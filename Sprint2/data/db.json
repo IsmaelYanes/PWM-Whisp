@@ -1,12 +1,68 @@
 {
   "users": [
-    {"id": 0,
+    {
+      "id": "0",
       "userName": "example",
       "password": 123,
       "email": "example@gmail.com",
-      "birthday" : "01/01/2025",
-      "profilePhoto": "../images/1.jpg",
-      "contact": [1, 2, 3]
+      "birthday": "01/01/2025",
+      "profilePhoto": "../images/icons/1.jpg",
+      "contact": [1,2,3,4,5,6],
+      "request": [1,2,3,4,5,6]
+    },
+    {
+      "id": "1",
+      "userName": "luis",
+      "password": 456,
+      "email": "luis@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/2.jpg",
+      "contact": [4, 5, 6]
+    },
+    {
+      "id": "2",
+      "userName": "maria",
+      "password": 456,
+      "email": "maria@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/3.jpg",
+      "contact": [4, 5, 6]
+    },
+    {
+      "id": "3",
+      "userName": "jose",
+      "password": 456,
+      "email": "jose@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/4.jpg",
+      "contact": [4, 5, 6]
+    },
+    {
+      "id": "4",
+      "userName": "adrian",
+      "password": 456,
+      "email": "adri@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/5.jpg",
+      "contact": [4, 5, 6]
+    },
+    {
+      "id": "5",
+      "userName": "pepe",
+      "password": 456,
+      "email": "pepe@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/6.jpg",
+      "contact": [4, 5, 6]
+    },
+    {
+      "id": "6",
+      "userName": "ana",
+      "password": 456,
+      "email": "ana@gmail.com",
+      "birthday": "05/05/2025",
+      "profilePhoto": "../images/icons/7.jpg",
+      "contact": [4, 5, 6]
     }
   ],
   "posts": []

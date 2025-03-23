@@ -44,15 +44,42 @@
 
 .button-box {
     width: 14em;
+    display: flex;
 }
 
-#aceptar-img {
-    margin-left: 1em;
-    width: 3.5em;
-    height: 3.5em;
+.acceptButton {
+    margin: auto;
+    width: 3em;
+    height: 3em;
 }
 
-#rechazar-img {
-    width: 3.5em;
-    height: 3.5em;
+.rejectButton {
+    width: 3em;
+    height: 3em;
+}
+#requestWindowContainer {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1em;
+    background-color: #F5ECE0;
+}
+.centerButton {
+    margin:0 2em 0 2em;
+}
+ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+.requestMessageBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0.5em 0 0.5em 0;
+}
+.invitationChat{
+    width: 75%;
 }

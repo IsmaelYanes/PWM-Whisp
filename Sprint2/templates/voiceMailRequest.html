@@ -1,10 +1,26 @@
+<div class="requestMessageBox" >
+    <div class="invitationChat">
+        <div class="player-container">
+            <img src="../images/avatar2.jpg" class="profilePic">
+            <audio id="player">
+                <source src="../images/audio.mp3" type="audio/mpeg">
+            </audio>
+            <button id="playPauseButton" onclick="togglePlay()">
+                <img id="playPauseIcon" src="../images/audioPlay.png" class="audio-button">
+            </button>
+            <input type="range" id="progress" value="0" max="100">
+            <span id="currentTime" class="time">0:00</span>
+            <span class="time">/</span>
+            <span id="durationTime" class="time">0:00</span>
+        </div>
+    </div>
 
-<div class="massage-container" >
-    <div id="messageAudio"></div>
     <div class="button-box">
-        <figure>
-            <img src="../images/aceptar.png" id="aceptar-img" onclick="aceptContact()">
-            <img src="../images/rechazar.png" id="rechazar-img" onclick="rejectContact()">
-        </figure>
+        <button class="centerButton">
+            <img src="../images/aceptar.png" class="acceptButton" onclick="aceptContact()">
+        </button>
+        <button>
+            <img src="../images/rechazar.png" class="rejectButton" onclick="rejectContact()">
+        </button>
     </div>
 </div>

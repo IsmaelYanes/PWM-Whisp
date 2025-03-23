@@ -26,18 +26,17 @@
         <div id="bodyFrame" class="chat-panel"></div>
         <div id="sendWindow" class="contentWindow" ></div>
         <div id="editWindow" class="contentWindow" style="display: none"></div>
-        <div id="requestWindow" class="contentWindow" style="display: none">
-            <div id="voiceMailRequest"></div>
-        </div>
+        <div id="requestWindow" class="contentWindow" style="display: none"></div>
         <div id="settingWindow" class="contentWindow" style="display: none"></div>
         <div id="message" class="contentWindow" style="display: none"></div>
     </div>
 </div>
 <div id="footer"></div>
+<script src="../javascript/chatPanel.js"></script>
+<script src="../javascript/requestWindow.js"></script>
 
 <script>
     document.addEventListener('DOMContentLoaded', init);
-
 
     function loadTemplate(fileName, id, callback) {
         fetch(fileName).then((res) => {
@@ -104,15 +103,15 @@
         loadTemplate('../templates/userPhoto.html', 'userProfile')
         loadTemplate('../templates/toolbar.html', 'toolBar')
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
+        loadTemplate('../templates/voiceMailRequest.html', 'voiceMailRequest')
         loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
+        loadTemplate('../templates/requestWindow.html', 'requestWindow')
         loadTemplate('../templates/settingsPanel.html', 'settingWindow')
-        loadTemplate('../templates/messageAudio.html', 'voiceMessage')
-        loadTemplate('../templates/messageAudio.html', 'voiceMessage2')
-        loadTemplate('../templates/messageAudio.html', 'voiceMessage3')
-        loadTemplate('../templates/messageAudio.html', 'voiceMessage4')
-        loadTemplate('../templates/messageAudio.html', 'voiceMessage5')
         loadTemplate('../templates/footer.html', 'footer')
         loadTemplate('../templates/messageAudio.html', 'message')
+        loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
+        loadChats();
+        loadRequests();
     }
 
 </script>
