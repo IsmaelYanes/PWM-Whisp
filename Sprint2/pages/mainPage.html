@@ -34,8 +34,9 @@
 <div id="footer"></div>
 <script src="../javascript/chatPanel.js"></script>
 <script src="../javascript/requestWindow.js"></script>
-
+<script src="../javascript/messageAudio.js"></script>
 <script>
+    const myUser = 0;
     document.addEventListener('DOMContentLoaded', init);
 
     function loadTemplate(fileName, id, callback) {
@@ -110,8 +111,8 @@
         loadTemplate('../templates/footer.html', 'footer')
         loadTemplate('../templates/messageAudio.html', 'message')
         loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
-        loadChats();
-        loadRequests();
+        loadChats(myUser);
+        loadRequests(myUser);
     }
 
 </script>

@@ -66,6 +66,7 @@
     border-radius: 10px;
     padding: 1em;
     background-color: #F5ECE0;
+    overflow: auto;
 }
 .centerButton {
     margin:0 2em 0 2em;
