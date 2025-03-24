@@ -5,24 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update mockups.zip file">
+      <change afterPath="$PROJECT_DIR$/Sprint2/pages/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ImageChanger.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ImageChanger.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/bodyFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/bodyFrame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/chatWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/chatWindow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/createAccount.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bodyFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createAccount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imageChanger.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/imageChanger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,30 +49,31 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.MockHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.MockHomeHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.createAccount.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.logIn.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.mockHomePage.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evaay/IdeaProjects/PWM-Whisp/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.MockHeader.html.executor": "Run",
+    "JavaScript Debug.MockHomeHeader.html.executor": "Run",
+    "JavaScript Debug.createAccount.html.executor": "Run",
+    "JavaScript Debug.logIn.html.executor": "Debug",
+    "JavaScript Debug.mockHomePage.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/evaay/IdeaProjects/PWM-Whisp/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\images" />
@@ -112,7 +110,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.17890.13" />
       </set>
     </attachedChunks>
   </component>
@@ -140,6 +138,7 @@
       <workItem from="1740795959322" duration="376000" />
       <workItem from="1740797895738" duration="652000" />
       <workItem from="1740827040142" duration="5486000" />
+      <workItem from="1742840514964" duration="1805000" />
     </task>
     <task id="LOCAL-00003" summary="Upload changes">
       <option name="closed" value="true" />
