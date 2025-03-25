@@ -9,8 +9,7 @@ async function loadUserPhoto(userID) {
     }
 }
 
-async function loadChats(userID){
-
+async function loadChats(userID) {
     try {
         const response = await fetch(`http://localhost:3000/users/${userID}`);
         const user = await response.json();
@@ -26,7 +25,13 @@ async function loadChats(userID){
             div.id = "voiceMessage" + id;
             li.appendChild(div);
             container.appendChild(li);
-            loadTemplate('../templates/messageAudio.html', `voiceMessage${id}`);
+
+            // Cargar template y luego asignar eventos
+            loadTemplate('../templates/messageAudio.html', `voiceMessage${id}`, () => {
+                initializeAudioPlayer(`#voiceMessage${id}`);
+            });
+
+            // Cargar foto de usuario
             const userPhoto = await loadUserPhoto(id);
             const profilePic = document.getElementById(`voiceMessage${id}`).querySelector('.profilePic');
             if (profilePic) {
@@ -37,6 +42,8 @@ async function loadChats(userID){
         console.log('Error:', error);
     }
 }
+
+
 function loadProfilePhoto(path) {
     document.getElementById("profile-photo").src = path;
 }
