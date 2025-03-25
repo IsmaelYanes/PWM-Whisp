@@ -128,4 +128,4 @@ Listado de páginas html del proyecto:
 
 Enlaces :
     figma : https://www.figma.com/design/HcQ9vCunbOPQVvvpc39OuU/PWM?node-id=0-1&m=dev&t=KvkWZwf1rN4dF1nq-1
-    trello : https://trello.com/invite/b/67a624efe35f1504497b146f/ATTI1c3c5286e72c03c8fa0ce6aecd3abe3267CBB3B1/pwm
+    trello : [https://trello.com/invite/b/67a624efe35f1504497b146f/ATTI1c3c5286e72c03c8fa0ce6aecd3abe3267CBB3B1/pwm](https://trello.com/invite/b/67cb0d5f7151ece6c09f4b52/ATTI10533303f90fda6dd4eca9e9ce4b275187A85F8C/pwm2)
