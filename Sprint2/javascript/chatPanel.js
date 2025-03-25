@@ -14,6 +14,7 @@ async function loadChats(userID){
     try {
         const response = await fetch(`http://localhost:3000/users/${userID}`);
         const user = await response.json();
+        await loadProfilePhoto(user.profilePhoto);
         const contacts = user.contact;
         const container = document.getElementById("chatConversationContainer");
         container.innerHTML = '';
@@ -35,4 +36,7 @@ async function loadChats(userID){
     } catch (error) {
         console.log('Error:', error);
     }
+}
+function loadProfilePhoto(path) {
+    document.getElementById("profile-photo").src = path;
 }

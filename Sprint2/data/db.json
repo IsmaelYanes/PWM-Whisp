@@ -3,12 +3,11 @@
     {
       "id": "0",
       "userName": "example",
-      "password": 123,
+      "password": "Mouga520?",
       "email": "example@gmail.com",
       "birthday": "01/01/2025",
       "profilePhoto": "../images/icons/1.jpg",
       "contact": [
-        7,
         1,
         2,
         3,
@@ -17,12 +16,12 @@
       ],
       "request": [
         7,
-        8,
         9,
         10,
         11,
         12
-      ]
+      ],
+      "chat": {"1": [0,1,2,3], "2": [4,5,6,7,8], "3": [8,9,10,11], "4": [12,13,14,15]}
     },
     {
       "id": "1",
@@ -181,5 +180,9 @@
       ]
     }
   ],
-  "posts": []
+  "chats": {
+    "id": "1",
+    "userId": "1",
+    "timestamp": "18:25 24/03/2025"
+  }
 }

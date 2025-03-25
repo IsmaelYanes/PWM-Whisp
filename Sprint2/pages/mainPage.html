@@ -34,9 +34,8 @@
 <div id="footer"></div>
 <script src="../javascript/chatPanel.js"></script>
 <script src="../javascript/requestWindow.js"></script>
-<script src="../javascript/messageAudio.js"></script>
 <script>
-    const myUser = 0;
+    const myUser = new URLSearchParams(window.location.search).get("userID");
     document.addEventListener('DOMContentLoaded', init);
 
     function loadTemplate(fileName, id, callback) {
@@ -116,5 +115,6 @@
     }
 
 </script>
+<script src="../javascript/messageAudio.js"></script>
 </body>
 </html>
