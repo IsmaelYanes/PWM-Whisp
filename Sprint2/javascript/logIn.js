@@ -19,7 +19,7 @@ function loadComponent(url, containerId, callback = null) {
 
 function submitExistUser(){
     const email = document.getElementById("email").value.trim();
-    
+
     fetch("http://localhost:3000/users?email=" + email, {
         method: "GET",
         headers: {'Content-Type': 'application/json'}

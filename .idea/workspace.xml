@@ -4,20 +4,112 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update mockups.zip file">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update db.json">
+      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio2.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio3.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint2/images/audio4.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/ImageChanger.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/ImageChanger.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/bodyFrame.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/bodyFrame.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/chatWindow.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/chatWindow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/createAccount.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/createAccount.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/message.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/message.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bodyFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bodyFrameWithMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatPanel.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatPanel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/chatWindow.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/chatWindow.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/createAccount.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/createAccount.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/imageChanger.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/imageChanger.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/Mockups.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/aceptar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/background.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/carta.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/icono.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/interrogation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/microphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/mundo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/onda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/playbutton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/rechazar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/red_dot.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/userphoto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/images/users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/javascript/xlu-include-file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/ChatPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/CreateAcoountPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/EditPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/HomePage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/LoginPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/UserFrameRequestPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/UserFrameSendPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/mockups/UserFrameSettingsPage.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/chatPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/createAccountPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/editPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/registerPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/userFrameRequestPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/userFrameSendMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/pages/userFrameSettings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/ImageChanger.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/SendMessageStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/SettingsPanelStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/bodyFrame.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/bodyFrameWithMessage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/chatRequest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/chatWindow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/createAccount.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/editWindow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/homeHeader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/logIn.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/messageRequest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/photoCarousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/templateStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/styles/voiceChat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/bodyFrame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/bodyFrameWithMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/chatPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/chatRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/chatWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/createAccount.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/editWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/homeHeader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/imageChanger.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/logIn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/photoCarousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/settingsPanel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceChat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceMail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint1/templates/voiceMailRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/javascript/logIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/javascript/logIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/chatPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/logInPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/logInPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/registerPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameRequestPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameSendMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/userFrameSettings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/SendMessageStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/chatRequest.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/logIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/logIn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/message.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/voiceChat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/bodyFrame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/bodyFrameWithMessage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatRequest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/chatWindow.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/example.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMailRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/templates/voiceMailRequest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/templates/voiceMessage.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,41 +144,44 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript Debug.MockHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.MockHomeHeader.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.createAccount.html.executor&quot;: &quot;Run&quot;,
-    &quot;JavaScript Debug.logIn.html.executor&quot;: &quot;Debug&quot;,
-    &quot;JavaScript Debug.mockHomePage.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/evaay/IdeaProjects/PWM-Whisp/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.MockHeader.html.executor": "Run",
+    "JavaScript Debug.MockHomeHeader.html.executor": "Run",
+    "JavaScript Debug.createAccount.html.executor": "Debug",
+    "JavaScript Debug.logIn.html.executor": "Debug",
+    "JavaScript Debug.mockHomePage.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/evaay/Desktop/whisp5/Sprint2/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images" />
+      <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images\icons" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\images" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\pages" />
       <recent name="D:\Uni\PWM\PWM-Whisp\javascript" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images" />
+      <recent name="C:\Users\evaay\Desktop\whisp5\Sprint2\images\icons" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\pages" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\templates" />
       <recent name="C:\Users\evaay\IdeaProjects\PWM-Whisp\styles" />
-      <recent name="D:\Uni\PWM\PWM-Whisp" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.createAccount.html">
@@ -140,22 +235,17 @@
       <workItem from="1740795959322" duration="376000" />
       <workItem from="1740797895738" duration="652000" />
       <workItem from="1740827040142" duration="5486000" />
-    </task>
-    <task id="LOCAL-00003" summary="Upload changes">
-      <option name="closed" value="true" />
-      <created>1740001965917</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740001965917</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add MockHomeHeader template">
-      <option name="closed" value="true" />
-      <created>1740002185461</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1740002185461</updated>
+      <workItem from="1742865983759" duration="305000" />
+      <workItem from="1742866298302" duration="6260000" />
+      <workItem from="1742906027552" duration="9180000" />
+      <workItem from="1742916210902" duration="12000" />
+      <workItem from="1742917358935" duration="7347000" />
+      <workItem from="1742926255382" duration="355000" />
+      <workItem from="1742938444993" duration="2265000" />
+      <workItem from="1742955406156" duration="2862000" />
+      <workItem from="1742994165170" duration="3962000" />
+      <workItem from="1743005326150" duration="670000" />
+      <workItem from="1743024761848" duration="2786000" />
     </task>
     <task id="LOCAL-00005" summary="Separate the style from the html file to a css">
       <option name="closed" value="true" />
@@ -533,7 +623,23 @@
       <option name="project" value="LOCAL" />
       <updated>1740794717686</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Update createAccount.js to put incremental id value">
+      <option name="closed" value="true" />
+      <created>1742921254539</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1742921254539</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Update db.json">
+      <option name="closed" value="true" />
+      <created>1742922248720</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1742922248720</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,8 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update HomeHeader.html file" />
-    <MESSAGE value="Update HomeHeader.css file" />
     <MESSAGE value="Update Header.html file" />
     <MESSAGE value="Update index.html file" />
     <MESSAGE value="Update footer.css file" />
@@ -588,6 +692,8 @@
     <MESSAGE value="Upload userFrameRequestPage.html file" />
     <MESSAGE value="Upload voiceMail.html and message.css files" />
     <MESSAGE value="Update mockups.zip file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update mockups.zip file" />
+    <MESSAGE value="Update createAccount.js to put incremental id value" />
+    <MESSAGE value="Update db.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update db.json" />
   </component>
 </project>
