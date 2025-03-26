@@ -2,23 +2,21 @@
 <meta charset="UTF-8">
 
 <div class="player-container">
-    <img src="../images/avatar2.jpg" class="profilePic">
+    <img src="../images/icons/1.jpg" class="profilePic">
 
-    <audio id="player">
+    <audio class="player">
         <source src="../images/audio.mp3" type="audio/mpeg">
     </audio>
 
-    <button id="playPauseButton" onclick="togglePlay()">
-        <img id="playPauseIcon" src="../images/audioPlay.png" class="audio-button">
+    <button class="playPauseButton">
+        <img class="playPauseIcon" src="../images/audioPlay.png" alt="Play">
     </button>
 
-    <input type="range" id="progress" value="0" max="100">
+    <input type="range" class="progress" value="0" max="100">
 
-    <span id="currentTime" class="time">0:00</span>
+    <span class="currentTime time">0:00</span>
     <span class="time">/</span>
-    <span id="durationTime" class="time">0:00</span>
-
+    <span class="durationTime time">0:00</span>
 </div>
 
 <script src="../javascript/messageAudio.js"></script>
-

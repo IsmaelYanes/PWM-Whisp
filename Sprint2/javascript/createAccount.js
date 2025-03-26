@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
     loadComponent("../templates/header.html", "header-base");
     loadComponent("../templates/footer.html", "footer-base");
     loadComponent("../templates/createAccount.html", "createAccount", addCreateAccountEventListeners);
@@ -17,14 +17,25 @@ function loadComponent(url, containerId, callback = null) {
         .catch(error => console.error(error));
 }
 
-function submitNewUser(){
+async function submitNewUser(){
+    const response = await fetch("http://localhost:3000/users");
+    const users = await response.json();
+    let newID = users.length > 0 ? ((parseInt(users[users.length - 1].id).toString()) + 1) : "0";
+
     fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({userName: document.getElementById("user-name").value,
-            password: document.getElementById("password").value, 
+        body: JSON.stringify({
+            id: newID,
+            userName: document.getElementById("user-name").value,
+            password: document.getElementById("password").value,
             email: document.getElementById("email").value,
-            birthday: document.getElementById("birthdate").value,})
+            birthday: document.getElementById("birthdate").value,
+            profilePhoto: "../images/icons/10.jpg",
+            contact: [],
+            request: [],
+            chat: []
+        })
     })
         .then(response => response.json())
         .then(data => {console.log("Usuario creado", data)})
@@ -121,7 +132,7 @@ async function validateCreateAccountForm(event) {
     }else {
         normalStyle(userNameError, userNameInput);
     }
-    
+
     if (!birthday) {
         birthdayError.textContent = "Introduzca la fecha de nacimiento";
         basicStyleError(birthdayError, birthdayInput);
@@ -133,7 +144,7 @@ async function validateCreateAccountForm(event) {
     } else {
         normalStyle(birthdayError, birthdayInput);
     }
-    
+
     if (isValid) {
         submitNewUser();
         alert("Inicio de sesión exitoso.");
@@ -151,9 +162,9 @@ function normalStyle(error, input) {
 function validateBirthday(birthday) {
     const actualDate = new Date();
     const birthdayDate = new Date(birthday);
-    
+
     let age = actualDate.getFullYear() - birthdayDate.getFullYear();
-    
+
     return age >= 8;
 }
 

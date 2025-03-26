@@ -27,13 +27,13 @@ input {
     border-radius: 50%;
 }
 
-#playPauseIcon[src="../images/audioPlay.png"] {
+.playPauseIcon[src="../images/audioPlay.png"] {
     width: 1.5em;
     height: 1.5em;
     margin:0.3em 5px 0 5px;
 }
 
-#playPauseIcon[src="../images/audioStop.png"] {
+.playPauseIcon[src="../images/audioStop.png"] {
     width: 1.5em;
     height: 1.5em;
     margin:0.3em 5px 0 5px;
