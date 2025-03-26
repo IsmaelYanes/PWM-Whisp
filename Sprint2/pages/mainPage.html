@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="../styles/messageAudio.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/messageRequest.css">
+    <link rel="stylesheet" href="../styles/chatWindow.css">
+
 
 
 </head>
@@ -29,6 +31,7 @@
         <div id="requestWindow" class="contentWindow" style="display: none"></div>
         <div id="settingWindow" class="contentWindow" style="display: none"></div>
         <div id="message" class="contentWindow" style="display: none"></div>
+        <div id="chatWindow" class="contentWindow" style="display: none"></div>
     </div>
 </div>
 <div id="footer"></div>
@@ -94,13 +97,13 @@
         photos[0].src = photos[1].src;
     }
     function loadEditWindow(){
-        synchronizePhoto();
+
         loadProfileTable(5,5,"../images/icons")
     }
     function init() {
         loadTemplate('../templates/header.html', 'header')
         loadTemplate('../templates/chatPanel.html', 'bodyFrame')
-        loadTemplate('../templates/userPhoto.html', 'userProfile')
+        loadTemplate('../templates/userPhoto.html', 'userProfile',synchronizePhoto)
         loadTemplate('../templates/toolbar.html', 'toolBar')
         loadTemplate('../templates/sendWindow.html', 'sendWindow')
         loadTemplate('../templates/voiceMailRequest.html', 'voiceMailRequest')
@@ -110,6 +113,7 @@
         loadTemplate('../templates/footer.html', 'footer')
         loadTemplate('../templates/messageAudio.html', 'message')
         loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
+        loadTemplate('../templates/chatWindow.html', 'chatWindow')
         loadChats(myUser);
         loadRequests(myUser);
     }
