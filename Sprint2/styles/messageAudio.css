@@ -46,3 +46,12 @@ input {
 .progress{
     margin-right: 5px;
 }
+.chatMessagebox{
+    width: 50%;
+    padding: 1em;
+}
+.myChatMessage{
+    position: absolute;
+    right: 0;
+    direction: rtl;
+}

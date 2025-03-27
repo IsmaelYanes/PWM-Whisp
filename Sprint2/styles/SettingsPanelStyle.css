@@ -139,6 +139,7 @@ option {
     font-size: 14px;
     background-color: #fff;
     color: #333;
+    width: 80%;
 }
 
 select option {
@@ -146,3 +147,18 @@ select option {
     margin-bottom: 5px;
 }
 
+.settings-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.settingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}

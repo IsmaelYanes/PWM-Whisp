@@ -1,48 +1,47 @@
-
-function acceptContact(button){
+function acceptContact(button) {
     const list = button.closest('li');
     list.remove();
-    addContact(myUser, Number.parseInt(button.getAttribute('userid')));
-    loadChats(myUser);
-
+    addContact(myUser, Number.parseInt(button.getAttribute('userid')))
+        .then(() => {
+            loadUsersData();
+        })
+        .then((response) => {
+            loadChats();
+        })
 }
 
-function rejectContact(button){
+function rejectContact(button) {
     const list = button.closest('li');
     list.remove();
-    removeContact(myUser, Number.parseInt(button.getAttribute('userid')));
+    removeContact(myUser, Number.parseInt(button.getAttribute('userid')))
+        .catch(error => {
+            console.error('Error al rechazar contacto:', error);
+        });
 }
 
-async function loadRequests(userID){
-    try {
-        const response = await fetch(`http://localhost:3000/users/${userID}`);
-        const user = await response.json();
-        const requests = user.request;
-        const container = document.getElementById("requestMessageContainer");
-
-        for (let i = 0; i < requests.length; i++) {
-            let li = document.createElement("li");
-            li.setAttribute('data-request-id', requests[i]);
-            let div = document.createElement("div");
-            div.id = "requestVoiceMessage" + i;
-            li.appendChild(div);
-            container.appendChild(li);
-            loadTemplate('../templates/voiceMailRequest.html', `requestVoiceMessage${i}`);
-            const userPhoto = await loadUserPhoto(requests[i]);
-            document.getElementById(`requestVoiceMessage${i}`).querySelector('.acceptButton').setAttribute('userId', requests[i]);
-            document.getElementById(`requestVoiceMessage${i}`).querySelector('.rejectButton').setAttribute('userId', requests[i]);
+function loadRequests() {
+    const requests = usersData[myUser].request;
+    const container = document.getElementById("requestMessageContainer");
+    for (let i = 0; i < requests.length; i++) {
+        let li = document.createElement("li");
+        li.setAttribute('data-request-id', requests[i]);
+        let div = document.createElement("div");
+        div.id = "requestVoiceMessage" + i;
+        li.appendChild(div);
+        container.appendChild(li);
+        loadTemplate('../templates/voiceMailRequest.html', `requestVoiceMessage${i}`, ()=>{
+            const acceptButton = document.getElementById(`requestVoiceMessage${i}`).querySelector('.acceptButton');
+            const rejectButton = document.getElementById(`requestVoiceMessage${i}`).querySelector('.rejectButton');
             const profilePic = document.getElementById(`requestVoiceMessage${i}`).querySelector('.profilePic');
-            if (profilePic) {
-                profilePic.src = userPhoto;
-            }
-        }
-    } catch (error) {
-        console.log('Error:', error);
+            acceptButton.setAttribute('userId', requests[i]);
+            rejectButton.setAttribute('userId', requests[i]);
+            profilePic.src = usersData[requests[i]].profilePhoto;
+        });
     }
 }
 
 function addContact(userID, newContactID) {
-    fetch(`http://localhost:3000/users/${userID}`)
+    return fetch(`http://localhost:3000/users/${userID}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -53,7 +52,6 @@ function addContact(userID, newContactID) {
             if (!user.contact.includes(newContactID)) {
                 user.contact.unshift(newContactID);
             }
-
 
             return fetch(`http://localhost:3000/users/${userID}`, {
                 method: 'PATCH',
@@ -70,9 +68,8 @@ function addContact(userID, newContactID) {
         });
 }
 
-
 function removeContact(userID, contactID) {
-    fetch(`http://localhost:3000/users/${userID}`)
+    return fetch(`http://localhost:3000/users/${userID}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
@@ -81,7 +78,6 @@ function removeContact(userID, contactID) {
         })
         .then(user => {
             user.request = user.request.filter(contact => contact !== contactID);
-            console.log(user.request);
             return fetch(`http://localhost:3000/users/${userID}`, {
                 method: 'PATCH',
                 headers: {

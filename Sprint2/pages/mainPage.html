@@ -16,109 +16,29 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/messageRequest.css">
     <link rel="stylesheet" href="../styles/chatWindow.css">
-
-
-
 </head>
+
 <body id="custom-background">
-<div id="header"></div>
-<div id="body_container">
-    <div id="bodyFrame-container">
-        <div id="toolBar"></div>
-        <div id="bodyFrame" class="chat-panel"></div>
-        <div id="sendWindow" class="contentWindow" ></div>
-        <div id="editWindow" class="contentWindow" style="display: none"></div>
-        <div id="requestWindow" class="contentWindow" style="display: none"></div>
-        <div id="settingWindow" class="contentWindow" style="display: none"></div>
-        <div id="message" class="contentWindow" style="display: none"></div>
-        <div id="chatWindow" class="contentWindow" style="display: none"></div>
+    <div id="header"></div>
+    <div id="body_container">
+        <div id="bodyFrame-container">
+            <div id="toolBar"></div>
+            <div id="bodyFrame" class="chat-panel"></div>
+            <div id="sendWindow" class="contentWindow" ></div>
+            <div id="editWindow" class="contentWindow" style="display: none"></div>
+            <div id="requestWindow" class="contentWindow" style="display: none"></div>
+            <div id="settingWindow" class="contentWindow" style="display: none"></div>
+            <div id="message" class="contentWindow" style="display: none"></div>
+            <div id="chatWindow" class="contentWindow" style="display: none"></div>
+        </div>
     </div>
-</div>
 <div id="footer"></div>
+
+<script src="../javascript/userContent.js"></script>
 <script src="../javascript/chatPanel.js"></script>
 <script src="../javascript/requestWindow.js"></script>
-<script>
-    const myUser = new URLSearchParams(window.location.search).get("userID");
-    document.addEventListener('DOMContentLoaded', init);
-
-    function loadTemplate(fileName, id, callback) {
-        fetch(fileName).then((res) => {
-            return res.text();
-        }).then((text) => {
-            document.getElementById(id).innerHTML = text;
-            if(callback){
-                callback();
-            }
-        })
-    }
-
-
-    function switchWindow(id) {
-
-        let contentWindows = document.getElementsByClassName("contentWindow");
-        for (let i = 0; i < contentWindows.length; i++) {
-            if (i === id) {
-                contentWindows[i].style.display = "flex";
-            } else {
-                contentWindows[i].style.display = "none";
-            }
-        }
-    }
-
-    function synchronizePhoto(){
-        let photos = document.getElementsByClassName("photo");
-        photos[1].src = photos[0].src;
-    }
-
-    function loadProfileTable(rows, col, path){
-        let counter = 0;
-        const table = document.getElementById('profileTable');
-        for (let i = 0; i < rows; i++) {
-            const row = document.createElement('tr');
-            for (let j = 0; j < col; j++) {
-                   const cell = document.createElement('td');
-                   const img = document.createElement('img');
-                   let pathName = `${path}/${counter}.jpg`;
-                   img.src = pathName;
-                   img.classList.add('profile-image');
-                   cell.appendChild(img);
-                   cell.onclick = function () {
-                       document.getElementById("profileSetting").src = pathName;
-                   }
-                   row.appendChild(cell);
-                   counter++;
-            }
-            table.appendChild(row);
-        }
-    }
-
-    function changeProfilePhoto(){
-        let photos = document.getElementsByClassName("photo");
-        photos[0].src = photos[1].src;
-    }
-    function loadEditWindow(){
-
-        loadProfileTable(5,5,"../images/icons")
-    }
-    function init() {
-        loadTemplate('../templates/header.html', 'header')
-        loadTemplate('../templates/chatPanel.html', 'bodyFrame')
-        loadTemplate('../templates/userPhoto.html', 'userProfile',synchronizePhoto)
-        loadTemplate('../templates/toolbar.html', 'toolBar')
-        loadTemplate('../templates/sendWindow.html', 'sendWindow')
-        loadTemplate('../templates/voiceMailRequest.html', 'voiceMailRequest')
-        loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
-        loadTemplate('../templates/requestWindow.html', 'requestWindow')
-        loadTemplate('../templates/settingsPanel.html', 'settingWindow')
-        loadTemplate('../templates/footer.html', 'footer')
-        loadTemplate('../templates/messageAudio.html', 'message')
-        loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
-        loadTemplate('../templates/chatWindow.html', 'chatWindow')
-        loadChats(myUser);
-        loadRequests(myUser);
-    }
-
-</script>
+<script src="../javascript/chatWindow.js"></script>
+<script src="../javascript/mainPage.js"></script>
 <script src="../javascript/messageAudio.js"></script>
 </body>
 </html>
