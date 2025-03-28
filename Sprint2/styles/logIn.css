@@ -9,7 +9,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25rem;
-    width: 80%;
+    width: 60%;
     height: auto;
     border: whitesmoke solid 2px;
     border-radius: 10px;
@@ -95,4 +95,32 @@ label {
     font-size: 0.8em;
     display: block;
     margin-top: 5px;
+}
+
+@media screen and (max-width: 478px) {
+    #LogIn-Text {
+        font-size: 2.3em;
+    }
+    #login-container {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        margin-top: 2em;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 4.5em auto;
+    }
+    #logIn-Form {
+        font-size: 1.2em;
+    }
+    input {
+        padding: 0.8em;
+    }
+    #logIn-Button-Field {
+        width: 100%;
+        height: 2.8em;
+    }
+    #forgot-Password-Text {
+        font-size: 0.8em;
+    }
 }
