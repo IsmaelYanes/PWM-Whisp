@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update mockups.zip file">
+    <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="responsive phone">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint2/pages/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint2/styles/sp2General.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/sp2General.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sprint2/styles/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/toolbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,14 +140,6 @@
       <workItem from="1740797895738" duration="652000" />
       <workItem from="1740827040142" duration="5486000" />
       <workItem from="1742840514964" duration="1805000" />
-    </task>
-    <task id="LOCAL-00003" summary="Upload changes">
-      <option name="closed" value="true" />
-      <created>1740001965917</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1740001965917</updated>
     </task>
     <task id="LOCAL-00004" summary="Add MockHomeHeader template">
       <option name="closed" value="true" />
@@ -535,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740794717686</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="responsive phone">
+      <option name="closed" value="true" />
+      <created>1743168349539</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1743168349539</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +563,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update HomeHeader.html file" />
     <MESSAGE value="Update HomeHeader.css file" />
     <MESSAGE value="Update Header.html file" />
     <MESSAGE value="Update index.html file" />
@@ -590,6 +587,7 @@
     <MESSAGE value="Upload userFrameRequestPage.html file" />
     <MESSAGE value="Upload voiceMail.html and message.css files" />
     <MESSAGE value="Update mockups.zip file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update mockups.zip file" />
+    <MESSAGE value="responsive phone" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive phone" />
   </component>
 </project>

@@ -39,7 +39,7 @@
     width: 90%;
     border-radius: 50%;
     border: 5px solid #ccc;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .chat-panel {
@@ -76,8 +76,8 @@
 
     #bodyFrame-container {
         width: 100%; /* Take up full width */
-        height: auto; /* Adjust height based on content */
-        flex-direction: column; /* Stack toolbar, bodyFrame, and contentWindow vertically */
+        height: calc(100vh - 60px); /* Match the height from main.css */
+        flex-direction: column; /* Stack toolbar first */
         box-shadow: none; /* Remove shadow for mobile */
         border-radius: 0; /* Remove border radius for mobile */
         background-color: transparent; /* Remove background for mobile */
@@ -86,15 +86,17 @@
     .chat-panel {
         width: 90%; /* Match the width from main.css */
         height: auto; /* Adjust height based on content */
-        max-height: 100%; /* Ensure it doesn’t overflow */
+        max-height: 80vh; /* Match the max-height from main.css */
         border-right: none; /* Remove border for mobile */
         border-radius: 10px; /* Match the border radius from main.css */
+        overflow-y: hidden; /* Remove scrollbar */
     }
 
     .contentWindow {
         width: 90%; /* Match the width from main.css */
         height: auto; /* Adjust height based on content */
-        max-height: 100%; /* Ensure it doesn’t overflow */
+        max-height: 60vh; /* Match the max-height from main.css */
         border-radius: 10px; /* Match the border radius from main.css */
+        overflow-y: hidden; /* Remove scrollbar */
     }
 }
