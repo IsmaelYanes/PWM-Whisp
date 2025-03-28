@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c2a82b2-4008-4ca1-9b3c-01ae83c45c40" name="Changes" comment="Update mockups.zip file">
-      <change afterPath="$PROJECT_DIR$/Sprint2/pages/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/pages/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/pages/mainPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/bodyFrameWithMessage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/sp2General.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/sp2General.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2/styles/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint2/styles/toolbar.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
     "JavaScript Debug.mockHomePage.html.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Ismael",
     "last_opened_file_path": "C:/Users/evaay/IdeaProjects/PWM-Whisp/images",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

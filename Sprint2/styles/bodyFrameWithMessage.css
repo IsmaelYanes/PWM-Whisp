@@ -1,14 +1,45 @@
 .bodyFrameWithMessage-container {
-    height: 10em;
+    height: 100%; /* Take up full height of the parent */
+    width: 100%; /* Take up full width of the parent */
 }
 
 .wrapper {
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%; /* Take up full height */
     background-color: #f0f0f0;
 }
 
 .bodyFrame-container {
     margin-top: 1em;
+    height: 100%; /* Take up full height */
+    width: 100%; /* Take up full width */
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .bodyFrameWithMessage-container {
+        height: 100%; /* Take up full height */
+        width: 100%; /* Take up full width of the center-panel */
+    }
+
+    .wrapper {
+        height: 100%; /* Take up full height */
+        background-color: transparent; /* Remove background for mobile */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: flex-start; /* Align content to the top */
+    }
+
+    .bodyFrame-container {
+        margin-top: 0; /* Remove margin for mobile */
+        height: auto; /* Adjust height based on content */
+        width: 100%; /* Take up full width */
+    }
+
+    .container {
+        height: auto; /* Adjust height based on content */
+        width: 100%; /* Take up full width */
+    }
 }

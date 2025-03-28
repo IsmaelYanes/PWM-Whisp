@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/messageRequest.css">
     <link rel="stylesheet" href="main.css">
-
-
 </head>
 <body id="custom-background">
 <div id="header"></div>
@@ -25,14 +23,13 @@
     <div id="bodyFrame-container">
         <div id="toolBar"></div>
         <div id="bodyFrame" class="chat-panel"></div>
-        <div id="sendWindow" class="contentWindow" ></div>
+        <div id="sendWindow" class="contentWindow"></div>
         <div id="editWindow" class="contentWindow" style="display: none"></div>
         <div id="requestWindow" class="contentWindow" style="display: none"></div>
         <div id="settingWindow" class="contentWindow" style="display: none"></div>
         <div id="message" class="contentWindow" style="display: none"></div>
     </div>
 </div>
-<div id="footer"></div>
 <script src="../javascript/chatPanel.js"></script>
 <script src="../javascript/requestWindow.js"></script>
 <script src="../javascript/messageAudio.js"></script>
@@ -51,9 +48,7 @@
         })
     }
 
-
     function switchWindow(id) {
-
         let contentWindows = document.getElementsByClassName("contentWindow");
         for (let i = 0; i < contentWindows.length; i++) {
             if (i === id) {
@@ -75,17 +70,17 @@
         for (let i = 0; i < rows; i++) {
             const row = document.createElement('tr');
             for (let j = 0; j < col; j++) {
-                   const cell = document.createElement('td');
-                   const img = document.createElement('img');
-                   let pathName = `${path}/${counter}.jpg`;
-                   img.src = pathName;
-                   img.classList.add('profile-image');
-                   cell.appendChild(img);
-                   cell.onclick = function () {
-                       document.getElementById("profileSetting").src = pathName;
-                   }
-                   row.appendChild(cell);
-                   counter++;
+                const cell = document.createElement('td');
+                const img = document.createElement('img');
+                let pathName = `${path}/${counter}.jpg`;
+                img.src = pathName;
+                img.classList.add('profile-image');
+                cell.appendChild(img);
+                cell.onclick = function () {
+                    document.getElementById("profileSetting").src = pathName;
+                }
+                row.appendChild(cell);
+                counter++;
             }
             table.appendChild(row);
         }
@@ -95,10 +90,12 @@
         let photos = document.getElementsByClassName("photo");
         photos[0].src = photos[1].src;
     }
+
     function loadEditWindow(){
         synchronizePhoto();
         loadProfileTable(5,5,"../images/icons")
     }
+
     function init() {
         loadTemplate('../templates/header.html', 'header')
         loadTemplate('../templates/chatPanel.html', 'bodyFrame')
@@ -109,13 +106,11 @@
         loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
         loadTemplate('../templates/requestWindow.html', 'requestWindow')
         loadTemplate('../templates/settingsPanel.html', 'settingWindow')
-        loadTemplate('../templates/footer.html', 'footer')
         loadTemplate('../templates/messageAudio.html', 'message')
         loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
         loadChats(myUser);
         loadRequests(myUser);
     }
-
 </script>
 </body>
 </html>

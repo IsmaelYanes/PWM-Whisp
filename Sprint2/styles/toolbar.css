@@ -1,4 +1,3 @@
-
 .toolbar {
     height: 70vh;
     width: 55px;
@@ -8,6 +7,7 @@
     align-items: center;
     padding-top: 10px;
 }
+
 .toolbar button {
     background: none;
     border: none;
@@ -16,10 +16,33 @@
     margin: 15px 0;
     cursor: pointer;
 }
+
 .toolbar button img {
     width: 80%;
     border-radius: 50%;
 }
+
 .toolbar button:hover {
     background-color: #457697;
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .toolbar {
+        height: 60px; /* Adjust height for horizontal layout */
+        width: 100%; /* Take up full width */
+        flex-direction: row; /* Make toolbar horizontal */
+        justify-content: space-around; /* Space buttons evenly */
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    .toolbar button {
+        margin: 0; /* Remove margin for horizontal layout */
+        padding: 10px; /* Add padding for better touch area */
+    }
+
+    .toolbar button img {
+        width: 40px; /* Adjust image size for mobile */
+        height: 40px; /* Ensure image is square */
+    }
 }

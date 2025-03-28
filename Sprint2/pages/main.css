@@ -1,44 +1,142 @@
-/* Media query para móviles */
-@media screen and (max-width: 768px) {
+/* Estilos generales */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
 
-    /* Ocultar la segunda columna */
+/* Panel izquierdo (toolbar) */
+.left-panel {
+    width: 15%;
+    min-width: 80px;
+    background-color: #7b92ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Panel central (chat y perfil) */
+.center-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Panel derecho (mundo y audio) */
+.right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividad para tablets */
+@media screen and (max-width: 1024px) {
     .main-container {
-        flex-direction: column; /* Poner los elementos en una sola columna */
+        flex-direction: column;
     }
 
     .left-panel {
-        display: none; /* Ocultar la segunda columna en móviles */
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
-    /* Ajustar la parte derecha (mundo y botón de audio) */
-    .right-panel {
+    .center-panel, .right-panel {
         width: 100%;
+    }
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: 100vh; /* Ensure the container takes the full viewport height */
+    }
+
+    /* Toolbar como parte del contenido del body */
+    .left-panel {
+        width: 100%;
+        height: 60px; /* Match toolbar height */
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7b92ac;
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    /* Ajustar el contenedor principal */
+    #body_container {
+        display: flex;
+        flex-direction: column; /* Stack toolbar, bodyFrame, and contentWindow vertically */
+        height: 100vh; /* Take up full viewport height */
+        width: 100%;
+    }
+
+    /* Ajustar el contenedor de bodyFrame y contentWindow */
+    #bodyFrame-container {
+        flex-direction: column; /* Stack toolbar, bodyFrame, and contentWindow vertically */
+        width: 100%; /* Take up full width */
+        height: auto; /* Adjust height based on content */
+        border-radius: 0; /* Remove border radius for mobile */
+        box-shadow: none; /* Remove shadow for mobile */
+    }
+
+    /* Asegurar que los elementos después del toolbar estén en horizontal */
+    #bodyFrame-container > div:not(#toolBar) {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto; /* Adjust height based on content */
+    }
+
+    /* Segunda columna (bodyFrame) debajo del toolbar a la izquierda */
+    .center-panel {
+        width: 50%; /* Take up half the screen width */
+        height: auto; /* Adjust height based on content */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: flex-start; /* Align content to the top */
+        overflow-y: auto; /* Allow scrolling if content overflows */
+        padding-top: 10px; /* Add some padding to avoid content touching the toolbar */
+    }
+
+    /* Ajustar el chat-panel (bodyFrame) */
+    .chat-panel {
+        width: 90%; /* Slightly less than full width for centering */
+        height: auto; /* Adjust height based on content */
+        max-height: 100%; /* Ensure it doesn’t overflow */
+        border-right: none; /* Remove border for mobile */
+        border-radius: 10px; /* Keep a slight border radius for aesthetics */
+        background-color: #f8f9fa; /* Match the original background */
+    }
+
+    /* Tercera columna (ventana activa) debajo del toolbar a la derecha */
+    .right-panel {
+        width: 50%; /* Take up half the screen width */
+        height: auto; /* Adjust height based on content */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: flex-start; /* Align content to the top */
+        overflow-y: auto; /* Allow scrolling if content overflows */
+        padding-top: 10px; /* Add some padding to avoid content touching the toolbar */
+    }
+
+    /* Ajustar las ventanas de contenido (sendWindow, editWindow, etc.) */
+    .contentWindow {
+        width: 90%; /* Slightly less than full width for centering */
+        height: auto; /* Adjust height based on content */
+        max-height: 100%; /* Ensure it doesn’t overflow */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-
-    /* Hacer el toolbar horizontal */
-    .toolbar {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 10px;
-    }
-
-    .toolbar button {
-        margin: 0 10px; /* Espaciado entre botones */
-    }
-
-    /* Ajustar el footer */
-    .footer {
-        width: 100%;
-        text-align: center;
-        padding: 10px;
-        background-color: #7b92ac;
-        color: white;
+        border-radius: 10px; /* Keep a slight border radius for aesthetics */
+        background-color: #e5ddd5;
     }
 }
