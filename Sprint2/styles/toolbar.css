@@ -26,23 +26,31 @@
     background-color: #457697;
 }
 
+#audioStories {
+    display: none;
+}
+
 /* Responsividad para móviles */
 @media screen and (max-width: 768px) {
     .toolbar {
         height: 60px; /* Adjust height for horizontal layout */
         width: 100%; /* Take up full width */
         flex-direction: row; /* Make toolbar horizontal */
-        justify-content: space-around; /* Space buttons evenly */
+        justify-content: space-evenly; /* Space buttons evenly */
         padding: 0; /* Remove padding for mobile */
     }
 
     .toolbar button {
         margin: 0; /* Remove margin for horizontal layout */
-        padding: 10px; /* Add padding for better touch area */
+        padding: 5px; /* Add padding for better touch area */
     }
 
     .toolbar button img {
         width: 40px; /* Adjust image size for mobile */
         height: 40px; /* Ensure image is square */
+    }
+
+    #audioStories {
+        display: block;
     }
 }
