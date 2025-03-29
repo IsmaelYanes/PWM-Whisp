@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
     <link rel="stylesheet" href="../styles/createAccount.css">
+
+    <style>
+        body, html {
+            background-color: #b1bfce;
+            height: 100%;
+            width: 100%;
+        }
+        .custom-background {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        #createAccount {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../images/background.webp');
+        }
+
+        @media screen and (max-width: 530px) {
+            .custom-background {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
+        }
+    </style>
+
 </head>
 <body class="custom-background">
     <header id="header-base"></header>
