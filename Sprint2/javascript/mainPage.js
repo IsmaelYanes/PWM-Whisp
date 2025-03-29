@@ -1,4 +1,5 @@
 const myUser = new URLSearchParams(window.location.search).get("userID");
+console.log(myUser)
 document.addEventListener('DOMContentLoaded', init);
 
 function loadTemplate(fileName, id, callback) {

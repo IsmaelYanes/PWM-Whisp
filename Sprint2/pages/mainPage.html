@@ -30,87 +30,13 @@
         <div id="message" class="contentWindow" style="display: none"></div>
     </div>
 </div>
+<div id="footer"></div>
+<script src="../javascript/userContent.js"></script>
 <script src="../javascript/chatPanel.js"></script>
 <script src="../javascript/requestWindow.js"></script>
+<script src="../javascript/chatWindow.js"></script>
+<script src="../javascript/mainPage.js"></script>
 <script src="../javascript/messageAudio.js"></script>
-<script>
-    const myUser = 0;
-    document.addEventListener('DOMContentLoaded', init);
 
-    function loadTemplate(fileName, id, callback) {
-        fetch(fileName).then((res) => {
-            return res.text();
-        }).then((text) => {
-            document.getElementById(id).innerHTML = text;
-            if(callback){
-                callback();
-            }
-        })
-    }
-
-    function switchWindow(id) {
-        let contentWindows = document.getElementsByClassName("contentWindow");
-        for (let i = 0; i < contentWindows.length; i++) {
-            if (i === id) {
-                contentWindows[i].style.display = "flex";
-            } else {
-                contentWindows[i].style.display = "none";
-            }
-        }
-    }
-
-    function synchronizePhoto(){
-        let photos = document.getElementsByClassName("photo");
-        photos[1].src = photos[0].src;
-    }
-
-    function loadProfileTable(rows, col, path){
-        let counter = 0;
-        const table = document.getElementById('profileTable');
-        for (let i = 0; i < rows; i++) {
-            const row = document.createElement('tr');
-            for (let j = 0; j < col; j++) {
-                const cell = document.createElement('td');
-                const img = document.createElement('img');
-                let pathName = `${path}/${counter}.jpg`;
-                img.src = pathName;
-                img.classList.add('profile-image');
-                cell.appendChild(img);
-                cell.onclick = function () {
-                    document.getElementById("profileSetting").src = pathName;
-                }
-                row.appendChild(cell);
-                counter++;
-            }
-            table.appendChild(row);
-        }
-    }
-
-    function changeProfilePhoto(){
-        let photos = document.getElementsByClassName("photo");
-        photos[0].src = photos[1].src;
-    }
-
-    function loadEditWindow(){
-        synchronizePhoto();
-        loadProfileTable(5,5,"../images/icons")
-    }
-
-    function init() {
-        loadTemplate('../templates/header.html', 'header')
-        loadTemplate('../templates/chatPanel.html', 'bodyFrame')
-        loadTemplate('../templates/userPhoto.html', 'userProfile')
-        loadTemplate('../templates/toolbar.html', 'toolBar')
-        loadTemplate('../templates/sendWindow.html', 'sendWindow')
-        loadTemplate('../templates/voiceMailRequest.html', 'voiceMailRequest')
-        loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
-        loadTemplate('../templates/requestWindow.html', 'requestWindow')
-        loadTemplate('../templates/settingsPanel.html', 'settingWindow')
-        loadTemplate('../templates/messageAudio.html', 'message')
-        loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
-        loadChats(myUser);
-        loadRequests(myUser);
-    }
-</script>
 </body>
 </html>
