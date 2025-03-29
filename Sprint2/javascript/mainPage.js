@@ -61,15 +61,16 @@ function init() {
     loadTemplate('../templates/chatPanel.html', 'bodyFrame', loadChats)
     loadTemplate('../templates/userPhoto.html', 'userProfile',loadProfilePhoto)
     loadTemplate('../templates/toolbar.html', 'toolBar')
+    loadTemplate('../templates/chatWindow.html', 'chatWindow')
     loadTemplate('../templates/sendWindow.html', 'sendWindow')
     loadTemplate('../templates/voiceMailRequest.html', 'voiceMailRequest')
     loadTemplate('../templates/editWindow.html', 'editWindow', loadEditWindow)
     loadTemplate('../templates/requestWindow.html', 'requestWindow', loadRequests)
     loadTemplate('../templates/setting.html', 'settingWindow', changeTheme)
     loadTemplate('../templates/footer.html', 'footer')
-    loadTemplate('../templates/messageAudio.html', 'message')
+    loadTemplate('../templates/chatPageForMobile.html', 'message',loadChatsForMobile)
     loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
-    loadTemplate('../templates/chatWindow.html', 'chatWindow')
+
 
 }
 function changeTheme() {
