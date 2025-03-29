@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
 }
+
 #custom-background {
     width: 100vw;
     height: 100vh;
@@ -23,6 +24,7 @@
     border-radius: 10px;
     overflow: hidden;
 }
+
 #profile-frame {
     width: 60%;
     height: auto;
@@ -37,21 +39,23 @@
     width: 90%;
     border-radius: 50%;
     border: 5px solid #ccc;
-    object-fit: cover;
-
+    object-fit: contain;
 }
+
 .chat-panel {
-     width: 30%;
-     background-color: #f8f9fa;
-     border-right: 1px solid #ddd;
-     display: flex;
-     flex-direction: column;
-     border-radius: 10px;
- }
+    width: 30%;
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
 #gap {
     width: 1%;
 }
-.contentWindow{
+
+.contentWindow {
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -60,4 +64,39 @@
     background-color: #e5ddd5;
     position: relative;
     text-align: center;
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    #body_container {
+        margin-top: 0; /* No need for margin since toolbar is not fixed */
+        height: 100vh; /* Take up full viewport height */
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    #bodyFrame-container {
+        width: 100%; /* Take up full width */
+        height: calc(100vh - 60px); /* Match the height from mainPage.css */
+        flex-direction: column; /* Stack toolbar first */
+        box-shadow: none; /* Remove shadow for mobile */
+        border-radius: 0; /* Remove border radius for mobile */
+        background-color: transparent; /* Remove background for mobile */
+    }
+
+    .chat-panel {
+        width: 90%; /* Match the width from mainPage.css */
+        height: auto; /* Adjust height based on content */
+        max-height: 80vh; /* Match the max-height from mainPage.css */
+        border-right: none; /* Remove border for mobile */
+        border-radius: 10px; /* Match the border radius from mainPage.css */
+        overflow-y: hidden; /* Remove scrollbar */
+    }
+
+    .contentWindow {
+        width: 90%; /* Match the width from mainPage.css */
+        height: auto; /* Adjust height based on content */
+        max-height: 60vh; /* Match the max-height from mainPage.css */
+        border-radius: 10px; /* Match the border radius from mainPage.css */
+        overflow-y: hidden; /* Remove scrollbar */
+    }
 }
