@@ -6,7 +6,7 @@
       "password": "91ea42397ebdae4b6e11d8d2212a19059621227c6cd2dfb999428d809c706a8a",
       "email": "example@gmail.com",
       "birthday": "01/01/2025",
-      "profilePhoto": "../images/icons/1.jpg",
+      "profilePhoto": "../images/icons/13.jpg",
       "contact": [
         1,
         2,
@@ -202,12 +202,11 @@
     {
       "id": "13",
       "userName": "yo",
-      "password": "Eva12345.",
+      "password": "e6a3695605e026e393863716075a662c6487aadc94e4929c55a7b9ea4f3e60ef",
       "email": "eva@gmail.com",
       "birthday": "2001-01-01",
       "profilePhoto": "../images/icons/13.jpg",
       "contact": [
-        null,
         7,
         1,
         2,
@@ -216,7 +215,6 @@
         5
       ],
       "request": [
-        9,
         10,
         11,
         12
@@ -298,6 +296,17 @@
       "password": "24b2eaa471ad58059dd9495896de229554f7750cc28cece11f8c5c377df6f2ed",
       "email": "juanita@gmail.com",
       "birthday": "0012-12-12",
+      "profilePhoto": "../images/icons/10.jpg",
+      "contact": [],
+      "request": [],
+      "chat": []
+    },
+    {
+      "id": "17",
+      "userName": "juanito",
+      "password": "e6a3695605e026e393863716075a662c6487aadc94e4929c55a7b9ea4f3e60ef",
+      "email": "juanito@gmail.com",
+      "birthday": "2001-02-01",
       "profilePhoto": "../images/icons/10.jpg",
       "contact": [],
       "request": [],
