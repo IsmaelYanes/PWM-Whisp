@@ -1,0 +1,146 @@
+/* Estilos generales */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+/* Panel izquierdo (toolbar) */
+.left-panel {
+    width: 15%;
+    min-width: 80px;
+    background-color: #7b92ac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Panel central (chat y perfil) */
+.center-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Panel derecho (mundo y audio) */
+.right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsividad para tablets */
+@media screen and (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .center-panel, .right-panel {
+        width: 100%;
+    }
+}
+
+/* Responsividad para móviles */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        height: 100vh; /* Ensure the container takes the full viewport height */
+    }
+
+    /* Toolbar como parte del contenido del body */
+    .left-panel {
+        width: 100%;
+        height: 60px; /* Match toolbar height */
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #7b92ac;
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    /* Ajustar el contenedor principal */
+    #body_container {
+        display: flex;
+        flex-direction: column; /* Stack toolbar, then bodyFrame and contentWindow */
+        height: 100%; /* Take up full viewport height */
+        width: 100%;
+    }
+
+    /* Ajustar el contenedor de bodyFrame y contentWindow */
+    #bodyFrame-container {
+        display: flex;
+        flex-direction: column; /* Asegura que se apilen en vertical */
+        width: 100%;
+        height: 100%; /* Ocupar toda la pantalla disponible */
+        overflow: hidden; /* Evita desbordamientos */
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Crear un contenedor para bodyFrame y contentWindow en horizontal */
+    #bodyFrame-container > div:not(#toolBar) {
+        display: none;
+    }
+
+
+    /* Ajustar el chat-panel (bodyFrame) */
+    .chat-panel {
+        width: 90%; /* Slightly less than full width for centering */
+        height: auto; /* Adjust height based on content */
+        max-height: 80vh; /* Limit height to fit within the viewport */
+        border-right: none; /* Remove border for mobile */
+        border-radius: 10px; /* Keep a slight border radius for aesthetics */
+        background-color: #f8f9fa; /* Match the original background */
+        overflow-y: hidden; /* Remove scrollbar */
+    }
+
+    /* Tercera columna (ventana activa) a la derecha */
+    .right-panel {
+        width: 50%; /* Take up half the screen width */
+        height: 100%; /* Take up full available height */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content horizontally */
+        justify-content: flex-start; /* Align content to the top */
+        overflow-y: hidden; /* Remove scrollbar */
+        padding-top: 10px; /* Add some padding to avoid content touching the toolbar */
+    }
+
+    /* Ajustar las ventanas de contenido (sendWindow, editWindow, etc.) */
+    .contentWindow {
+        width: 100%; /* Slightly less than full width for centering */
+        height: 100vh; /* Adjust height based on content */
+        max-height: 60vh; /* Further reduce height to fit mobile screen without scrollbar */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center content vertically */
+        border-radius: 10px; /* Keep a slight border radius for aesthetics */
+        background-color: #e5ddd5;
+        padding: 10px; /* Add padding for better spacing */
+        overflow-y: hidden; /* Remove scrollbar */
+    }
+
+    /* Ajustar el tamaño del contenido dentro de contentWindow (como la imagen del planeta) */
+    .contentWindow img {
+        max-width: 100%; /* Ensure the image doesn’t overflow */
+        max-height: 30vh; /* Further reduce the height to fit mobile screen without scrollbar */
+        object-fit: contain; /* Maintain aspect ratio */
+    }
+
+    /* Ajustar el tamaño de otros elementos dentro de contentWindow (como el botón de micrófono) */
+    .contentWindow button {
+        max-width: 100%; /* Ensure buttons don’t overflow */
+        max-height: 10vh; /* Limit button height */
+    }
+}
