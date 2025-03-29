@@ -20,7 +20,7 @@ function loadComponent(url, containerId, callback = null) {
 async function submitNewUser(){
     const response = await fetch("http://localhost:3000/users");
     const users = await response.json();
-    let newID = users.length > 0 ? ((parseInt(users[users.length - 1].id).toString()) + 1) : "0";
+    let newID = users.length > 0 ? ((parseInt(users[users.length - 1].id) + 1).toString()) : "0";
     let password = document.getElementById("password").value;
     let hashedPassword = await hashPassword(password);
 
@@ -150,7 +150,7 @@ async function validateCreateAccountForm(event) {
 
     if (isValid) {
         submitNewUser();
-        alert("Inicio de sesión exitoso.");
+        alert("Creación de cuenta exitosa.");
         document.getElementById("createAccount-Form").submit(); // Envía el formulario si todo está correcto
         window.location.href = "../pages/logInPage.html";
     }

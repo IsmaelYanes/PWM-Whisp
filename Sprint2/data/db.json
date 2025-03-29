@@ -35,7 +35,6 @@
           4,
           5,
           6
-
         ],
         "3": [
           7,
@@ -204,7 +203,7 @@
       "id": "13",
       "userName": "yo",
       "password": "Eva12345.",
-      "email": "evaayuaan@gmail.com",
+      "email": "eva@gmail.com",
       "birthday": "2001-01-01",
       "profilePhoto": "../images/icons/13.jpg",
       "contact": [
@@ -270,6 +269,17 @@
       "contact": [],
       "request": [],
       "chat": []
+    },
+    {
+      "id": "16",
+      "userName": "Juan",
+      "password": "e6a3695605e026e393863716075a662c6487aadc94e4929c55a7b9ea4f3e60ef",
+      "email": "juan@gmail.com",
+      "birthday": "2001-01-01",
+      "profilePhoto": "../images/icons/10.jpg",
+      "contact": [],
+      "request": [],
+      "chat": []
     }
   ],
   "chats": [
@@ -323,6 +333,5 @@
       "userId": "0",
       "timestamp": "18:25 24/03/2025"
     }
-
   ]
 }

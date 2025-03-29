@@ -122,7 +122,8 @@ async function correctPassword(userEmail, password) {
         const data = await response.json();
         if (data.length > 0) {
             const user = data[0];
-            if (user.password !== password) {
+            const encodedPassword = await hashPassword(password);
+            if (encodedPassword !== user.password) {
                 return false;
             }
         }
@@ -130,4 +131,15 @@ async function correctPassword(userEmail, password) {
     } catch {
         return false;
     }
+}
+
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+
+    const hash = await crypto.subtle.digest('SHA-256', data);
+
+    return Array.from(new Uint8Array(hash))
+        .map(byte => byte.toString(16).padStart(2, '0'))
+        .join('');
 }
