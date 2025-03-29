@@ -36,6 +36,14 @@ button {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 480px) {
+    button {
+        font-size: 0.8em;
+    }
+    #optionButtons {
+        width: 12em;
+    }
+}
 .button:hover {
     background-color: #12214c;
 }
