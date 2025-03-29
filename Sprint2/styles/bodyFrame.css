@@ -43,7 +43,7 @@
 }
 
 /* Responsividad para móviles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 478px) {
     .bodyFrameWithMessage-container {
         height: 100%; /* Take up full height */
         width: 100%; /* Take up full width of the center-panel */
