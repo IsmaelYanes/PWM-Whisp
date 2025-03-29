@@ -26,27 +26,21 @@
             background-image: url('../images/background.webp');
         }
 
-        #welcome-box {
-            width: 80%;
-        }
-
-        @media screen and (max-width: 478px) {
+        @media screen and (max-width: 500px) {
             .custom-background {
                 display: grid;
                 grid-template-rows: auto 1fr auto;
             }
+            #login {
+                height: 100%;
+                background-image: none;
+            }
         }
-
     </style>
 </head>
 <body class="custom-background">
 <div id="header-base"></div>
-<div style="display: flex">
-    <div id="welcome-box">
-        <h1>Bienvenido a Whisp</h1>
-    </div>
-    <div id="login"></div>
-</div>
+<div id="login"></div>
 <div id="footer-base"></div>
 
 <script src="../javascript/logIn.js"></script>
