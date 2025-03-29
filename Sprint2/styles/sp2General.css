@@ -58,7 +58,7 @@
 }
 
 /* Responsividad para móviles */
-@media screen and (max-width: 768px) {
+@media (max-width: 478px) {
     #body_container {
         margin-top: 0; /* No need for margin since toolbar is not fixed */
         flex-direction: column; /* Stack content vertically */
