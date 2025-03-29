@@ -117,9 +117,8 @@
 
     /* Ajustar las ventanas de contenido (sendWindow, editWindow, etc.) */
     .contentWindow {
-        width: 100%; /* Slightly less than full width for centering */
-        height: 100vh; /* Adjust height based on content */
-        max-height: 60vh; /* Further reduce height to fit mobile screen without scrollbar */
+        width: 100vw; /* Slightly less than full width for centering */
+        height: 77vh; /* Adjust height based on content */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -128,6 +127,13 @@
         background-color: #e5ddd5;
         padding: 10px; /* Add padding for better spacing */
         overflow-y: hidden; /* Remove scrollbar */
+    }
+    #requestWindowContainer{
+        width: 100%;
+        height: 100%;
+}
+    .button-box{
+        width: 10em;
     }
 
     /* Ajustar el tamaño del contenido dentro de contentWindow (como la imagen del planeta) */
@@ -141,5 +147,8 @@
     .contentWindow button {
         max-width: 100%; /* Ensure buttons don’t overflow */
         max-height: 10vh; /* Limit button height */
+    }
+    .centerButton{
+        margin: 0 1em 0 1em;
     }
 }

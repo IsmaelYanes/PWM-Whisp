@@ -76,7 +76,7 @@
 
     /* Hide the conversation-container on mobile */
     .conversation-container {
-        display: none; /* Remove the purple div on mobile */
+        display: block; /* Remove the purple div on mobile */
     }
 
     /* Ensure the userProfile takes up the available space */
