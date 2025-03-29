@@ -9,14 +9,21 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 1.25em;
-    width: 45%;
-    min-width: 22em;
+    width: 60%;
     border: whitesmoke solid 2px;
     border-radius: 10px;
     background: whitesmoke;
-    box-shadow: 0 0 10px 8px #A8A8A8;
+    box-shadow: 0 5px 10px rgba(0.5, 0.4, 0, 0.3);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 8vh auto;
+}
+
+#welcome-text {
+    color: #1d407d;
+    font-size: 2em;
+}
+
+#welcome-text2 {
+    display: none
 }
 
 .createAccount-maintext {
@@ -26,8 +33,8 @@
 
 #createAccount-Text {
     color: #323234;
-    padding: 0.2em 0 0.05em 0;
-    font-size: 2em;
+    padding: 1em 0 0.05em 0.2em;
+    font-size: 1.4em;
 }
 
 #createAccount-Form {
@@ -94,3 +101,57 @@ label {
 }
 
 
+@media screen and (max-width: 500px) {
+    #createAccount-Text {
+        font-size: 2.3em;
+    }
+    #createAccount-Container {
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        margin-top: 0;
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 3.5em auto;
+        border-radius: 0;
+    }
+    #createAccount-Form {
+        font-size: 1.2em;
+    }
+
+    #birthdate, #confirm-password, #password {
+        padding-left: 0.4em;
+        padding-right: 0.9em;
+    }
+
+    input {
+        padding: 0.5em;
+    }
+
+    #createAccountButton {
+        width: 100%;
+        height: 2.2em;
+    }
+
+    #welcome-text, createAccount-Text {
+        display: none;
+    }
+    #welcome-text2 {
+        display: block;
+        color: #323234;
+        padding: 0.5em 0 0.05em 0.5em;
+        font-size: 2em;
+    }
+    #createAccount-Text {
+        display: none;
+    }
+
+    #createAccount-Form {
+        width: 100%;
+        padding-left: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+    }
+}
