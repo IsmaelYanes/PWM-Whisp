@@ -16,6 +16,30 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/messageRequest.css">
     <link rel="stylesheet" href="../styles/mainPage.css">
+
+    <style>
+        body, html {
+            background-color: #b1bfce;
+            height: 100vh;
+            width: 100vw;
+        }
+        #custom-background {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        #body_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @media screen and (max-width: 478px) {
+            #footer {
+                display: none;
+            }
+        }
+
+    </style>
 </head>
 <body id="custom-background">
 <div id="header"></div>
