@@ -21,6 +21,9 @@ async function submitNewUser(){
     const response = await fetch("http://localhost:3000/users");
     const users = await response.json();
     let newID = users.length > 0 ? ((parseInt(users[users.length - 1].id).toString()) + 1) : "0";
+    let password = document.getElementById("password").value;
+    let hashedPassword = await hashPassword(password);
+
 
     fetch("http://localhost:3000/users", {
         method: "POST",
@@ -28,7 +31,7 @@ async function submitNewUser(){
         body: JSON.stringify({
             id: newID,
             userName: document.getElementById("user-name").value,
-            password: document.getElementById("password").value,
+            password: hashedPassword,
             email: document.getElementById("email").value,
             birthday: document.getElementById("birthdate").value,
             profilePhoto: "../images/icons/10.jpg",
@@ -191,4 +194,15 @@ async function existUserName(userName) {
     } catch {
         return false;
     }
+}
+
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+
+    const hash = await crypto.subtle.digest('SHA-256', data);
+
+    return Array.from(new Uint8Array(hash))
+        .map(byte => byte.toString(16).padStart(2, '0'))
+        .join('');
 }

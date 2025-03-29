@@ -1,25 +1,17 @@
-<link rel="stylesheet" href="../styles/messageAudio.css">
-<meta charset="UTF-8">
-
 <div class="requestMessageBox" >
     <div class="invitationChat">
         <div class="player-container">
-            <img src="../images/icons/1.jpg" class="profilePic">
-
-            <audio class="player">
+            <img src="../images/avatar2.jpg" class="profilePic">
+            <audio id="player">
                 <source src="../images/audio.mp3" type="audio/mpeg">
             </audio>
-
-            <button class="playPauseButton" onclick="togglePlay()">
-                <img class="playPauseIcon" src="../images/audioPlay.png" alt="Play">
+            <button id="playPauseButton" onclick="togglePlay()">
+                <img  src="../images/audioPlay.png" class="playPauseIcon audio-button">
             </button>
-
-
-            <input type="range" class="progress" value="0" max="100">
-
-            <span class="currentTime time">0:00</span>
+            <input type="range" id="progress" value="0" max="100">
+            <span id="currentTime" class="time">0:00</span>
             <span class="time">/</span>
-            <span class="durationTime time">0:00</span>
+            <span id="durationTime" class="time">0:00</span>
         </div>
     </div>
 
@@ -32,6 +24,3 @@
         </button>
     </div>
 </div>
-
-<script src="../javascript/messageAudio.js"></script>
-
