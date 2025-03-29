@@ -12,11 +12,14 @@
         2,
         3,
         4,
-        5
+        5,
+        13,
+        14,
+        15
       ],
       "request": [
         7,
-        9,
+        8,
         10,
         11,
         12
@@ -25,21 +28,17 @@
         "1": [
           0,
           1,
-          2,
-          3
+          2
         ],
         "2": [
           4,
           5,
-          6,
-          7,
-          8
+          6
         ],
         "3": [
+          7,
           8,
-          9,
-          10,
-          11
+          9
         ]
       }
     },
@@ -270,11 +269,69 @@
       "contact": [],
       "request": [],
       "chat": []
+    },
+    {
+      "id": "151",
+      "userName": "pepejuan",
+      "password": "510856c4b698a39d70514d3681be5d40fa6e4e12a913e26e15ad7e573af35ef8",
+      "email": "example2@gmail.com",
+      "birthday": "2013-02-28",
+      "profilePhoto": "../images/icons/10.jpg",
+      "contact": [],
+      "request": [],
+      "chat": []
     }
   ],
-  "chats": {
-    "id": "1",
-    "userId": "1",
-    "timestamp": "18:25 24/03/2025"
-  }
+  "chats": [
+    {
+      "id": "0",
+      "userId": "1",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "1",
+      "userId": "1",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "2",
+      "userId": "0",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "4",
+      "userId": "2",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "5",
+      "userId": "2",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "6",
+      "userId": "0",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "7",
+      "userId": "3",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "7",
+      "userId": "3",
+      "timestamp": "18:25 24/03/2025"
+    },
+    {
+      "id": "8",
+      "userId": "0",
+      "timestamp": "18:25 24/03/2025"
+    }
+  ]
 }
