@@ -30,6 +30,7 @@ function loadRequests() {
         li.appendChild(div);
         container.appendChild(li);
         loadTemplate('../templates/voiceMailRequest.html', `requestVoiceMessage${i}`, ()=>{
+            initializeAudioPlayer(`#requestVoiceMessage${i}`);
             const acceptButton = document.getElementById(`requestVoiceMessage${i}`).querySelector('.acceptButton');
             const rejectButton = document.getElementById(`requestVoiceMessage${i}`).querySelector('.rejectButton');
             const profilePic = document.getElementById(`requestVoiceMessage${i}`).querySelector('.profilePic');
@@ -39,6 +40,7 @@ function loadRequests() {
         });
     }
 }
+
 
 function addContact(userID, newContactID) {
     return fetch(`http://localhost:3000/users/${userID}`)

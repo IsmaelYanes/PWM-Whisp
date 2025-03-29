@@ -1,5 +1,7 @@
 
-window.addEventListener("DOMContentLoaded", initializeAudioPlayer(".player-container"));
+window.addEventListener("DOMContentLoaded", () => {
+    initializeAudioPlayer(".player-container");
+});
 
 function initializeAudioPlayer(selector) {
     const audio = document.querySelector(`${selector} .player`);
