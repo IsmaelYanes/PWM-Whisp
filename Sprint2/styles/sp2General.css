@@ -87,3 +87,8 @@
         overflow-y: hidden; /* Remove scrollbar */
     }
 }
+@media screen and (max-width: 1025px) {
+    #bodyFrame-container {
+        width: 100vw;
+    }
+}

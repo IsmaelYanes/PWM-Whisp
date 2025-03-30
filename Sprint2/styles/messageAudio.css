@@ -52,7 +52,7 @@ input {
 }
 .myChatMessage{
     position: absolute;
-    right: 0;
+    right: 20px;
     direction: rtl;
 }
 @media screen and (max-width: 478px) {

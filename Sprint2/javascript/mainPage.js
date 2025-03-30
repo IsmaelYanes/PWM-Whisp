@@ -1,6 +1,15 @@
-const myUser = new URLSearchParams(window.location.search).get("userID");
-console.log(myUser)
-document.addEventListener('DOMContentLoaded', init);
+let myUser;
+
+function loadUserId(){
+    myUser = new URLSearchParams(window.location.search).get("userID");
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+    loadUserId();
+    loadUsersData(myUser).then(init);
+    loadChatsData();
+
+});
 
 function loadTemplate(fileName, id, callback) {
     fetch(fileName).then((res) => {
@@ -14,7 +23,6 @@ function loadTemplate(fileName, id, callback) {
 }
 
 function switchWindow(id) {
-
     let contentWindows = document.getElementsByClassName("contentWindow");
     for (let i = 0; i < contentWindows.length; i++) {
         if (i === id) {
@@ -70,18 +78,16 @@ function init() {
     loadTemplate('../templates/footer.html', 'footer')
     loadTemplate('../templates/chatPageForMobile.html', 'message',loadChatsForMobile)
     loadTemplate('../templates/messageAudio.html', 'requestVoiceMessage')
-
-
 }
+
 function changeTheme() {
     const themeSelect = document.getElementById("themeSelect");
     console.log("hhhh");
     themeSelect.addEventListener("change", function () {
         const selectedTheme = themeSelect.value;
+        const windows = document.querySelectorAll(".contentWindow");
+        const container = document.querySelectorAll(".player-container");
         if (selectedTheme === "dark") {
-            const windows = document.querySelectorAll(".contentWindow");
-            const container = document.querySelectorAll(".player-container");
-
             windows.forEach((el) => {
                 el.style.backgroundColor = "#27374D";
             });
@@ -91,6 +97,17 @@ function changeTheme() {
             document.querySelector(".toolbar").style.backgroundColor = "#526D82";
             document.querySelector(".chat-panel").style.backgroundColor = "#9DB2BF";
             document.querySelector(".chatPanel-container").style.backgroundColor = "#9DB2BF";
+        }
+        if (selectedTheme === "normal") {
+            windows.forEach((el) => {
+                el.style.backgroundColor = "#e5ddd5";
+            });
+            container.forEach((item) => {
+                item.style.backgroundColor = "#fff";
+            })
+            document.querySelector(".toolbar").style.backgroundColor = "#7b92ac";
+            document.querySelector(".chat-panel").style.backgroundColor = "#fff";
+            document.querySelector(".chatPanel-container").style.backgroundColor = "#fff";
         }
     });
 }

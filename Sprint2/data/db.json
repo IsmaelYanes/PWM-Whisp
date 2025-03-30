@@ -3,10 +3,10 @@
     {
       "id": "0",
       "userName": "example",
-      "password": "91ea42397ebdae4b6e11d8d2212a19059621227c6cd2dfb999428d809c706a8a",
+      "password": "510856c4b698a39d70514d3681be5d40fa6e4e12a913e26e15ad7e573af35ef8",
       "email": "example@gmail.com",
       "birthday": "01/01/2025",
-      "profilePhoto": "../images/icons/13.jpg",
+      "profilePhoto": "../images/icons/1.jpg",
       "contact": [
         1,
         2,
@@ -202,11 +202,12 @@
     {
       "id": "13",
       "userName": "yo",
-      "password": "e6a3695605e026e393863716075a662c6487aadc94e4929c55a7b9ea4f3e60ef",
+      "password": "Eva12345.",
       "email": "eva@gmail.com",
       "birthday": "2001-01-01",
       "profilePhoto": "../images/icons/13.jpg",
       "contact": [
+        null,
         7,
         1,
         2,
@@ -215,6 +216,7 @@
         5
       ],
       "request": [
+        9,
         10,
         11,
         12
@@ -302,11 +304,11 @@
       "chat": []
     },
     {
-      "id": "17",
-      "userName": "juanito",
-      "password": "e6a3695605e026e393863716075a662c6487aadc94e4929c55a7b9ea4f3e60ef",
-      "email": "juanito@gmail.com",
-      "birthday": "2001-02-01",
+      "id": "19",
+      "userName": "pepecito",
+      "password": "510856c4b698a39d70514d3681be5d40fa6e4e12a913e26e15ad7e573af35ef8",
+      "email": "pepecito@gmail.com",
+      "birthday": "2000-12-12",
       "profilePhoto": "../images/icons/10.jpg",
       "contact": [],
       "request": [],
