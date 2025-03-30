@@ -152,3 +152,38 @@
         margin: 0 1em 0 1em;
     }
 }
+body, html {
+    background-color: #b1bfce;
+    height: 100vh;
+    width: 100vw;
+}
+#custom-background {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+#body_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 478px) {
+    #footer {
+        display: none;
+    }
+}
+@media (min-width: 478px) and (max-width: 700px) {
+    .chat-panel .bar-time-messageAudio {
+        display: none;
+    }
+}
+@media (max-width: 330px) {
+    .contentWindow .bar-time-requestAudio {
+        display: none;
+    }
+}
+@media (min-width: 478px) and (max-width: 700px) {
+    .contentWindow .bar-time-requestAudio {
+        display: none;
+    }
+}
