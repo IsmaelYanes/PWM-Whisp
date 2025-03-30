@@ -6,8 +6,9 @@
       "password": "510856c4b698a39d70514d3681be5d40fa6e4e12a913e26e15ad7e573af35ef8",
       "email": "example@gmail.com",
       "birthday": "01/01/2025",
-      "profilePhoto": "../images/icons/1.jpg",
+      "profilePhoto": "../images/icons/7.jpg",
       "contact": [
+        6,
         1,
         2,
         3,
@@ -18,8 +19,6 @@
         15
       ],
       "request": [
-        6,
-        7,
         8,
         9,
         10,
@@ -251,7 +250,7 @@
     },
     {
       "id": "14",
-      "userName": "Ernestina",
+      "userName": "profe",
       "password": "Eva12345.",
       "email": "profe@gmail.com",
       "birthday": "2001-01-01",
@@ -311,6 +310,17 @@
       "email": "pepecito@gmail.com",
       "birthday": "2000-12-12",
       "profilePhoto": "../images/icons/10.jpg",
+      "contact": [],
+      "request": [],
+      "chat": []
+    },
+    {
+      "id": "20",
+      "userName": "Ernestina",
+      "password": "8651c61d8ee488c08ef1dbc2e14adbf7c15bd40fef5b2a4a7588b95325f74bf1",
+      "email": "ernestina@gmail.com",
+      "birthday": "2000-02-01",
+      "profilePhoto": "../images/icons/7.jpg",
       "contact": [],
       "request": [],
       "chat": []

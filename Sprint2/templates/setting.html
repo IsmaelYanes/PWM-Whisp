@@ -7,15 +7,18 @@
 
   <form id="passwordForm">
     <label for="currentPassword" class="setting-label">Contraseña Actual:</label>
-    <input type="password" id="currentPassword" name="currentPassword" class="setting-input" placeholder="Ingresa tu contraseña actual" required>
+    <input type="password" id="currentPassword" name="currentPassword" class="setting-input" placeholder="Ingresa tu contraseña actual"
+           pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$" required>
 
     <label for="newPassword" class="setting-label">Nueva Contraseña:</label>
-    <input type="password" id="newPassword" name="newPassword" class="setting-input" placeholder="Ingresa la nueva contraseña" required>
+    <input type="password" id="newPassword" name="newPassword" class="setting-input" placeholder="Ingresa la nueva contraseña"
+           pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$" required>
 
     <label for="confirmPassword" class="setting-label">Confirmar Nueva Contraseña:</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" class="setting-input" placeholder="Confirma la nueva contraseña" required>
+    <input type="password" id="confirmPassword" name="confirmPassword" class="setting-input" placeholder="Confirma la nueva contraseña"
+           pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$" required>
 
-    <button type="submit" id="setting-button" onclick="changePassword()">Cambiar Contraseña</button>
+    <button type="submit" id="setting-button">Cambiar Contraseña</button>
   </form>
 
   <label for="themeSelect" class="setting-theme-label">Seleccionar Tema:</label>
@@ -26,72 +29,3 @@
   </select>
 </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("setting-button").addEventListener("click", function () {
-      changePassword();
-    })
-  })
-
-  function changePassword() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get("userID");
-    const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/;
-
-    fetch("http://localhost:3000/users?userID=" + id, {
-      method: "GET",
-      headers: {'Content-Type': 'application/json'}
-    })
-      .then(response => response.json())
-      .then(data => {
-      if (data.length > 0) {
-        const user = data[0];
-        if (document.getElementById("currentPassword").value !== user.password) {
-          alert("La contraseña actual no coincide");
-        } else if (!passwordRegex.test(document.getElementById("newPassword").value)) {
-          alert("La nueva contraseña no coincide con el patrón \n La contraseña debe tener al menos 8 caracteres, \n incluir una letra mayúscula y una minúscula, \n un número y un carácter especial.");
-        } else if (document.getElementById("confirmPassword").value !== document.getElementById("newPassword").value) {
-          alert("La nueva contraseña y la de confirmación no coinciden");
-        } else {
-          change(id, document.getElementById("newPassword").value);
-          alert("Se ha cambiado la contraseña correctamente");
-          document.getElementById("setting-button").submit();
-        }
-      } else {
-        alert("Ha ocurrido un error al cambiar la contraseña");
-      }
-    })
-    .catch(error => console.error("Error", error));
-  }
-
-  function change(id, newPasswd) {
-    fetch("http://localhost:3000/users?userID=" + id, {
-      method: "PATCH",
-      headers: {'Content-Type': 'application/json'} ,
-      body: JSON.stringify({
-        password: hashPassword(newPasswd)
-      })
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.length > 0) {
-          alert("Se ha cambiado la contraseña correctamente");
-        } else {
-          alert("No se ha podido cambiar la contraseña");
-        }
-      })
-  }
-
-  async function hashPassword(password) {
-    const encoder = new TextEncoder();
-    const data = encoder.encode(password);
-
-    const hash = await crypto.subtle.digest('SHA-256', data);
-
-    return Array.from(new Uint8Array(hash))
-            .map(byte => byte.toString(16).padStart(2, '0'))
-            .join('');
-  }
-</script>
-
