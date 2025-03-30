@@ -8,6 +8,7 @@
       "birthday": "01/01/2025",
       "profilePhoto": "../images/icons/7.jpg",
       "contact": [
+        8,
         6,
         1,
         2,
@@ -19,8 +20,6 @@
         15
       ],
       "request": [
-        8,
-        9,
         10,
         11,
         12
