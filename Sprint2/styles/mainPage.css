@@ -37,7 +37,6 @@
     .main-container {
         flex-direction: column;
     }
-
     .left-panel {
         width: 100%;
         height: auto;
@@ -49,7 +48,6 @@
         width: 100%;
     }
 }
-
 /* Responsividad para móviles */
 @media screen and (max-width: 478px) {
     .main-container {
@@ -167,22 +165,24 @@ body, html {
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width: 478px) {
-    #footer {
-        display: none;
-    }
-}
+
 @media (min-width: 478px) and (max-width: 700px) {
     .chat-panel .bar-time-messageAudio {
         display: none;
     }
-}
-@media (max-width: 330px) {
     .contentWindow .bar-time-requestAudio {
         display: none;
     }
 }
-@media (min-width: 478px) and (max-width: 700px) {
+@media screen and (max-width: 478px) {
+    #footer {
+        display: none;
+    }
+    .playPauseButton{
+        margin-right: 13px;
+    }
+}
+@media (max-width: 330px) {
     .contentWindow .bar-time-requestAudio {
         display: none;
     }
