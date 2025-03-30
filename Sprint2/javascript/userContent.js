@@ -6,14 +6,27 @@ let profilePicture;
 
 
 async function loadUsersData(userId) {
-    usersData = await fetch('http://localhost:3000/users').then(response => response.json());
-    contact =  usersData[userId].contact;
-    profilePicture =  usersData[userId].profilePhoto;
+    try {
+        const response = await fetch('http://localhost:3000/users');
+        usersData = await response.json();
+
+        if (usersData[userId]) {
+            contact = usersData[userId].contact;
+            profilePicture = usersData[userId].profilePhoto;
+        } else {
+            console.error('Usuario no encontrado');
+        }
+    } catch (error) {
+        console.error('Error en loadUsersData:', error);
+    }
 }
 
 async function loadChatsData() {
-    chatsData = await fetch('http://localhost:3000/chats').then(response => response.json());
+    try {
+        const response = await fetch('http://localhost:3000/chats');
+
+        chatsData = await response.json();
+    } catch (error) {
+        console.error('Error en loadChatsData:', error);
+    }
 }
-
-
-
