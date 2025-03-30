@@ -45,10 +45,10 @@
     box-sizing: border-box;
 }
 
-.setting-button {
+#setting-button {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #1d407d;
     color: white;
     border: none;
     border-radius: 4px;
@@ -58,7 +58,7 @@
 }
 
 .setting-button:hover {
-    background-color: #45a049;
+    background-color: #1d407d;
 }
 
 .setting-theme-label {
