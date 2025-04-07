@@ -9,8 +9,8 @@ import { RouterOutlet } from '@angular/router'; // Necesario para cargar las rut
     RouterOutlet,  // Componente necesario para cargar las rutas
   ],
   templateUrl: './app.component.html',  // El template donde se renderiza el router-outlet
-  styleUrls: ['./app.component.css'],   // Estilos de tu componente
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Angular'; // Título de tu aplicación
+  title = 'Angular';
 }
