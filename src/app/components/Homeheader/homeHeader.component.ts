@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 export class HomeHeaderComponent {
   constructor(private router: Router) { }
   register(){
-    window.location.href = "../pages/createAccountPage.html"
+    this.router.navigate(['signUp']);
   }
   login(){
     this.router.navigate(['login']);
