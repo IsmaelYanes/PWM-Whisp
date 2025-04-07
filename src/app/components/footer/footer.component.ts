@@ -1,6 +1,6 @@
-// header.component.ts
+// HomeHeader.component.ts
 import { Component } from '@angular/core';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import {CommonModule} from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
