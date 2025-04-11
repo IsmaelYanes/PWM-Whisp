@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';  // Importa CommonModule para us
 import { RouterModule } from '@angular/router';
 import { FooterComponent} from '../../components/footer/footer.component';
 import { CreateAccountComponent} from '../../components/createAccount/createAccount.component';
-import {HeaderComponent} from '../../components/header/header.component';
+import { HeaderComponent} from '../../components/header/header.component';
 
 @Component({
   selector: 'app-createAccountPage',
