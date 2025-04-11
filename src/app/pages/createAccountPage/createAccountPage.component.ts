@@ -7,7 +7,7 @@ import { CreateAccountComponent} from '../../components/createAccount/createAcco
 import {HeaderComponent} from '../../components/header/header.component';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-createAccountPage',
   standalone: true,
   imports: [
     CommonModule,
