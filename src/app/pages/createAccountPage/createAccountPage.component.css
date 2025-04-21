@@ -3,13 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-#body_container{
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/assets/images/background.webp");
-}
+
 body, html {
   background-color: #b1bfce;
   height: 100vh;
@@ -23,4 +17,15 @@ body, html {
   grid-template-rows: auto 1fr auto;
   background-image: url('/assets/images/background.webp');
 }
+
+#app-createAccountContainer {
+  height: 100%;
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/images/background.webp");
+}
+
 

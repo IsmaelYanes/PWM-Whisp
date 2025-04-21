@@ -61,15 +61,13 @@ input {
 
 #createAccount-Field {
   height: 3em;
-  width: 94.5%;
+  width: 100%;
   margin-top: 0.8em;
+  padding-right: 0.5em;
+  /*
   display: flex;
   justify-content: center;
-}
-
-#birthdate, #confirm-password, #password {
-  padding-left: 1em;
-  padding-right: 1.5em;
+  */
 }
 
 label {
@@ -81,7 +79,7 @@ label {
 }
 
 #createAccountButton {
-  width: 100%;
+  width: 96%;
   height: 2.5em;
   border-radius: 5em;
   border: #1d407d solid 2px;
