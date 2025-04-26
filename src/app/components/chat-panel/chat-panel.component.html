@@ -6,7 +6,9 @@
       </figure>
     </div>
     <ul class="conversation-container" id="chatConversationContainer">
-      <li *ngFor="let conversation of conversations"></li>
+      <li *ngFor="let conversation of conversations">
+        <app-message-audio></app-message-audio>
+      </li>
     </ul>
 </div>
 
