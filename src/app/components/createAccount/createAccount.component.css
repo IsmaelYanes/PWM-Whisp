@@ -57,6 +57,10 @@ input {
   border-radius: 0.5em;
   border: #A8A8A8 solid 2px;
   font-size: 1em;
+
+  &.ng-invalid.ng-touched {
+    border-color: red;
+  }
 }
 
 #createAccount-Field {
@@ -92,10 +96,10 @@ label {
 }
 
 .error-message {
-  color: red;
-  font-size: 0.8em;
-  display: block;
-  margin-top: 5px;
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
 }
 
 
