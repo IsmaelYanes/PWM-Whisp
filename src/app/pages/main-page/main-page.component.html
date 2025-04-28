@@ -9,9 +9,13 @@
 <app-header></app-header>
 <div id="body_container">
   <div id="bodyFrame-container">
-    <app-tool-bar></app-tool-bar>
+    <app-tool-bar (toolBarEvent)="windowSwitched($event)" ></app-tool-bar>
     <app-chat-panel class="chat-panel"></app-chat-panel>
-    <app-send-window class="contentWindow"></app-send-window>
+    <app-send-window *ngIf="this.switchWindow === 0" class="contentWindow"></app-send-window>
+    <app-chat-window *ngIf="this.switchWindow === 1" class="contentWindow"></app-chat-window>
+    <app-edit-window *ngIf="this.switchWindow === 2" class="contentWindow"></app-edit-window>
+    <app-request-window *ngIf="this.switchWindow === 3" class="contentWindow"></app-request-window>
+    <app-setting-window *ngIf="this.switchWindow === 4" class="contentWindow"></app-setting-window>
   </div>
 </div>
 <app-footer></app-footer>
