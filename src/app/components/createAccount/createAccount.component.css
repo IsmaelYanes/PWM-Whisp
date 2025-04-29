@@ -108,6 +108,12 @@ label {
   border-color: lightskyblue;
 }
 
+input:focus {
+  outline: none;
+  border-color: #1d407d;
+  box-shadow: 0 0 5px #1d407d;
+}
+
 @media screen and (max-width: 500px) {
   #createAccount-Text {
     font-size: 2.3em;

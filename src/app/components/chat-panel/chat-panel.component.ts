@@ -19,29 +19,20 @@ import { of } from 'rxjs';
 })
 export class ChatPanelComponent {
   conversations = [1, 2, 3, 4, 5];
-  user!: User | null;
+  user!: User;
 
   constructor(private authService: AuthService,
               private firestoreService: FirestoreService) {
   }
 
   ngOnInit() {
-    // el switchMap -> Cuando llegue el usuario logueado,
-    // conéctate automáticamente a su documento en Firestore.
-    // Si no hay usuario, no hagas nada.
-    // .pipe -> encadenar operadores q permiten transformar filtar o
-    // realizar otras acciones sobre los valores emitidos por el observable
-    this.authService.getAuthState().pipe(
-      switchMap(user => {
-        if (user) {
-          return this.firestoreService.getUserById(user.uid); // <- devuelve Observable<User>
-        } else {
-          return of(null); // <- devuelve Observable<null> si no hay usuario
-        }
-      })
-      //una vez conectado con el usuario usamos los datos
-    ).subscribe(userData => {
-      this.user = userData;
+    this.authService.getAuthState().subscribe(user => {
+      if (user) {
+        this.firestoreService.getUserById(user.uid).subscribe(userData => {
+          console.log(userData);
+          this.user = userData;
+        });
+      }
     });
   }
 }
