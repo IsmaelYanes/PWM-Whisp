@@ -15,7 +15,7 @@ import {
 import {AuthService} from '../../services/auth.service';
 import {User} from '../../models/user.interface';
 import { Router } from '@angular/router';
-import {toast} from 'ngx-sonner';
+import { toast } from 'ngx-sonner';
 
 @Component({
   selector: 'app-createAccount',
@@ -28,6 +28,16 @@ export class CreateAccountComponent {
   private authService = inject(AuthService);
   private router = inject(Router);
 
+  user: User = {
+    email: '',
+    name: '',
+    birthday: '',
+    imageProfile: '../../../assets/images/icons/0.jpg',
+    contact: [],
+    request: [],
+    chat: {}
+  }
+
   /*Herramienta para crear formularios reactivos +rápidos y +legibles
   * Ayuda a crear: FormGroup, FormControl, FormArray
   * */
@@ -39,10 +49,8 @@ export class CreateAccountComponent {
     password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
     password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
     name: ['', Validators.required],
-    birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]]
+    birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]],
   }, {validators: [passwordMatchValidator]});
-
-  user!: User;
 
   onSubmit() {
     if (this.form.valid) {

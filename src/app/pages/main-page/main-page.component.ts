@@ -12,6 +12,7 @@ import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-main-page',
+  standalone: true,
   imports: [
     FooterComponent,
     HeaderComponent,

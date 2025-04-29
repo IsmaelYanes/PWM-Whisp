@@ -4,6 +4,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
   selector: 'app-tool-bar',
   imports: [],
   templateUrl: './tool-bar.component.html',
+  standalone: true,
   styleUrl: './tool-bar.component.css'
 })
 export class ToolBarComponent {

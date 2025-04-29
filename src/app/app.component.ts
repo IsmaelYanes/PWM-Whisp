@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router'; // Necesario para cargar las rutas
-import { toast, NgxSonnerToaster } from 'ngx-sonner';
+import { NgxSonnerToaster } from 'ngx-sonner';
 
 @Component({
   selector: 'app-root',
