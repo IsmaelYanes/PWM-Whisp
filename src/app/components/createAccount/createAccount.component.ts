@@ -1,8 +1,21 @@
 import {Component, inject} from '@angular/core';
 import { CommonModule} from '@angular/common';
 import { RouterModule } from '@angular/router';
-import {FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
-
+import {
+  FormGroup,
+  NonNullableFormBuilder,
+  ReactiveFormsModule,
+  Validators
+} from '@angular/forms';
+import {
+  dateFutureValidatorControl,
+  dateValidValidatorControl,
+  passwordMatchValidator
+} from '../../validators/createAccount.validator'
+import {AuthService} from '../../services/auth.service';
+import {User} from '../../models/user.interface';
+import { Router } from '@angular/router';
+import {toast} from 'ngx-sonner';
 
 @Component({
   selector: 'app-createAccount',
@@ -12,6 +25,8 @@ import {FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators} from
   styleUrl: './createAccount.component.css'
 })
 export class CreateAccountComponent {
+  private authService = inject(AuthService);
+  private router = inject(Router);
 
   /*Herramienta para crear formularios reactivos +rápidos y +legibles
   * Ayuda a crear: FormGroup, FormControl, FormArray
@@ -24,14 +39,30 @@ export class CreateAccountComponent {
     password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
     password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
     name: ['', Validators.required],
-    birthday: ['', Validators.required]
-  })
+    birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]]
+  }, {validators: [passwordMatchValidator]});
 
-  handleSubmit() {
-    if (!this.form.valid) {
-      this.form.markAsTouched();
-      return;
+  user!: User;
+
+  onSubmit() {
+    if (this.form.valid) {
+      this.user = {...this.user, ...this.form.value};
+      this.authService.signUp(this.user).then(() => {
+        this.form.reset();
+        toast.success('Usuario creado correctamente');
+        this.router.navigate(['login']);
+      }).catch(error => {
+        toast.error("No se ha podido crear el usuario");
+      });
     }
-    console.log(this.form);
   }
+
+  formatDateForMax(): string {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = (today.getMonth() + 1).toString().padStart(2, '0');
+    const day = today.getDate().toString().padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
 }
