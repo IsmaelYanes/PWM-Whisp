@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-tool-bar',
@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './tool-bar.component.css'
 })
 export class ToolBarComponent {
+  @Output() toolBarEvent = new EventEmitter<number>();
 
+  switchWindow(index: number) {
+    this.toolBarEvent.emit(index);
+  }
 }

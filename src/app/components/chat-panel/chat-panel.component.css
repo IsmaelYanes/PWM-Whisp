@@ -40,6 +40,7 @@
   flex: 1;
   background-color: #f0f0f0; /* Default background for the conversation container */
   overflow-y: auto; /* Allow scrolling for the conversation on larger screens */
+  padding: 0;
 }
 
 /* Responsividad para móviles */
