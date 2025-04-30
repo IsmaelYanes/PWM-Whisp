@@ -1,11 +1,17 @@
 <div class="profile-container" >
-  <img id="profileSetting" class="circleFrame photo" src="assets/images/users.png" alt="userPhoto" >
+  <img id="profileSetting" class="circleFrame photo" [src]='defaultPhoto' alt="userPhoto" >
   <button id="selectButton">
-    <img id="settingProfilePhoto" (click)="changeProfilePhoto()" src="assets/images/mark.png" alt="aceptar">
+    <img id="settingProfilePhoto" (click)="onClickToChangeProfilePhoto()" src="assets/images/mark.png" alt="aceptar">
   </button>
 </div>
 <div class="edit-frame">
   <div>
-    <table id="profileTable" class="profile-table" ></table>
+    <table id="profileTable" class="profile-table" >
+      <tr *ngFor="let row of rows">
+        <td *ngFor="let col of columns" (click)="changeProfilePhoto(row * 5 + col)">
+          <img class="profile-image" [src]="'assets/images/icons/' + (row * 5 + col) + '.jpg'" alt="icons">
+        </td>
+      </tr>
+    </table>
   </div>
 </div>

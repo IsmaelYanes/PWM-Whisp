@@ -4,11 +4,7 @@ import {CommonModule} from '@angular/common';
 import {Router, RouterModule} from '@angular/router';
 import {AuthService} from '../../services/auth.service';
 import {FormGroup, FormsModule, NonNullableFormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
-import {
-  dateFutureValidatorControl,
-  dateValidValidatorControl,
-  passwordMatchValidator
-} from '../../validators/createAccount.validator';
+
 import {User} from '../../models/user.interface';
 import {toast} from 'ngx-sonner';
 
@@ -38,14 +34,14 @@ export class LoginComponent {
   onSubmit() {
     if (this.form.valid) {
       this.user = {...this.user, ...this.form.value};
-      this.authService.signIn(this.user).then(() => {
-        this.form.reset();
-        toast.success('Hola nuevamente');
-        this.router.navigate(['mainPage']);
+      this.authService.signIn(this.user)
+        .then(() => {
+          this.form.reset();
+          toast.success('Hola nuevamente');
+          this.router.navigate(['mainPage']);
       }).catch(error => {
         toast.error("El usuario no existe o contraseña incorrecta");
       });
     }
   }
-
 }

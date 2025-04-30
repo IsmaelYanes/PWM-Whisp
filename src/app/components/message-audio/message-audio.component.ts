@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-message-audio',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './message-audio.component.css'
 })
 export class MessageAudioComponent {
-
+  @Input() userPhoto: string|undefined;
 }

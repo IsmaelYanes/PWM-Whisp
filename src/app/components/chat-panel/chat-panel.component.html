@@ -7,7 +7,7 @@
     </div>
     <ul class="conversation-container" id="chatConversationContainer">
       <li *ngFor="let conversation of conversations">
-        <app-message-audio></app-message-audio>
+        <app-message-audio [userPhoto]='conversation?.profilePhoto'></app-message-audio>
       </li>
     </ul>
 </div>
