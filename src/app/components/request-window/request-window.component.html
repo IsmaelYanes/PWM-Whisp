@@ -1,6 +1,5 @@
-<div id="requestWindowContainer">
-  <ul class="conversation-container" id="requestMessageContainer">
-  </ul>
-</div>
-
-
+<ul class="conversation-container" id="requestMessageContainer">
+  <li *ngFor="let request of requestList">
+    <app-voice-mail-request [currentUser]="request"></app-voice-mail-request>
+  </li>
+</ul>

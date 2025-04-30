@@ -8,9 +8,9 @@ import {Component, EventEmitter, Output} from '@angular/core';
   styleUrl: './tool-bar.component.css'
 })
 export class ToolBarComponent {
-  @Output() toolBarEvent = new EventEmitter<number>();
+  @Output() toolBarEvent = new EventEmitter<string>();
 
-  switchWindow(index: number) {
-    this.toolBarEvent.emit(index);
+  switchWindow(window: string) {
+    this.toolBarEvent.emit(window);
   }
 }

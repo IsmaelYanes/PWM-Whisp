@@ -1,0 +1,15 @@
+<div class="requestMessageBox" >
+  <div class="invitationChat">
+    <app-message-audio [userPhoto]="currentUser?.profilePhoto"></app-message-audio>
+  </div>
+
+  <div class="button-box">
+    <button class="centerButton">
+      <img src="assets/images/aceptar.png" class="acceptButton" (click)="accept()">
+    </button>
+    <button>
+      <img src="assets/images/rechazar.png" class="rejectButton" (click)="reject()">
+    </button>
+  </div>
+</div>
+

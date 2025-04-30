@@ -34,7 +34,7 @@ import {UserService} from '../../services/user.service';
 export class MainPageComponent implements OnInit {
   private userId :string | undefined;
   private userData!: User;
-  public switchWindow = 0;
+  public switchWindow: string = "sendWindow";
   protected userPhoto: string = "assets/images/userphoto.png";
   contacts : string[] = [];
   requests : string[] = [];
@@ -63,7 +63,7 @@ export class MainPageComponent implements OnInit {
 
   }
 
-  windowSwitched($event: number) {
+  windowSwitched($event: string) {
     this.switchWindow = $event;
   }
 

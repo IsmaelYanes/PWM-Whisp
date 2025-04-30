@@ -1,10 +1,16 @@
 import {Component, Input, OnChanges, SimpleChanges} from '@angular/core';
 import {User} from '../../models/user.interface';
 import {UserService} from '../../services/user.service';
+import {VoiceMailRequestComponent} from '../voice-mail-request/voice-mail-request.component';
+import {NgForOf, NgFor} from '@angular/common';
 
 @Component({
     selector: 'app-request-window',
-    imports: [],
+  imports: [
+    VoiceMailRequestComponent,
+    NgForOf,
+    NgFor
+  ],
     templateUrl: './request-window.component.html',
     standalone: true,
     styleUrl: './request-window.component.css'
