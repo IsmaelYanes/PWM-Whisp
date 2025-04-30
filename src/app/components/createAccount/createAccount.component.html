@@ -60,7 +60,9 @@
     <section>
       <label for="user-name">Nombre de usuario</label>
       <input id="user-name" required placeholder="ArmadilloAmarillo" formControlName="name">
-      <span id="userNameError" class="error-message"></span>
+      @if (form.get('name')?.touched && form.get('name')?.errors?.['userNameExists']) {
+        <span class="error-message">El nombre de usuario ya existe</span>
+      }
     </section>
     <section>
       <label for="birthdate">Fecha de nacimiento</label>
@@ -78,10 +80,11 @@
   </form>
 </div>
 
+<!--
 <div>
   <pre>Formulario valido: {{form.valid}}</pre>
 </div>
 <div>
   <pre>{{form.value | json }}</pre>
 </div>
-
+-->

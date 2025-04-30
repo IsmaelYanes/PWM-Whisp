@@ -15,6 +15,7 @@ import {UserService} from '../../services/user.service';
 
 @Component({
   selector: 'app-main-page',
+  standalone: true,
   imports: [
     FooterComponent,
     HeaderComponent,
