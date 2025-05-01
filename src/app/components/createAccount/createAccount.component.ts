@@ -57,16 +57,18 @@ export class CreateAccountComponent {
   }, {validators: [passwordMatchValidator]});
 
   onSubmit() {
-    if (this.form.valid) {
-      this.user = {...this.user, ...this.form.value};
-      this.authService.signUp(this.user).then(() => {
-        this.form.reset();
-        toast.success('Usuario creado correctamente');
-        this.router.navigate(['login']);
-      }).catch(error => {
-        toast.error("No se ha podido crear el usuario");
-      });
+    if (this.form.invalid) {
+      this.form.markAllAsTouched();
+      return;
     }
+    this.user = {...this.user, ...this.form.value};
+    this.authService.signUp(this.user).then(() => {
+      this.form.reset();
+      toast.success('Usuario creado correctamente');
+      this.router.navigate(['login']);
+    }).catch(error => {
+      toast.error("No se ha podido crear el usuario");
+    });
   }
 
 showPasswordMatchError() {

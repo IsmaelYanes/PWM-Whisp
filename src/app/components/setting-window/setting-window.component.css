@@ -1,55 +1,129 @@
-
+.setting-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
 
 .setting-container {
+  height: 90%;
+  width: 80%;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.setting-container.expanded {
+  height: 95%;
+}
+
+.password-Text {
+  color: #1d407d;
+  padding: 1em 0 0.1em 0;
+  font-size: 2.2em;
+}
+
+#passwordForm {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: start;
+  width: 95%;
+  padding-left: 2em;
 }
 
-.setting-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.setting-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+section {
   width: 100%;
-  text-align: left;
+  margin-block: 0.4em;
 }
 
-.setting-input,
-.setting-select {
+input {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  padding: 0.5em 0 0.5em 1em;
+  border-radius: 0.5em;
+  border: #A8A8A8 solid 2px;
+  font-size: 1em;
+
+  &.ng-invalid.ng-touched {
+    border-color: red;
+  }
+}
+
+#password-Field {
+  height: 2.8em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 #setting-button {
   width: 100%;
-  padding: 10px;
-  background-color: #1d407d;
-  color: white;
-  border: none;
-  border-radius: 4px;
+  height: 100%;
+  border-radius: 5em;
+  border: #1d407d solid 2px;
+  background: #1d407d;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
 }
 
-.setting-button:hover {
-  background-color: #1d407d;
+label {
+  font-size: 1.1em;
 }
 
-.setting-theme-label {
-  margin-top: 10px;
+.error-message {
+  color: red;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 5px;
+}
+
+#setting-button:hover {
+  background: lightskyblue;
+  color: #1d407d;
+  border-color: lightskyblue;
+}
+
+#change-theme {
+  text-align: start;
+  padding-left: 2em;
+}
+
+#themeSelect {
+  width: 95%;
+  border-radius: 0.5em;
+  padding: 0.5em 0 0.5em 1em;
+  border: #A8A8A8 solid 2px;
+  font-size: 1em;
+}
+
+#close {
+  padding-left: 2em;
+  width: 95%;
+}
+
+#logOut-button {
+  height: 2.5em;
   width: 100%;
+  margin-top: 1.2em;
+  border-radius: 5em;
+  border: #1d407d solid 2px;
+  background: #1d407d;
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+}
+
+#logOut-button:hover {
+  background: lightskyblue;
+  color: #1d407d;
+  border-color: lightskyblue;
 }

@@ -26,23 +26,31 @@ export class LoginComponent {
 
   form: FormGroup = this.formBuilder.group({
     email: ['', [Validators.required, Validators.email]], //nunca será null, solo string
-    password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
-    //    password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
+    //password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
+    password: ['', [Validators.required,
+      Validators.minLength(8),
+      Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
   });
 
   user!: User;
 
   onSubmit() {
-    if (this.form.valid) {
-      this.user = {...this.user, ...this.form.value};
-      this.authService.signIn(this.user)
-        .then(() => {
-          this.form.reset();
-          toast.success('Hola nuevamente');
-          this.router.navigate(['mainPage']);
-      }).catch(error => {
-        toast.error("El usuario no existe o contraseña incorrecta");
-      });
+    if (this.form.invalid) {
+      this.form.markAllAsTouched();
+      return;
     }
+    this.user = {...this.user, ...this.form.value};
+    this.authService.signIn(this.user)
+      .then(() => {
+        this.form.reset();
+        toast.success('Hola nuevamente');
+        this.router.navigate(['mainPage']);
+      }).catch(error => {
+      toast.error("El usuario no existe o contraseña incorrecta");
+    });
+  }
+
+  get isFormTouchedAndInvalid() {
+    return this.form.invalid && this.form.touched;
   }
 }

@@ -66,6 +66,9 @@
     <section>
       <label for="user-name">Nombre de usuario</label>
       <input id="user-name" required placeholder="ArmadilloAmarillo" formControlName="name">
+      @if (form.get('name')?.touched && form.get('name')?.hasError('required')) {
+        <span class="error-message">Es obligatorio introducir un nombre de usuario</span>
+      }
       @if (form.get('name')?.touched && form.get('name')?.errors?.['userNameExists']) {
         <span class="error-message">El nombre de usuario ya existe</span>
       }
@@ -73,6 +76,9 @@
     <section>
       <label for="birthdate">Fecha de nacimiento</label>
       <input id="birthdate" type="date" required formControlName="birthday" min="1900-01-01" max="{{ formatDateForMax() }}">
+      @if (form.get('birthday')?.touched && form.get('birthday')?.hasError('required')) {
+        <span class="error-message">Es obligatorio introducir la fecha de nacimiento</span>
+      }
       @if (form.get('birthday')?.touched && form.get('birthday')?.errors?.['tooYoung']) {
         <span class="error-message">Debe tener al menos 12 años</span>
       }
@@ -81,7 +87,7 @@
       }
     </section>
     <section id="createAccount-Field">
-      <button id="createAccountButton" type="submit" [disabled]="this.form.invalid">Crear cuenta</button>
+      <button id="createAccountButton" type="submit">Crear cuenta</button>
     </section>
   </form>
 </div>

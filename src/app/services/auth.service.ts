@@ -1,10 +1,17 @@
 import {inject, Injectable} from '@angular/core';
-import {Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from '@angular/fire/auth';
+import {
+  Auth,
+  createUserWithEmailAndPassword,
+  getAuth, reauthenticateWithCredential,
+  signInWithEmailAndPassword,
+  updatePassword, EmailAuthProvider, signOut
+} from '@angular/fire/auth';
 import {User} from '../models/user.interface';
 import { authState } from '@angular/fire/auth';
 import { User as FirebaseUser } from 'firebase/auth';
 import {Observable} from 'rxjs';
 import {UserService} from './user.service';
+import {toast} from 'ngx-sonner';
 
 @Injectable({
   providedIn: 'root'
@@ -46,4 +53,35 @@ export class AuthService {
     return this.auth.currentUser?.uid;
   }
 
+  changePassword(password: string) {
+    const currentUser = this.auth.currentUser;
+    if (currentUser) {
+      updatePassword(currentUser, password).then(() => {
+        toast.success('Contraseña cambiada correctamente');
+      }).catch(error => {
+        toast.error("No se ha podido cambiar la contraseña");
+      });
+    }
+  }
+
+  logOut() {
+    this.auth.signOut();
+  }
+
+  async verificationCredentials(password: string): Promise<boolean> {
+    const currentUser = this.auth.currentUser;
+
+    if (currentUser?.email) {
+      const credential = EmailAuthProvider.credential(currentUser.email, password);
+
+      try {
+        await reauthenticateWithCredential(currentUser, credential);
+        return true;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    return false;
+  }
 }

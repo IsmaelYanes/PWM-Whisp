@@ -11,6 +11,7 @@ import {User} from '../../models/user.interface';
     MessageAudioComponent
   ],
   templateUrl: './chat-panel.component.html',
+  standalone: true,
   styleUrl: './chat-panel.component.css'
 })
 export class ChatPanelComponent implements OnChanges{
