@@ -61,8 +61,9 @@ export class SettingWindowComponent {
   }
 
   logout() {
-    this.authService.logOut();
-    this.router.navigate(['login']);
+    this.authService.logOut().then(() => {
+      this.router.navigateByUrl('/login');
+    });
   }
 
   changeTheme($event: Event) {

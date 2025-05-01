@@ -2,16 +2,17 @@ import {inject, Injectable} from '@angular/core';
 import {
   Auth,
   createUserWithEmailAndPassword,
-  getAuth, reauthenticateWithCredential,
+  reauthenticateWithCredential,
   signInWithEmailAndPassword,
-  updatePassword, EmailAuthProvider, signOut
+  updatePassword, EmailAuthProvider,
+  authState,
 } from '@angular/fire/auth';
 import {User} from '../models/user.interface';
-import { authState } from '@angular/fire/auth';
-import { User as FirebaseUser } from 'firebase/auth';
-import {Observable} from 'rxjs';
 import {UserService} from './user.service';
 import {toast} from 'ngx-sonner';
+import {Observable} from 'rxjs';
+import {User as FirebaseUser} from '@firebase/auth';
+import { signOut } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -45,10 +46,6 @@ export class AuthService {
     return signInWithEmailAndPassword(this.auth, user.email, user.password!);
   }
 
-  getAuthState(): Observable<FirebaseUser | null> {
-    return authState(this.auth);
-  }
-
   getCurrentUser(){
     return this.auth.currentUser?.uid;
   }
@@ -64,8 +61,8 @@ export class AuthService {
     }
   }
 
-  logOut() {
-    this.auth.signOut();
+  async logOut() {
+    await signOut(this.auth);
   }
 
   async verificationCredentials(password: string): Promise<boolean> {
@@ -81,7 +78,10 @@ export class AuthService {
         return false;
       }
     }
-
     return false;
+  }
+
+  get authState(): Observable<FirebaseUser | null> {
+    return authState(this.auth);
   }
 }
