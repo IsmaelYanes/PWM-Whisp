@@ -50,8 +50,8 @@ export class CreateAccountComponent {
   form: FormGroup = this.formBuilder.group({
     //email: ['', [Validators.required, Validators.pattern(/^(?=[^@]*[a-zA-Z])([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/)]], //nunca será null, solo string
     email: ['', [Validators.required, Validators.email]], //nunca será null, solo string
-    password: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
-    password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[A-Z])(?=.*[a-z])(?=.*[\W_])(?=.{8,}).+$/)]],
+    password: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(15), Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
+    password_confirmation: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(15), Validators.pattern(/^(?=.*[a-zñ])(?=.*[A-ZÑ])(?=.*\d)(?=.*[.$@$!%*?&])[A-Za-zÑñ\d.$@$!%*?&]+$/)]],
     name: ['', [Validators.required], [userNameExistsValidator(this.userService)]],
     birthday: ['', [Validators.required, dateFutureValidatorControl, dateValidValidatorControl]],
   }, {validators: [passwordMatchValidator]});
@@ -68,6 +68,14 @@ export class CreateAccountComponent {
       });
     }
   }
+
+showPasswordMatchError() {
+  return this.form.get('password_confirmation')?.touched &&
+    this.form.get('password')?.touched &&
+    (this.form.get("password")?.value != "") &&
+    (this.form.get('password_confirmation')?.value != "") &&
+    this.form.errors?.['passwordMismatch'];
+}
 
   formatDateForMax(): string {
     const today = new Date();

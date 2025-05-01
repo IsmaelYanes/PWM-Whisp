@@ -7,6 +7,7 @@ import {NgForOf} from '@angular/common';
     NgForOf
   ],
   templateUrl: './edit-window.component.html',
+  standalone: true,
   styleUrl: './edit-window.component.css'
 })
 export class EditWindowComponent {

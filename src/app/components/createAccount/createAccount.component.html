@@ -31,6 +31,9 @@
       @if (form.get('password')?.touched && form.get('password')?.hasError('minLength')) {
         <span class="error-message">La contraseña debe de contener al menos 8 dígitos</span>
       }
+      @if (form.get('password')?.touched && form.get('password')?.hasError('maxLength')) {
+        <span class="error-message">La contraseña debe de contener menos de 15 dígitos</span>
+      }
       @if (form.get('password')?.touched && form.get('password')?.hasError('pattern')) {
         <span class="error-message">La contraseña no sigue el patrón correcto</span>
         <span class="error-message">1 Mayúscula</span>
@@ -47,13 +50,16 @@
       @if (form.get('password_confirmation')?.touched && form.get('password_confirmation')?.hasError('minLength')) {
         <span class="error-message">La contraseña debe de contener al menos 8 dígitos</span>
       }
+      @if (form.get('password_confirmation')?.touched && form.get('password_confirmation')?.hasError('maxLength')) {
+        <span class="error-message">La contraseña debe de contener menos de 15 dígitos</span>
+      }
       @if (form.get('password_confirmation')?.touched && form.get('password_confirmation')?.hasError('pattern')) {
         <span class="error-message">La contraseña no sigue el patrón correcto</span>
         <span class="error-message">1 Mayúscula</span>
         <span class="error-message">1 Minúsucla</span>
         <span class="error-message">1 Carácter especial</span>
       }
-      @if (form.get('password_confirmation')?.touched && form.get('password')?.touched && form.errors?.['passwordMismatch']) {
+      @if (showPasswordMatchError()) {
         <span class="error-message">Las contraseñas no coinciden</span>
       }
     </section>
