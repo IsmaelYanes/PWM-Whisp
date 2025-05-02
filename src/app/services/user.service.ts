@@ -69,5 +69,4 @@ export class UserService {
       console.log("Error de añadir al contacto", error);
     }
   }
-
 }
