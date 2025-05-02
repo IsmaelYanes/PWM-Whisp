@@ -5,8 +5,9 @@
   height: 100%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: #f4f4f4;
   font-family: Arial, sans-serif;
+  background-color: #e5ddd5;
+
 }
 
 .setting-container {
@@ -126,4 +127,8 @@ label {
   background: lightskyblue;
   color: #1d407d;
   border-color: lightskyblue;
+}
+.settingContainer{
+  background-color: #e5ddd5;
+
 }

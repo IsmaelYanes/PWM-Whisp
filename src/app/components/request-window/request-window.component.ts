@@ -33,10 +33,4 @@ export class RequestWindowComponent implements OnChanges{
       })
     }
   }
-
-  addToContact(user: User) {
-    if (user.id !== undefined) {
-      this.userService.addNewContact(user.id);
-    }
-  }
 }

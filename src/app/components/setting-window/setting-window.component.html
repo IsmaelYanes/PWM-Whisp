@@ -75,7 +75,7 @@
 
     <section id="change-theme">
       <label for="themeSelect" class="setting-theme-label">Seleccionar Tema:</label><br>
-      <select id="themeSelect" class="setting-select" (change)="changeTheme($event)">
+      <select id="themeSelect" class="setting-select" [(ngModel)]="theme" (change)="changeTheme()">
         <option value="normal">Normal</option>
         <option value="dark">Oscuro</option>
       </select>

@@ -8,6 +8,7 @@ import {
   docData,
   getDoc,
   arrayUnion,
+  arrayRemove,
   Firestore, setDoc, updateDoc
 } from '@angular/fire/firestore';
 import { User } from '../models/user.interface';
@@ -32,7 +33,7 @@ export class UserService {
 
   getUserByID(id:string):Observable<User> {
     const userRef = doc(this.firestore, `users/${id}`);
-    return docData(userRef) as Observable<User>;
+    return docData(userRef, {idField:'id'}) as Observable<User>;
   }
 
   async editUser(id:string, data:Partial<User>) {
@@ -50,12 +51,23 @@ export class UserService {
   }
 
 
-  async addNewContact(id: string) {
+  async addNewContact(currentId: string, requestId: string) {
     try {
-      const userRef = doc(this.firestore, `users/${id}`);
-      await updateDoc(userRef, { contact: arrayUnion(id)});
+      const userRef = doc(this.firestore, `users/${currentId}`);
+      await updateDoc(userRef, { request: arrayRemove(requestId)});
+      await updateDoc(userRef, { contact: arrayUnion(requestId)});
     }catch (error) {
       console.log("Error de añadir al contacto", error);
     }
   }
+
+  async rejectInvitation(currentId: string, requestId: string) {
+    try {
+      const userRef = doc(this.firestore, `users/${currentId}`);
+      await updateDoc(userRef, { request: arrayRemove(requestId)});
+    }catch (error) {
+      console.log("Error de añadir al contacto", error);
+    }
+  }
+
 }

@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {FormGroup, NonNullableFormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
+import {FormGroup, FormsModule, NonNullableFormBuilder, ReactiveFormsModule, Validators} from '@angular/forms';
 import {
   passwordMatchValidator,
   passwordMatchFirebaseValidator
@@ -11,7 +11,8 @@ import {Router} from '@angular/router';
 @Component({
     selector: 'app-setting-window',
   imports: [
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
     templateUrl: './setting-window.component.html',
     standalone: true,
@@ -20,7 +21,7 @@ import {Router} from '@angular/router';
 export class SettingWindowComponent {
   private authService = inject(AuthService);
   private router = inject(Router);
-
+  theme = "normal";
   formBuilder: NonNullableFormBuilder = inject(NonNullableFormBuilder);
 
   form: FormGroup = this.formBuilder.group({
@@ -65,7 +66,25 @@ export class SettingWindowComponent {
     this.router.navigate(['login']);
   }
 
-  changeTheme($event: Event) {
-    //cambio de tema
+  changeTheme() {
+    const windows = document.querySelectorAll('.contentWindow');
+    const containers = document.querySelectorAll('.player-container');
+
+    if (this.theme === 'dark') {
+      windows.forEach(el => (el as HTMLElement).style.backgroundColor = '#27374D');
+      containers.forEach(el => (el as HTMLElement).style.backgroundColor = '#DDE6ED');
+
+      (document.querySelector('.toolbar') as HTMLElement)?.style.setProperty('background-color', '#526D82');
+      (document.querySelector('.chat-panel') as HTMLElement)?.style.setProperty('background-color', '#9DB2BF');
+      (document.querySelector('.chatPanel-container') as HTMLElement)?.style.setProperty('background-color', '#9DB2BF');
+
+    } else {
+      windows.forEach(el => (el as HTMLElement).style.backgroundColor = '#e5ddd5');
+      containers.forEach(el => (el as HTMLElement).style.backgroundColor = '#fff');
+
+      (document.querySelector('.toolbar') as HTMLElement)?.style.setProperty('background-color', '#7b92ac');
+      (document.querySelector('.chat-panel') as HTMLElement)?.style.setProperty('background-color', '#fff');
+      (document.querySelector('.chatPanel-container') as HTMLElement)?.style.setProperty('background-color', '#fff');
+    }
   }
 }
