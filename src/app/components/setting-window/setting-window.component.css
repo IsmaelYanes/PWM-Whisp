@@ -7,7 +7,6 @@
   border-radius: 10px;
   font-family: Arial, sans-serif;
   background-color: #e5ddd5;
-
 }
 
 .setting-container {
@@ -25,7 +24,7 @@
 .password-Text {
   color: #1d407d;
   padding: 1em 0 0.1em 0;
-  font-size: 2.2em;
+  font-size: 1.6rem;
 }
 
 #passwordForm {
@@ -48,7 +47,7 @@ input {
   padding: 0.5em 0 0.5em 1em;
   border-radius: 0.5em;
   border: #A8A8A8 solid 2px;
-  font-size: 1em;
+  font-size: 0.8em;
 
   &.ng-invalid.ng-touched {
     border-color: red;
@@ -56,26 +55,26 @@ input {
 }
 
 #password-Field {
-  height: 2.8em;
+  height: 2.5em;
   margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 
 #setting-button {
   width: 100%;
   height: 100%;
   border-radius: 5em;
-  border: #1d407d solid 2px;
+  border: #1d407d solid 1px;
   background: #1d407d;
   cursor: pointer;
   color: whitesmoke;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 label {
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .error-message {
@@ -101,7 +100,8 @@ label {
   border-radius: 0.5em;
   padding: 0.5em 0 0.5em 1em;
   border: #A8A8A8 solid 2px;
-  font-size: 1em;
+  font-size: 0.8em;
+  color: #777171;
 }
 
 #close {
@@ -110,7 +110,7 @@ label {
 }
 
 #logOut-button {
-  height: 2.5em;
+  height: 2.4em;
   width: 100%;
   margin-top: 1.2em;
   border-radius: 5em;
@@ -130,5 +130,4 @@ label {
 }
 .settingContainer{
   background-color: #e5ddd5;
-
 }

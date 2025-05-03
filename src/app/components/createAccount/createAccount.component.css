@@ -19,7 +19,7 @@
 
 #welcome-text {
   color: #1d407d;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 #welcome-text2 {
@@ -34,7 +34,7 @@
 #createAccount-Text {
   color: #323234;
   padding: 1em 0 0.05em 0.2em;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 #createAccount-Form {
@@ -56,7 +56,7 @@ input {
   padding: 0.5em 0 0.5em 1em;
   border-radius: 0.5em;
   border: #A8A8A8 solid 2px;
-  font-size: 1em;
+  font-size: 0.8em;
 
   &.ng-invalid.ng-touched {
     border-color: red;
@@ -75,11 +75,11 @@ input {
 }
 
 label {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 #birthdate {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 #createAccountButton {
@@ -92,7 +92,7 @@ label {
   color: whitesmoke;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .error-message {

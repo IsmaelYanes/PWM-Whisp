@@ -10,7 +10,7 @@
   justify-content: flex-start;
   padding: 1.25rem;
   width: 45%;
-  height: 24em;
+  height: 23rem;
   border: whitesmoke solid 2px;
   border-radius: 10px;
   background: whitesmoke;
@@ -19,10 +19,11 @@
 }
 
 #login-container.expanded {
-  height: 52%;
+  height: 25rem;
 }
 
 #welcome-text {
+  font-size: 1.8em;
   color: #1d407d;
   margin-top: 0.3em;
 }
@@ -39,7 +40,7 @@
 #LogIn-Text {
   color: #323234;
   padding: 1em 0 0.05em 0.2em;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 #logIn-Form {
@@ -61,7 +62,7 @@ input {
   padding: 0.5em 0 0.5em 1em;
   border-radius: 0.5em;
   border: #A8A8A8 solid 2px;
-  font-size: 1em;
+  font-size: 0.8em;
 
   &.ng-invalid.ng-touched {
     border-color: red;
@@ -88,7 +89,7 @@ input {
   color: whitesmoke;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
+  font-size: 0.9em;
 }
 
 .forgot-Password-Text {
@@ -96,7 +97,7 @@ input {
   border: none;
   cursor: pointer;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }
 
 label {
