@@ -1,0 +1,14 @@
+
+  <div class="chatPanel-container">
+    <div id="userProfile">
+      <figure id="profile-frame">
+        <img id="profile-photo" class="photo" [src]="userPhoto"  alt="user photo">
+      </figure>
+    </div>
+    <ul class="conversation-container" id="chatConversationContainer">
+      <li *ngFor="let conversation of conversations" (click)="openChatWindow(conversation?.profilePhoto)">
+        <app-message-audio [userPhoto]='conversation?.profilePhoto'></app-message-audio>
+      </li>
+    </ul>
+</div>
+
