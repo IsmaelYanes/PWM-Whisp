@@ -3,11 +3,13 @@ import {MessageAudioComponent} from '../message-audio/message-audio.component';
 import {User} from '../../models/user.interface';
 import {UserService} from '../../services/user.service';
 import {AuthService} from '../../services/auth.service';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-voice-mail-request',
   imports: [
-    MessageAudioComponent
+    MessageAudioComponent,
+    NgIf,
   ],
   templateUrl: './voice-mail-request.component.html',
   styleUrl: './voice-mail-request.component.css'

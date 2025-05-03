@@ -1,4 +1,4 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {NgForOf} from '@angular/common';
 import { MessageAudioComponent } from '../message-audio/message-audio.component';
 import {UserService} from '../../services/user.service';
@@ -18,6 +18,8 @@ export class ChatPanelComponent implements OnChanges{
 
   @Input() userPhoto: string = "assets/images/userphoto.png";
   @Input() userContacts:string[] = [];
+  @Output() sendWindowSelect: EventEmitter<string> = new EventEmitter();
+  @Output() chatUser: EventEmitter<string> = new EventEmitter();
   protected conversations: User[] = [];
 
   constructor(private userService: UserService) {}
@@ -35,5 +37,10 @@ export class ChatPanelComponent implements OnChanges{
         this.conversations.push(user);
       })
     }
+  }
+
+  openChatWindow(profilePhoto: string | undefined) {
+    this.sendWindowSelect.emit('chatWindow');
+    this.chatUser.emit(profilePhoto);
   }
 }

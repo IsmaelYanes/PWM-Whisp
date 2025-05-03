@@ -6,7 +6,7 @@
       </figure>
     </div>
     <ul class="conversation-container" id="chatConversationContainer">
-      <li *ngFor="let conversation of conversations">
+      <li *ngFor="let conversation of conversations" (click)="openChatWindow(conversation?.profilePhoto)">
         <app-message-audio [userPhoto]='conversation?.profilePhoto'></app-message-audio>
       </li>
     </ul>

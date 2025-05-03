@@ -1,6 +1,8 @@
 <div class="requestMessageBox" >
   <div class="invitationChat">
-    <app-message-audio [userPhoto]="requestUser?.profilePhoto"></app-message-audio>
+    <ng-container *ngIf="requestUser.profilePhoto">
+      <app-message-audio [userPhoto]="requestUser.profilePhoto"></app-message-audio>
+    </ng-container>
   </div>
 
   <div class="button-box">

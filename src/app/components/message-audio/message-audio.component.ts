@@ -9,4 +9,14 @@ import {Component, Input} from '@angular/core';
 })
 export class MessageAudioComponent {
   @Input() userPhoto: string|undefined;
+  private audio= new Audio();
+
+  constructor() {
+    this.audio.src = "assets/images/audio.mp3";
+    this.audio.load();
+  }
+
+  playAudio(){
+    this.audio.play();
+  }
 }

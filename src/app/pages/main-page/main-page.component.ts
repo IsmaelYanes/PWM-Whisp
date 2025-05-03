@@ -36,6 +36,7 @@ export class MainPageComponent implements OnInit {
   private userData!: User;
   public switchWindow: string = "sendWindow";
   protected userPhoto: string = "assets/images/userphoto.png";
+  protected chatUser!: string;
   contacts : string[] = [];
   requests : string[] = [];
 
@@ -92,6 +93,13 @@ export class MainPageComponent implements OnInit {
       }
   }
 
+  switchWindowSelect($event: string) {
+    this.switchWindow = $event;
+  }
+
+  loadChatUser($event: string) {
+    this.chatUser = $event;
+  }
 }
 
 
